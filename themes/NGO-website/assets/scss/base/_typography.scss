@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Daniel';
+    src: url('/fonts/daniel/daniel.ttf') format('truetype');
+    font-weight: 400; // Regular weight
+  }
+  
+  @font-face {
+    font-family: 'Daniel';
+    src: url('/fonts/daniel/danielbd.ttf') format('truetype');
+    font-weight: 700; // Bold weight
+  }
+  
+  @font-face {
+    font-family: 'Daniel';
+    src: url('/fonts/daniel/danielbk.ttf') format('truetype');
+    font-weight: 900; // Black weight (heaviest)
+  }
+  
+  // Usage example
+//   body {
+//     font-family: 'Daniel', sans-serif;
+//   }
+  

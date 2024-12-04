@@ -1,0 +1,117 @@
+@import '../abstracts/variables';
+
+$btn-primary--clr: hsl($hue-primary, $saturation-primary, 55%);
+$btn-hover-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); // Soft shadow for hover
+
+// Mixin to handle button states with best-practice styles
+@mixin btn-state($color) {
+  &:hover {
+    background-color: darken($color, 7%); // Slight darken effect for hover
+    box-shadow: $btn-hover-shadow; // Soft shadow on hover
+  }
+
+  &:focus-visible {
+    outline: 2px solid lighten($color, 15%); // Lightened outline for accessibility
+  }
+
+  &:active {
+    background-color: darken($color, 10%); // Darken further on active
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); // Inset shadow for pressed effect
+  }
+}
+
+// Base button styles
+.btn {
+  padding: 0.6em 1.2em;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease outline 0.3s ease; // Smooth transitions
+}
+
+// Primary button
+.btn-primary {
+  background-color: $btn-primary--clr;
+  border-color: $btn-primary--clr;
+  color: $white;
+
+  @include btn-state($btn-primary--clr); // Primary color state styles
+}
+
+// Primary Outline button
+.btn-primary--outline {
+  background-color: transparent;
+  color: $btn-primary--clr;
+  border: 2px solid $btn-primary--clr;
+
+  &:hover {
+    background-color: $btn-primary--clr;
+    color: $white;
+  }
+  &_none{
+    border: none;
+    color: $primary-clr;
+    &:hover{
+      // background-color: $btn-primary--clr;
+      outline: 2px solid $btn-primary--clr
+    }
+  }
+
+  @include btn-state($btn-primary--clr);
+}
+
+// Secondary button
+.btn-secondary {
+  background-color: $secondary-clr;
+  border-color: $secondary-clr;
+  color: $white;
+
+  @include btn-state($secondary-clr);
+}
+
+// Secondary Outline button
+.btn-secondary--outline {
+  background-color: transparent;
+  color: $secondary-clr;
+  border: 2px solid $secondary-clr;
+
+  &:hover {
+    background-color: $secondary-clr;
+    color: $white;
+  }
+
+  @include btn-state($secondary-clr);
+}
+
+// Light button
+.btn-light {
+  background-color: $light-clr;
+  border-color: $light-clr;
+  color: $dark-clr;
+
+  @include btn-state($light-clr);
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  // font-size: 0.9rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  // display: inline-block;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #ff7f50, #ff6347);
+  border: none;
+  &--outline{
+    border: 1px solid #ff7f50;
+    background: $white;
+    color:#ff7f50;
+  }
+}
+
+.btn-secondary {
+  background: linear-gradient(45deg, #32cd32, #228b22);
+  border: none;
+}

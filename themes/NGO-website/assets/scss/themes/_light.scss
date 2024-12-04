@@ -1,0 +1,19 @@
+@import '../abstracts/variables';
+
+// Light Theme Variables
+$background-color1: #ffffff;
+$text-color1: #000000;
+
+body {
+  background-color: $background-color1;
+  color: $text-color1;
+}
+
+a {
+  color: $primary-clr;
+}
+
+.navbar {
+  background-color: $primary-clr;
+  color: $secondary-clr;
+}

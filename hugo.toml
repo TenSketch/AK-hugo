@@ -1,0 +1,14 @@
+baseURL = 'https://akfoundationindia.com/'
+languageCode = 'en-us'
+title = 'AK Foundation - Empowering Lives Through Annadhanam and Sports Initiatives'
+theme = 'NGO-website'
+[params]
+favicon = '/favicon1.ico'
+description = 'AK Foundation (Reg. 945/2010) is dedicated to serving humanity through Annadhanam (food offerings) and nurturing rural sports talent. Join us in creating a better future by supporting our initiatives for the underprivileged and aspiring athletes.'
+keywords = 'AK Foundation, Annadhanam, Food Offering Service, Rural Sports Academy, Support Rural Talent, Community Welfare, Charity Trust, Empowering Lives, Donate for Annadhanam, Social Service Initiatives'
+author = 'Balachandiran - TenSketch'
+logo = '/images/logo/Success-Solutions-logo-2.jpeg'
+og_image = '/ogimage.jpg'
+[asset]
+  # Enable Hugo pipes for SCSS
+  enable = true

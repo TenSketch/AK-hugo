@@ -1,0 +1,49 @@
+@import '../abstracts/variables';
+
+.about-section {
+  background-color: #f9f9f9;
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff7f50;
+  }
+
+  .section-description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+
+    strong {
+      color: #32cd32;
+    }
+  }
+
+  .btn-primary {
+    background-color: #ff7f50;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: darken(#ff7f50, 10%);
+      transform: scale(1.05);
+    }
+  }
+
+  .btn-secondary {
+    background-color: #32cd32;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: darken(#32cd32, 10%);
+      transform: scale(1.05);
+    }
+  }
+}

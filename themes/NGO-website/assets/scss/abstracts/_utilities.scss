@@ -1,0 +1,80 @@
+@import '../abstracts/variables';
+
+.pt-8 {
+    padding-top: map-get($sizes, 800);
+}
+
+.py-6 {
+    padding-block: map-get($sizes, 600);
+}
+
+.py-8 {
+    padding-block: map-get($sizes, 800);
+}
+
+.py-evolve {
+    padding-block: map-get($sizes, 10000);
+}
+
+.mb-6 {
+    margin-bottom: map-get($sizes, 600);
+}
+
+.icon {
+    width: 60px;
+}
+
+.neumorphism {
+    background: linear-gradient(145deg, $card-shadow-light, $white);
+    border-radius: 10px;
+    box-shadow: 20px 20px 60px $card-shadow-dark, -20px -20px 60px $white;
+    // padding: 2rem;
+}
+
+.justify-items-center {
+    justify-items: center;
+}
+
+.bg-primary {
+    background-color: $primary-clr;
+}
+// bg-primary--light
+.bg-primary--light {
+    background-color: $primary-clr--light;
+}
+
+.text-primary {
+    color: $primary-clr;
+}
+
+.gradient-bg{
+  background: linear-gradient(84deg, rgba(10, 27, 36, 1) 51%, rgba(0, 64, 128, 1) 100%);
+  color: $text-light-clr;
+
+  .btn-primary--outline_none{
+    color: $text-light-clr;
+    i{
+        color: $text-light-clr;
+    }
+  }
+  .neumorphism{
+    box-shadow: 10px 10px 30px #d4d4d8, -10px -10px 30px #fff;
+
+  }
+}
+.gradient-bg-card{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(135deg, $primary-clr 60%, $secondary-clr 100%);
+    color: $text-light-clr;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.py-custom{
+    padding-block: 5rem;
+}

@@ -1,0 +1,20 @@
+{{ define "main" }}
+<main>
+    <section class="page-title d-flex align-items-center">
+        <div class="container text-center py-5">
+            <h1 class="display-4">{{ .Title }}</h1>
+        </div>
+    </section>
+    <section class="content py-5">
+        <div class="container">
+            <ol>
+                {{ range .Pages }}
+                    <li><a class="h2 text-primary" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+                {{ end }}
+            </ol>
+            
+            <!-- {{ .Content }} -->
+        </div>
+    </section>
+</main>
+{{ end }}

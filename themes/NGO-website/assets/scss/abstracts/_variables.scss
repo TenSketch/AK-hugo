@@ -1,0 +1,65 @@
+// Colors
+// Primary
+$hue-primary: 210;
+$saturation-primary: 100%;
+$lightness-primary: 25%;
+$color-primary: hsl($hue-primary, $saturation-primary, $lightness-primary);
+
+// Secondary
+$hue-secondary:200;
+$saturation-secondary: 57%;
+$lightness-secondary: 9%;
+$color-secondary: hsl($hue-secondary, $saturation-secondary, $lightness-secondary);
+
+// Accent
+$hue-accent: 45;
+$saturation-accent: 100%;
+$lightness-accent: 51%;
+$color-accent: hsl($hue-accent, $saturation-accent, $lightness-accent);
+
+$primary-clr: #004080;
+$primary-clr: hsl(210, 100%, 25%);
+$secondary-clr: #0a1b24;
+$secondary-clr: hsl(200, 57%, 9%);
+$accent-clr: hsl(45, 100%, 51%);
+
+
+$primary-clr--light: hsla(194, 86%, 86%, 1);
+$primary-clr--dark: hsla(206, 79%, 17%, 1);
+
+$light-clr: hsla(195, 33%, 98%, 1);
+$charcoal: hsla(198, 18%, 29%, 1);
+$white: #fff;
+$black: #000;
+$dark-clr: hsl(0, 0%, 17%);
+$text-dark: hsl(240, 29%, 07%);
+$text-light-clr: hsl(0, 0%, 100%);
+
+
+// cards
+$card-dark: #dcdce0;
+$card-shadow-light: #dcdce0;
+$card-shadow-dark: #cfcfd4;
+
+
+// Typography
+$font-primary: "EB Garamond", serif;;
+$font-secondary: 'Montserrat', sans-serif;
+$font-tertiary: 'Lato', sans-serif;
+$font-daniel: 'Daniel', sans-serif;
+
+$base-font-size: 16px;
+$base-line-height: 1.5;
+
+
+$base-unit: 0.25rem;
+$sizes: (); // An empty map to store the size values
+
+@for $i from 1 through 32 {
+  $size: $i * 25;
+  $size-value: $base-unit * $i;
+
+  // Store the sizes in the map
+  $sizes: map-merge($sizes, ($size: $size-value));
+}
+$navbar-height: 10vh
