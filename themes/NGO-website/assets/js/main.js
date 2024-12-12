@@ -36,3 +36,68 @@ document.addEventListener('DOMContentLoaded', function() {
         overlay.classList.remove('show');
     });
 });
+
+// carousel slider function :-
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.querySelector('.carousel');
+    const carouselItems = carousel.querySelectorAll('.carousel-item');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const indicatorsContainer = document.querySelector('.carousel-indicators');
+
+    // Create indicators
+    carouselItems.forEach((_, index) => {
+        const indicator = document.createElement('div');
+        indicator.classList.add('carousel-indicator');
+        if (index === 0) indicator.classList.add('active');
+        indicator.addEventListener('click', () => goToSlide(index));
+        indicatorsContainer.appendChild(indicator);
+    });
+
+    const indicators = document.querySelectorAll('.carousel-indicator');
+    let currentSlide = 0;
+    const totalSlides = carouselItems.length;
+
+    function resetClasses() {
+        carouselItems.forEach((item) => item.classList.remove('active', 'prev'));
+        indicators.forEach((ind) => ind.classList.remove('active'));
+    }
+
+    function goToSlide(slideIndex) {
+        resetClasses();
+        carouselItems[slideIndex].classList.add('active');
+        if (slideIndex > 0) {
+            carouselItems[slideIndex - 1].classList.add('prev');
+        }
+        indicators[slideIndex].classList.add('active');
+        currentSlide = slideIndex;
+    }
+
+    function nextSlide() {
+        if (currentSlide === totalSlides - 1) {
+            // Temporarily move to the first slide for seamless looping
+            goToSlide(0);
+        } else {
+            goToSlide(currentSlide + 1);
+        }
+    }
+
+    function prevSlide() {
+        if (currentSlide === 0) {
+            // Temporarily move to the last slide for seamless looping
+            goToSlide(totalSlides - 1);
+        } else {
+            goToSlide(currentSlide - 1);
+        }
+    }
+
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    // Optional: Auto-slide every 5 seconds
+    setInterval(nextSlide, 5000);
+});
+

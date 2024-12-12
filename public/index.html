@@ -3,6 +3,7 @@
 
 <head>
 	<meta name="generator" content="Hugo 0.139.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=egde">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,6 +116,15 @@
             display: block;
             animation: fadeIn 0.3s ease-in-out;
         }
+        .linksa{
+          margin-top: 1px;
+          border-radius: 0.2rem;
+          
+        }
+        .linksa:hover{
+          background-color: #007bff;
+          color: #fff;
+          }
 
          
         @keyframes fadeIn {
@@ -141,13 +151,13 @@
         
         <div class="sidebar-content mb-4">
             <div class="list-group">
-              <a href="/" class="nav-link active list-group-item list-group-item-action d-lg-none">Home</a>
-              <a href="#About-us" class="list-group-item list-group-item-action d-lg-none">About us</a>
-              <a href="#AK-Schools" class="list-group-item list-group-item-action d-lg-none">AK Schools</a>
-              <a href="#Services" class="list-group-item list-group-item-action d-lg-none">Services</a>
-              <a href="#activities" class="list-group-item list-group-item-action">Activities</a>
-              <a href="#gallery" class="list-group-item list-group-item-action">Gallery</a>
-              <a href="#contact-us" class="list-group-item list-group-item-action">Contact Us</a>
+              <a href="/" class="nav-link active linksa p-2  fs-5 text-decoration-none list-group-item list-group-item-action  d-lg-none">Home</a>
+              <a href="#About-us" class="p-2 linksa fs-5 text-decoration-none d-lg-none">About us</a>
+              <a href="#AK-Schools" class="p-2 linksa fs-5 text-decoration-none d-lg-none">AK Schools</a>
+              <a href="#Services" class="p-2 linksa fs-5 text-decoration-none d-lg-none">Services</a>
+              <a href="#activities" class="p-2  linksa fs-5 text-decoration-none">Activities</a>
+              <a href="#gallery" class=" p-2 linksa fs-5 text-decoration-none">Gallery</a>
+              <a href="#contact-us" class="p-2 linksa fs-5 text-decoration-none">Contact Us</a>
             </div>
           </div>
       
@@ -184,18 +194,321 @@
     
 
 
-<div class="hero-section">
-  <div class="hero-overlay">
-    <div class="container text-center text-md-left">
-      <h1 class="hero-title display-2">AK Foundation (Reg. 945/2010)</h1>
-      <p class="hero-subtitle">Building Bridges for Better Futures</p>
-      <div class="hero-buttons d-flex gap-3 justify-content-center">
-        <a href="#about" class="btn btn-primary">Learn More About Us</a>
-        <a href="#donate" class="btn btn-primary--outline">Donate Now</a>
-      </div>
+
+
+
+<style>
+    :root {
+        --bg-dark: #10100e;
+        --text-light: #ffffe6;
+        --accent-color: #ffffe6;
+        --transition-speed: 0.6s;
+    }
+
+    
+
+    .body-corusel {
+        min-height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Arial', sans-serif;
+         
+        color: var(--text-light);
+    }
+
+    .carousel-container {
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+    }
+
+    .carousel {
+        position: relative;
+        width: 100%;
+        min-height: 100dvh;
+        aspect-ratio: 16/9;
+        overflow: hidden;
+         
+    }
+
+    .carousel-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        opacity: 0;
+        transform: translateX(100%);
+
+    }
+
+    .carousel-item.active {
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 10;
+    }
+
+    .carousel-item .prev {
+    z-index: 2;
+    opacity: 0.25;
+    transform: translateX(-100%);
+    }
+
+    .carousel-item.prev {
+        transform: translateX(-100%);
+    }
+
+    .carousel-controls {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 43%;
+        width: 100%;
+        transform: translateY(-50%);
+        z-index: 20;
+    }
+
+    .carousel-btn {
+        background: none;
+        border: none;
+        color: var(--text-light);
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+         
+        border-radius: 50%;
+        padding: 10px 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+  
+
+    .carousel-indicators {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    .carousel-indicator {
+        width: 12px;
+        height: 12px;
+        background: rgba(255,255,255,0.3);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .carousel-indicator.active {
+        background: var(--accent-color);
+    }
+
+     
+
+    
+
+  .hero-section-aboutus {
+    position: relative;
+    background: url(/images/AK-foundation-About-us.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.658); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  
+      .container {
+        text-align: center;
+  
+        @media (min-width: 768px) {
+          text-align: left;
+        }
+  
+        .hero-title {
+           
+          font-weight: bold;
+  
+          @media (min-width: 768px) {
+             
+          }
+        }
+  
+        .hero-subtitle {
+          font-size: 1rem;
+          margin: 0.5rem 0;
+  
+          @media (min-width: 768px) {
+            font-size: 2rem;
+          }
+        }
+  
+        .hero-buttons {
+          margin-top: 1rem;
+  
+          .btn {
+            padding: 0.75rem 1.5rem;
+             
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+             
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+  
+          .btn-primary {
+            background: linear-gradient(45deg, #ff7f50, #ff6347);
+            border: none;
+            &--outline{
+              border: 1px solid #ff7f50;
+              background: white;
+              color:#ff7f50;
+            }
+          }
+  
+          .btn-secondary {
+            background: linear-gradient(45deg, #32cd32, #228b22);
+            border: none;
+          }
+        }
+      }
+    }
+
+    .hero-section-school {
+    position: relative;
+    background: url(/images/AK-foundation-schooling.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .hero-section-service {
+    position: relative;
+    background: url(/images/AK-foundation-services.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .hero-section-activity {
+    position: relative;
+    background: url(/images/Ak-foundation-activities-scan10_1.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+  
+</style>
+
+<div class="body-corusel">
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="hero-section active carousel-item">
+                <div class="hero-overlay">
+                  <div class="container text-center text-md-left">
+                    <h1 class="hero-title display-2">AK Foundation (Reg. 945/2010)</h1>
+                    <p class="hero-subtitle">Building Bridges for Better Futures</p>
+                    <div class="hero-buttons d-flex gap-3 justify-content-center">
+                      <a href="#about" class="btn btn-primary">Learn More About Us</a>
+                      <a href="#donate" class="btn btn-primary--outline">Donate Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-section-aboutus   carousel-item">
+                <div class="hero-overlay">
+                  <div class="container text-center text-md-left">
+                    <h1 class="hero-title display-2"> About US</h1>
+                    <p class="hero-subtitle">Building Bridges for Better Futures</p>
+                    <div class="hero-buttons d-flex gap-3 justify-content-center">
+                      <a href="#about" class="btn btn-primary">Learn More About Us</a>
+                      <a href="#donate" class="btn btn-primary--outline">Donate Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-section-school   carousel-item">
+                <div class="hero-overlay">
+                  <div class="container text-center text-md-left">
+                    <h1 class="hero-title display-2"> Ak Schools</h1>
+                    <p class="hero-subtitle">Building Bridges for Better Futures</p>
+                    <div class="hero-buttons d-flex gap-3 justify-content-center">
+                      <a href="#about" class="btn btn-primary">Learn More About Us</a>
+                      <a href="#donate" class="btn btn-primary--outline">Donate Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-section-service  carousel-item">
+                <div class="hero-overlay">
+                  <div class="container text-center text-md-left">
+                    <h1 class="hero-title display-2"> Service</h1>
+                    <p class="hero-subtitle">Building Bridges for Better Futures</p>
+                    <div class="hero-buttons d-flex gap-3 justify-content-center">
+                      <a href="#about" class="btn btn-primary">Learn More About Us</a>
+                      <a href="#donate" class="btn btn-primary--outline">Donate Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-section-activity   carousel-item">
+                <div class="hero-overlay">
+                  <div class="container text-center text-md-left">
+                    <h1 class="hero-title display-2"> Activities</h1>
+                    <p class="hero-subtitle">Building Bridges for Better Futures</p>
+                    <div class="hero-buttons d-flex gap-3 justify-content-center">
+                      <a href="#about" class="btn btn-primary">Learn More About Us</a>
+                      <a href="#donate" class="btn btn-primary--outline">Donate Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+        <div class="carousel-controls">
+            <button class="carousel-btn prev-btn">
+                <i class="fas fa-chevron-left" style="font-size: 2rem;"></i>
+            </button>
+            <button class="carousel-btn next-btn">
+                <i class="fas fa-chevron-right" style="font-size: 2rem;"></i>
+            </button>
+        </div>
+        
+        <div class="carousel-indicators">
+            <div class="carousel-indicator active"></div>
+            <div class="carousel-indicator"></div>
+          </div>
     </div>
-  </div>
 </div>
+
 
 
 <section id="about" class="about-section py-5">
@@ -224,6 +537,8 @@
     </div>
   </div>
 </section>
+
+
 
 
 <section class="annadhanam-section">

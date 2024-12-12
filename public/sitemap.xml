@@ -14,6 +14,9 @@
     <loc>http://localhost:1313/services/</loc>
     <lastmod>2024-12-02T17:30:50+05:30</lastmod>
   </url><url>
+    <loc>http://localhost:1313/home/</loc>
+    <lastmod>2024-10-17T14:37:44+05:30</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
