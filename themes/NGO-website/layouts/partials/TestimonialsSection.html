@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials Section</title>
+    <style>
+        :root {
+            --green-dark: #2A5D34;
+            --text-primary: #333333;
+            --orange-accent: #FF7621;
+        }
+
+        .testimonials-section {
+            background-color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .testimonials-headline {
+            color: var(--green-dark);
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .testimonials-headline::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: var(--orange-accent);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .testimonial-content {
+            text-align: left;
+        }
+
+        .testimonial-quote {
+            font-style: italic;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: var(--green-dark);
+        }
+
+        @media (max-width: 768px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="testimonials-section">
+        <h2 class="testimonials-headline">Voices of Gratitude</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/400x200?text=img" alt="Testimonial Author" class="testimonial-image">
+                <div class="testimonial-content">
+                    <p class="testimonial-quote">"This program has been life-changing for my child. The support and dedication are incredible."</p>
+                    <p class="testimonial-author">- Sarah M., Parent</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/400x200?text=img" alt="Testimonial Author" class="testimonial-image">
+                <div class="testimonial-content">
+                    <p class="testimonial-quote">"Volunteering here has been the most rewarding experience of my life. I'm making a real difference."</p>
+                    <p class="testimonial-author">- Michael T., Volunteer</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/400x200?text=img" alt="Testimonial Author" class="testimonial-image">
+                <div class="testimonial-content">
+                    <p class="testimonial-quote">"The educational support we received transformed our entire community's approach to learning."</p>
+                    <p class="testimonial-author">- Elena R., Community Leader</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/400x200?text=img" alt="Testimonial Author" class="testimonial-image">
+                <div class="testimonial-content">
+                    <p class="testimonial-quote">"I never thought I could pursue my dreams, but this program gave me hope and direction."</p>
+                    <p class="testimonial-author">- David K., Beneficiary</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

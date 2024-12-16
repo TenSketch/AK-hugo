@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presidential Awards Section</title>
+    <style>
+        /* body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        } */
+
+        .presidential-awards-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            background: linear-gradient(to bottom right, #FFF4E5, #FFD7A3);
+        }
+
+        .awards-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .headline {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .awards-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .image-container {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .text-content {
+            width: 100%;
+            text-align: center;
+        }
+
+        .achievements {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .achievements li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .achievements li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #FF6B00;
+            font-weight: bold;
+        }
+
+        @media (min-width: 768px) {
+            .awards-content {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .image-container {
+                width: 50%;
+                margin-right: 40px;
+                margin-bottom: 0;
+            }
+
+            .text-content {
+                width: 50%;
+                text-align: left;
+            }
+
+            .headline {
+                text-align: left;
+            }
+
+            .achievements {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="presidential-awards-section">
+        <div class="awards-container">
+            <div class="awards-content">
+                <div class="image-container">
+                    <img src="/images/Geetha-mam-President-meeting.jpeg" alt="Presidential Award" />
+                </div>
+                <div class="text-content">
+                    <h2 class="headline">Honoring Excellence in Service</h2>
+                    <ul class="achievements">
+                        <li>Demonstrated exceptional commitment to community development and social welfare</li>
+                        <li>Pioneered innovative approaches to addressing critical social challenges</li>
+                        <li>Recognized for outstanding leadership and sustained impact in service to others</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

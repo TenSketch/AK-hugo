@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 7: About AK Foundation</title>
+    <style>
+        :root {
+            --background-color: #FAFAFA;
+            --green-dark: #2A5D34;
+            --orange-accent: #FF7621;
+            --text-primary: #333333;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-primary);
+        }
+
+        .about-section {
+            background-color: var(--background-color);
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about-headline {
+            color: var(--green-dark);
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .about-headline::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: var(--orange-accent);
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .timeline-item {
+            margin: 0 15px;
+            text-align: center;
+        }
+
+        .timeline-icon {
+            font-size: 2rem;
+            color: var(--green-dark);
+            margin-bottom: 10px;
+        }
+
+        .timeline-year {
+            font-weight: bold;
+            color: var(--orange-accent);
+        }
+
+        .know-more-btn {
+            display: inline-block;
+            background-color: var(--green-dark);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .know-more-btn:hover {
+            background-color: var(--orange-accent);
+        }
+    </style>
+</head>
+<body>
+    <section class="about-section">
+        <h2 class="about-headline">About AK Foundation</h2>
+        <div class="about-content">
+            <p>AK Foundation is dedicated to creating positive social change through innovative programs and community-driven initiatives. Our mission is to empower individuals, support sustainable development, and inspire collective growth.</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">🌱</div>
+                <div class="timeline-year">2010</div>
+                <div>Foundation Established</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">🏫</div>
+                <div class="timeline-year">2015</div>
+                <div>First School Launched</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">🌍</div>
+                <div class="timeline-year">2020</div>
+                <div>Expanded National Reach</div>
+            </div>
+        </div>
+        <a href="#" class="know-more-btn">Read More</a>
+    </section>
+</body>
+</html>

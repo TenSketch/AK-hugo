@@ -2,6 +2,7 @@
 <html lang="en-us" dir="ltr">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=egde">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +48,7 @@
           <a class="nav-link active" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/contact-us">About us</a>
+          <a class="nav-link" href="/about-us">About us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#AKSchools">AK Schools</a>
@@ -114,6 +115,15 @@
             display: block;
             animation: fadeIn 0.3s ease-in-out;
         }
+        .linksa{
+          margin-top: 1px;
+          border-radius: 0.2rem;
+          
+        }
+        .linksa:hover{
+          background-color: #007bff;
+          color: #fff;
+          }
 
          
         @keyframes fadeIn {
@@ -132,25 +142,28 @@
     
 
     
-    <div id="sidebar-right" class="p-4 bg-light border-start h-100">
+    <div id="sidebar-right" class="p-4 bg-light  border-start h-100">
+      <div class="">
         <div class="d-flex justify-content-between align-items-center mb-4">
-          <h4 class="mb-0 fw-bold"></h4>
-          <button id="sidebar-close" class="btn-close" aria-label="Close"></button>
-        </div>
-        
-        <div class="sidebar-content mb-4">
-            <div class="list-group">
-              <a href="/" class="nav-link active list-group-item list-group-item-action d-lg-none">Home</a>
-              <a href="#About-us" class="list-group-item list-group-item-action d-lg-none">About us</a>
-              <a href="#AK-Schools" class="list-group-item list-group-item-action d-lg-none">AK Schools</a>
-              <a href="#Services" class="list-group-item list-group-item-action d-lg-none">Services</a>
-              <a href="#activities" class="list-group-item list-group-item-action">Activities</a>
-              <a href="#gallery" class="list-group-item list-group-item-action">Gallery</a>
-              <a href="#contact-us" class="list-group-item list-group-item-action">Contact Us</a>
-            </div>
+            <h4 class="mb-0 fw-bold"></h4>
+            <button id="sidebar-close" class="btn-close" aria-label="Close"></button>
           </div>
-      
-        <div class="d-grid gap-2 mb-4">
+          
+          <div class="sidebar-content mb-4">
+              <div class="list-group">
+                <a href="/" class="nav-link active linksa p-2  fs-5 text-decoration-none list-group-item list-group-item-action  d-lg-none">Home</a>
+                <a href="/about-us" class="p-2 linksa fs-5 text-decoration-none d-lg-none">About us</a>
+                <a href="#AK-Schools" class="p-2 linksa fs-5 text-decoration-none d-lg-none">AK Schools</a>
+                <a href="/Services" class="p-2 linksa fs-5 text-decoration-none d-lg-none">Services</a>
+                <a href="#activities" class="p-2  linksa fs-5 text-decoration-none">Activities</a>
+                <a href="#gallery" class=" p-2 linksa fs-5 text-decoration-none">Gallery</a>
+                <a href="/contact-us" class="p-2 linksa fs-5 text-decoration-none">Contact Us</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="">
+         <div class="d-grid gap-2 mb-4">
           <a href="#join" class="btn btn-outline-primary">Join as Member</a>
           <a href="#donate" class="btn btn-primary">Donate Now</a>
         </div>
@@ -172,6 +185,8 @@
             </a>
           </div>
         </div>
+      </div>  
+        
       </div>
 
     
@@ -183,18 +198,749 @@
     
 
 
-<div class="hero-section">
-  <div class="hero-overlay">
-    <div class="container text-center text-md-left">
-      <h1 class="hero-title display-2">AK Foundation (Reg. 945/2010)</h1>
-      <p class="hero-subtitle">Building Bridges for Better Futures</p>
-      <div class="hero-buttons d-flex gap-3 justify-content-center">
-        <a href="#about" class="btn btn-primary">Learn More About Us</a>
-        <a href="#donate" class="btn btn-primary--outline">Donate Now</a>
-      </div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Infinite Slider Carousel</title>
+    <style>
+        .carousel-container {
+            width: 100%;
+        max-width: 100%;
+        position: relative;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: 300%;
+        }
+
+        .carousel-slide {
+            flex: 0 0 33.333%;
+            width: 33.333%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            font-size: 48px;
+            color: white;
+        }
+
+        .navigation-buttons {
+            display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 43%;
+        width: 100%;
+        transform: translateY(-50%);
+        z-index: 20;
+        }
+
+        .nav-btn {
+            background: none;
+        border: none;
+        color: var(--text-light);
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+         
+        border-radius: 50%;
+        padding: 10px 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .hero-slide1 {
+        position: relative;
+        background: url(/images/hero-bg.jpeg) no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+                }
+.hero-slide-2 {
+    position: relative;
+    background: url(/images/ak-foundation-s2sscan8_2.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.658); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  
+      .container {
+        text-align: center;
+  
+        @media (min-width: 768px) {
+          text-align: left;
+        }
+  
+        .hero-title {
+           
+          font-weight: bold;
+  
+          @media (min-width: 768px) {
+             
+          }
+        }
+  
+        .hero-subtitle {
+          font-size: 1rem;
+          margin: 0.5rem 0;
+  
+          @media (min-width: 768px) {
+            font-size: 2rem;
+          }
+        }
+  
+        .hero-buttons {
+          margin-top: 1rem;
+  
+          .btn {
+            padding: 0.75rem 1.5rem;
+             
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+             
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+  
+          .btn-primary {
+            background: linear-gradient(45deg, #ff7f50, #ff6347);
+            border: none;
+            &--outline{
+              border: 1px solid #ff7f50;
+              background: white;
+              color:#ff7f50;
+            }
+          }
+  
+          .btn-secondary {
+            background: linear-gradient(45deg, #32cd32, #228b22);
+            border: none;
+          }
+        }
+      }
+    }
+
+    .hero-section-school {
+    position: relative;
+    background: url(/images/AK-foundation-schooling.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .hero-slide-4 {
+    position: relative;
+    background: url(/images/ak-foundation-s6scan19_2.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .hero-slide-5 {
+    position: relative;
+    background: url(/images/Ak-foundation-awrd-scan19_1.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .hero-slide-6 {
+    position: relative;
+    background: url(/images/ak-foundation-slide-6scan9_3.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .carousel-indicators {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    .carousel-indicator {
+        width: 12px;
+        height: 12px;
+        background: rgba(255,255,255,0.3);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .carousel-indicator.active {
+        background: white;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <div class="hero-slide1  carousel-slide">
+                <div class="hero-overlay">
+                  <div class="container text-center text-md-left">
+                    <h1 class="hero-title display-2">Welcome to AK Foundation (Reg. 945/2010)</h1>
+                    <p class="hero-subtitle">Building a brighter future through sports, education, and community welfare</p>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-slide-2   carousel-slide">
+                <div class="hero-overlay">
+                  <div class="container text-center text-md-left">
+                    <h1 class="hero-title display-2"> Sports Means Patriotism</h1>
+                    <p class="hero-subtitle">Nurturing rural talent to shine on global stages. Join us in empowering the next generation of athletes</p>
+                    <div class="hero-buttons d-flex gap-3 justify-content-center">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-section-school   carousel-slide">
+                <div class="hero-overlay">
+                  <div class="container text-center text-md-left">
+                    <h1 class="hero-title display-2"> Unlocking Potential Through Education</h1>
+                    <p class="hero-subtitle">Encouraging creativity, innovation, and self-discovery in every child.</p>
+                    <div class="hero-buttons d-flex gap-3 justify-content-center">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-slide-4  carousel-slide">
+                <div class="hero-overlay">
+                  <div class="container text-center text-md-left">
+                    <h1 class="hero-title display-2"> Compassion for the Voiceless</h1>
+                    <p class="hero-subtitle">Advocating for animal welfare and providing a voice for those who cannot speak for themselves</p>
+                    <div class="hero-buttons d-flex gap-3 justify-content-center">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-slide-5   carousel-slide">
+                <div class="hero-overlay">
+                  <div class="container text-center text-md-left">
+                    <h1 class="hero-title display-2"> Preserving Nature for Future Generations</h1>
+                    <p class="hero-subtitle">Promoting environmental awareness and sustainable practices to protect our planet.</p>
+                    <div class="hero-buttons d-flex gap-3 justify-content-center">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-slide-6   carousel-slide">
+                <div class="hero-overlay">
+                  <div class="container text-center text-md-left">
+                    <h1 class="hero-title display-2"> Integrity for a Better Tomorrow</h1>
+                    <p class="hero-subtitle">Instilling values and fighting corruption through education and awareness.</p>
+                    <div class="hero-buttons d-flex gap-3 justify-content-center">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
     </div>
-  </div>
-</div>
+    <div class="navigation-buttons">
+        <button class="nav-btn" id="prevBtn">
+            <i class="fas fa-chevron-left" style=" font-size: 2rem; color: rgba(255, 255, 255, 0.448);"></i>
+            
+        </button>
+        <button class="nav-btn" id="nextBtn">
+            <i class="fas fa-chevron-right" style="font-size: 2rem; color: rgba(255, 255, 255, 0.448);"></i>
+        </button>
+        
+    </div>
+    <div class="carousel-indicators">
+      <div class="carousel-indicators" role="tablist"></div>
+
+    </div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const indicatorsContainer = document.querySelector('.carousel-indicators');
+    
+    let currentIndex = 1;
+    const transitionDuration = 500; 
+    let autoSlideInterval;
+
+    
+    const firstSlideClone = slides[0].cloneNode(true);
+    const lastSlideClone = slides[slides.length - 1].cloneNode(true);
+    track.append(firstSlideClone);
+    track.prepend(lastSlideClone);
+
+    const updateSlideWidth = () => slides[0].offsetWidth;
+    let slideWidth = updateSlideWidth();
+
+    
+    const positionTrack = () => {
+        track.style.transition = 'none';
+        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    };
+
+    positionTrack();
+
+    
+    slides.forEach((_, index) => {
+        const indicator = document.createElement('button');
+        indicator.classList.add('carousel-indicator');
+        indicator.setAttribute('role', 'tab');
+        indicator.setAttribute('aria-label', `Go to slide ${index + 1}`);
+        if (index === 0) indicator.classList.add('active');
+        indicator.addEventListener('click', () => goToSlide(index + 1));
+        indicatorsContainer.appendChild(indicator);
+    });
+
+    const indicators = Array.from(document.querySelectorAll('.carousel-indicator'));
+
+    const updateIndicators = () => {
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle(
+                'active',
+                index === (currentIndex - 1 + slides.length) % slides.length
+            );
+        });
+    };
+
+    const updateCarousel = () => {
+        track.style.transition = `transform ${transitionDuration}ms ease`;
+        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    };
+
+    const goToSlide = (index) => {
+        currentIndex = index;
+        updateCarousel();
+        updateIndicators();
+    };
+
+    const nextSlide = () => {
+        currentIndex++;
+        updateCarousel();
+        updateIndicators();
+
+        if (currentIndex === slides.length + 1) {
+            setTimeout(() => {
+                currentIndex = 1;
+                positionTrack();
+            }, transitionDuration);
+        }
+    };
+
+    const prevSlide = () => {
+        currentIndex--;
+        updateCarousel();
+        updateIndicators();
+
+        if (currentIndex === 0) {
+            setTimeout(() => {
+                currentIndex = slides.length;
+                positionTrack();
+            }, transitionDuration);
+        }
+    };
+
+    const startAutoSlide = () => {
+        autoSlideInterval = setInterval(nextSlide, 8000);
+    };
+
+    const stopAutoSlide = () => {
+        clearInterval(autoSlideInterval);
+    };
+
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    track.addEventListener('transitionend', updateIndicators);
+
+    
+    window.addEventListener('resize', () => {
+        slideWidth = updateSlideWidth();
+        positionTrack();
+    });
+
+    
+    track.addEventListener('mouseenter', stopAutoSlide);
+    track.addEventListener('mouseleave', startAutoSlide);
+
+    startAutoSlide();
+});
+
+</script>
+   
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presidential Awards Section</title>
+    <style>
+         
+
+        .presidential-awards-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            background: linear-gradient(to bottom right, #FFF4E5, #FFD7A3);
+        }
+
+        .awards-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .headline {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .awards-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .image-container {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .text-content {
+            width: 100%;
+            text-align: center;
+        }
+
+        .achievements {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .achievements li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .achievements li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #FF6B00;
+            font-weight: bold;
+        }
+
+        @media (min-width: 768px) {
+            .awards-content {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .image-container {
+                width: 50%;
+                margin-right: 40px;
+                margin-bottom: 0;
+            }
+
+            .text-content {
+                width: 50%;
+                text-align: left;
+            }
+
+            .headline {
+                text-align: left;
+            }
+
+            .achievements {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="presidential-awards-section">
+        <div class="awards-container">
+            <div class="awards-content">
+                <div class="image-container">
+                    <img src="/images/Geetha-mam-President-meeting.jpeg" alt="Presidential Award" />
+                </div>
+                <div class="text-content">
+                    <h2 class="headline">Honoring Excellence in Service</h2>
+                    <ul class="achievements">
+                        <li>Demonstrated exceptional commitment to community development and social welfare</li>
+                        <li>Pioneered innovative approaches to addressing critical social challenges</li>
+                        <li>Recognized for outstanding leadership and sustained impact in service to others</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Activities & Events</title>
+    <style>
+        :root {
+             
+            --orange-light: #FFA366;
+            --orange-dark: #FF7621;
+            --green-light: #B8E6C1;
+            --green-dark: #2A5D34;
+
+             
+            --white: #FFFFFF;
+            --gray-light: #F5F5F5;
+            --gray-medium: #CCCCCC;
+            --gray-dark: #333333;
+
+             
+            --blue-link: #0056B3;
+            --red-alert: #D9534F;
+
+             
+            --gradient-green: linear-gradient(to bottom, var(--green-light), var(--white));
+            --gradient-orange: linear-gradient(to bottom, var(--orange-light), var(--white));
+
+             
+            --text-primary: var(--gray-dark);
+            --text-secondary: var(--gray-medium);
+
+             
+            --bg-primary: var(--white);
+            --bg-secondary: var(--gray-light);
+
+             
+            --btn-primary-bg: var(--orange-dark);
+            --btn-primary-hover: #E55E0E;
+            --btn-secondary-bg: var(--green-dark);
+            --btn-secondary-hover: #3A7D46;
+        }
+
+     
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+           
+        }
+
+        .events-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .event-card {
+            border: 1px solid var(--gray-medium);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            background: var(--white);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .event-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.1);
+        }
+
+        .event-thumbnail {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .event-details {
+            padding: 15px;
+            background: var(--gradient-green);
+        }
+
+        .event-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--green-dark);
+            margin-bottom: 10px;
+        }
+
+        .event-date {
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .event-description {
+            color: var(--text-primary);
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .learn-more-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--btn-primary-bg);
+            color: var(--white);
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        .learn-more-btn:hover {
+            background-color: var(--btn-primary-hover);
+        }
+
+        .learn-more-btn svg {
+            margin-left: 5px;
+        }
+
+         
+        @media (max-width: 768px) {
+            .events-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="events-container" id="eventsContainer">
+        
+    </div>
+
+    <script>
+        
+        const events = [
+            {
+                thumbnail: 'https://via.placeholder.com/400x200?text=Community+Event',
+                title: 'Annual Community Fest',
+                date: 'June 15, 2024',
+                description: 'Join us for a day of fun, music, and community spirit at our annual festival.',
+                link: '#event1'
+            },
+            {
+                thumbnail: 'https://via.placeholder.com/400x200?text=Tech+Conference',
+                title: 'Tech Innovation Conference',
+                date: 'July 22, 2024',
+                description: 'Explore cutting-edge technologies and network with industry leaders.',
+                link: '#event2'
+            },
+            {
+                thumbnail: 'https://via.placeholder.com/400x200?text=Charity+Gala',
+                title: 'Charity Fundraiser Gala',
+                date: 'August 10, 2024',
+                description: 'An elegant evening supporting local charitable organizations.',
+                link: '#event3'
+            }
+        ];
+
+        
+        function createEventCards() {
+            const container = document.getElementById('eventsContainer');
+            
+            events.forEach(event => {
+                const card = document.createElement('div');
+                card.className = 'event-card';
+                
+                card.innerHTML = `
+                    <img src="${event.thumbnail}" alt="${event.title}" class="event-thumbnail">
+                    <div class="event-details">
+                        <h3 class="event-title">${event.title}</h3>
+                        <p class="event-date">${event.date}</p>
+                        <p class="event-description">${event.description}</p>
+                        <a href="${event.link}" class="learn-more-btn">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </a>
+                    </div>
+                `;
+                
+                container.appendChild(card);
+            });
+        }
+
+        
+        document.addEventListener('DOMContentLoaded', createEventCards);
+    </script>
+</body>
+</html>
+
+
 
 
 <section id="about" class="about-section py-5">
@@ -223,6 +969,8 @@
     </div>
   </div>
 </section>
+
+
 
 
 <section class="annadhanam-section">
