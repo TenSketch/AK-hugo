@@ -403,6 +403,7 @@
     </style>
 </head>
 <body>
+  <section>
     <div class="carousel-container">
         <div class="carousel-track">
             <div class="hero-slide1  carousel-slide">
@@ -490,6 +491,7 @@
       <div class="carousel-indicators" role="tablist"></div>
 
     </div>
+  </section>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.carousel-track');
@@ -784,14 +786,28 @@ document.addEventListener('DOMContentLoaded', () => {
             --btn-secondary-hover: #3A7D46;
         }
 
-     
+       
 
-        body {
+        .activity {
             font-family: Arial, sans-serif;
-            background-color: var(--bg-primary);
+            background-color: #f9f9f9;
             color: var(--text-primary);
-           
+            padding-top: 4rem ;
+            padding-bottom: 4rem ;
+
         }
+
+        .page-headline {
+            text-align: center;
+            color: var(--orange-dark);
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            position: relative;
+            padding: 10px;
+        }
+
+       
 
         .events-container {
             display: grid;
@@ -873,13 +889,24 @@ document.addEventListener('DOMContentLoaded', () => {
             .events-container {
                 grid-template-columns: 1fr;
             }
+
+            .page-headline {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
-<body>
+<body class="">
+    <section class="activity">
+        
+
+   
+    <h1 class="page-headline">Latest Activities & Events</h1>
+
     <div class="events-container" id="eventsContainer">
         
     </div>
+    </section>
 
     <script>
         
@@ -941,6 +968,903 @@ document.addEventListener('DOMContentLoaded', () => {
 </html>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK School of Sports</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    
+</style>
+<body>
+    <section class="sports-section">
+        <div class="container">
+            <h1 class="headline">Empowering Rural Sports Talent</h1>
+            
+            <div class="content-layout">
+                <div class="left-column">
+                    <img src="https://via.placeholder.com/400x200?text=sports" alt="Rural Athletes in Action" class="hero-image">
+                </div>
+                
+                <div class="right-column">
+                    <h2 class="section-title">AK School of Sports</h2>
+                    
+                    <p class="mission-text">
+                        Our mission is to identify and nurture sports talent among rural youth, 
+                        inspiring them to compete on the global stage and raise our National Flag proudly.
+                    </p>
+                    
+                    <div class="focus-areas">
+                        <div class="focus-item">
+                            <i class="icon-talent"></i>
+                            <span>Identifying talent in rural areas</span>
+                        </div>
+                        <div class="focus-item">
+                            <i class="icon-training"></i>
+                            <span>Professional training and mentorship</span>
+                        </div>
+                        <div class="focus-item">
+                            <i class="icon-support"></i>
+                            <span>Support for national and international events</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <a href="/ak-school-of-sports" class="btn btn-primary">Know More</a>
+                        <a href="/all-schools" class="btn btn-secondary">View All Schools</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="achievements-carousel">
+                <div class="achievement-item">
+                    <img src="https://via.placeholder.com/400x200?text=Event+2" alt="Achievement 1">
+                    <h3>Rural Athlete Wins National Championship</h3>
+                </div>
+                <div class="achievement-item">
+                    <img src="https://via.placeholder.com/400x200?text=Event+2" alt="Achievement 2">
+                    <h3>Regional Training Camp Success</h3>
+                </div>
+                <div class="achievement-item">
+                    <img src="https://via.placeholder.com/400x200?text=Event+2" alt="Achievement 3">
+                    <h3>Scholarship Program Launched</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script >
+        document.addEventListener('DOMContentLoaded', () => {
+    const achievementsCarousel = document.querySelector('.achievements-carousel');
+    let currentIndex = 0;
+
+    
+    function rotateAchievements() {
+        const achievementItems = document.querySelectorAll('.achievement-item');
+        const totalItems = achievementItems.length;
+
+        
+        achievementItems.forEach(item => {
+            item.style.display = 'none';
+        });
+
+        
+        if (window.innerWidth > 768) {
+            
+            for (let i = 0; i < 3; i++) {
+                const index = (currentIndex + i) % totalItems;
+                achievementItems[index].style.display = 'block';
+            }
+        } else {
+            
+            achievementItems[currentIndex].style.display = 'block';
+        }
+    }
+
+    
+    function startCarousel() {
+        rotateAchievements();
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % document.querySelectorAll('.achievement-item').length;
+            rotateAchievements();
+        }, 5000);
+    }
+
+    
+    function handleResize() {
+        rotateAchievements();
+    }
+
+    window.addEventListener('resize', handleResize);
+    startCarousel();
+});
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 6: Services We Offer</title>
+    <style>
+        :root {
+            --green-light-gradient-start: #E6F9EB;
+            --green-light-gradient-end: #CFF5D8;
+            --green-dark: #2A5D34;
+            --text-primary: #333333;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-primary);
+        }
+
+        .services-section {
+            background: linear-gradient(to bottom, var(--green-light-gradient-start), var(--green-light-gradient-end));
+            padding: 50px 20px;
+        }
+
+        .services-headline {
+            text-align: center;
+            color: var(--green-dark);
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .services-headline::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: #FF7621;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            text-align: center;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--green-dark);
+            margin-bottom: 15px;
+        }
+
+        .service-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--green-dark);
+        }
+
+        .service-description {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="services-section">
+        <h2 class="services-headline">Services We Offer</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🤝</div>
+                <h3 class="service-title">Counseling</h3>
+                <p class="service-description">Providing supportive guidance and mental health support to individuals in need.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📣</div>
+                <h3 class="service-title">Awareness Programs</h3>
+                <p class="service-description">Conducting educational initiatives to raise social consciousness and promote positive change.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎓</div>
+                <h3 class="service-title">Training</h3>
+                <p class="service-description">Offering skill development and professional training programs for personal and community growth.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💪</div>
+                <h3 class="service-title">Youth Empowerment</h3>
+                <p class="service-description">Empowering young individuals through leadership and personal development programs.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 7: About AK Foundation</title>
+    <style>
+        :root {
+            --background-color: #FAFAFA;
+            --green-dark: #2A5D34;
+            --orange-accent: #FF7621;
+            --text-primary: #333333;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-primary);
+        }
+
+        .about-section {
+            background-color: var(--background-color);
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about-headline {
+            color: var(--green-dark);
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .about-headline::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: var(--orange-accent);
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .timeline-item {
+            margin: 0 15px;
+            text-align: center;
+        }
+
+        .timeline-icon {
+            font-size: 2rem;
+            color: var(--green-dark);
+            margin-bottom: 10px;
+        }
+
+        .timeline-year {
+            font-weight: bold;
+            color: var(--orange-accent);
+        }
+
+        .know-more-btn {
+            display: inline-block;
+            background-color: var(--green-dark);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .know-more-btn:hover {
+            background-color: var(--orange-accent);
+        }
+    </style>
+</head>
+<body>
+    <section class="about-section">
+        <h2 class="about-headline">About AK Foundation</h2>
+        <div class="about-content">
+            <p>AK Foundation is dedicated to creating positive social change through innovative programs and community-driven initiatives. Our mission is to empower individuals, support sustainable development, and inspire collective growth.</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">🌱</div>
+                <div class="timeline-year">2010</div>
+                <div>Foundation Established</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">🏫</div>
+                <div class="timeline-year">2015</div>
+                <div>First School Launched</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">🌍</div>
+                <div class="timeline-year">2020</div>
+                <div>Expanded National Reach</div>
+            </div>
+        </div>
+        <a href="#" class="know-more-btn">Read More</a>
+    </section>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 8: AK Schools</title>
+    <style>
+        :root {
+            --light-green: #E6F9EB;
+            --green-dark: #2A5D34;
+            --text-primary: #333333;
+            --orange-accent: #FF7621;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-primary);
+        }
+
+        .schools-section {
+            background-color: var(--light-green);
+            padding: 50px 20px;
+        }
+
+        .schools-headline {
+            text-align: center;
+            color: var(--green-dark);
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .schools-headline::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: var(--orange-accent);
+        }
+
+        .schools-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .school-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .school-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .school-icon {
+            font-size: 3rem;
+            color: var(--green-dark);
+            margin-bottom: 15px;
+        }
+
+        .school-title {
+            color: var(--green-dark);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .school-description {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .view-all-btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto 0;
+            background-color: var(--orange-accent);
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .schools-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .schools-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="schools-section">
+        <h2 class="schools-headline">AK Schools: Nurturing Growth</h2>
+        <div class="schools-grid">
+            <div class="school-card">
+                <div class="school-icon">🏀</div>
+                <h3 class="school-title">AK School of Sports</h3>
+                <p class="school-description">Developing athletic skills and promoting physical wellness for youth.</p>
+            </div>
+            <div class="school-card">
+                <div class="school-icon">📚</div>
+                <h3 class="school-title">AK School of Education</h3>
+                <p class="school-description">Providing quality education and innovative learning approaches.</p>
+            </div>
+            <div class="school-card">
+                <div class="school-icon">🤲</div>
+                <h3 class="school-title">AK School of Voiceless</h3>
+                <p class="school-description">Empowering marginalized communities and giving voice to the unheard.</p>
+            </div>
+            <div class="school-card">
+                <div class="school-icon">🌍</div>
+                <h3 class="school-title">AK School of Environment</h3>
+                <p class="school-description">Promoting environmental awareness and sustainable practices.</p>
+            </div>
+            <div class="school-card">
+                <div class="school-icon">⚖️</div>
+                <h3 class="school-title">AK School of Moral Science</h3>
+                <p class="school-description">Cultivating ethical values and personal character development.</p>
+            </div>
+        </div>
+        <a href="#" class="view-all-btn">View All Schools</a>
+    </section>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Section</title>
+    <style>
+        :root {
+            --light-green: #F4FAF4;
+            --green-dark: #2A5D34;
+            --text-primary: #333333;
+            --orange-accent: #FF7621;
+        }
+
+        .gallery-section {
+            background-color: var(--light-green);
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .gallery-headline {
+            color: var(--green-dark);
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .gallery-headline::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: var(--orange-accent);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .view-more-btn {
+            display: inline-block;
+            margin-top: 30px;
+            background-color: var(--orange-accent);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+         
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 1024px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="gallery-section">
+        <h2 class="gallery-headline">Gallery: Moments That Inspire</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://via.placeholder.com/400x200?text=img" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://via.placeholder.com/400x200?text=img" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://via.placeholder.com/400x200?text=img" alt="Gallery Image 3">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://via.placeholder.com/400x200?text=img" alt="Gallery Image 4">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://via.placeholder.com/400x200?text=img" alt="Gallery Image 5">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://via.placeholder.com/400x200?text=img" alt="Gallery Image 6">
+            </div>
+        </div>
+        <a href="#" class="view-more-btn">View More</a>
+
+        <div class="lightbox" onclick="closeLightbox(event)">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" src="" alt="Lightbox Image">
+        </div>
+    </section>
+
+    <script>
+        function openLightbox(element) {
+            const lightbox = document.querySelector('.lightbox');
+            const lightboxImg = document.querySelector('.lightbox-content');
+            lightboxImg.src = element.querySelector('img').src;
+            lightbox.style.display = 'flex';
+        }
+
+        function closeLightbox(event) {
+            if (event.target.classList.contains('lightbox') || 
+                event.target.classList.contains('lightbox-close')) {
+                const lightbox = document.querySelector('.lightbox');
+                lightbox.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTA Section</title>
+    <style>
+        :root {
+            --orange-light: #FFD7A3;
+            --orange-dark: #FF944D;
+            --green-dark: #2A5D34;
+            --text-primary: #333333;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--orange-light), var(--orange-dark));
+            color: var(--text-primary);
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .cta-headline {
+            color: var(--green-dark);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-quote {
+            font-style: italic;
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: white;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .join-btn {
+            background-color: var(--green-dark);
+            color: white;
+        }
+
+        .volunteer-btn {
+            background-color: white;
+            color: var(--green-dark);
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-headline {
+                font-size: 2rem;
+            }
+
+            .cta-quote {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="cta-section">
+        <h2 class="cta-headline">Be a Part of the Change</h2>
+        <blockquote class="cta-quote">
+            "Together, we can make a difference."
+        </blockquote>
+        <div class="cta-buttons">
+            <a href="#" class="cta-btn join-btn">Join Now</a>
+            <a href="#" class="cta-btn volunteer-btn">Volunteer</a>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials Section</title>
+    <style>
+        :root {
+            --green-dark: #2A5D34;
+            --text-primary: #333333;
+            --orange-accent: #FF7621;
+        }
+
+        .testimonials-section {
+            background-color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .testimonials-headline {
+            color: var(--green-dark);
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .testimonials-headline::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: var(--orange-accent);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .testimonial-content {
+            text-align: left;
+        }
+
+        .testimonial-quote {
+            font-style: italic;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: var(--green-dark);
+        }
+
+        @media (max-width: 768px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="testimonials-section">
+        <h2 class="testimonials-headline">Voices of Gratitude</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/400x200?text=img" alt="Testimonial Author" class="testimonial-image">
+                <div class="testimonial-content">
+                    <p class="testimonial-quote">"This program has been life-changing for my child. The support and dedication are incredible."</p>
+                    <p class="testimonial-author">- Sarah M., Parent</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/400x200?text=img" alt="Testimonial Author" class="testimonial-image">
+                <div class="testimonial-content">
+                    <p class="testimonial-quote">"Volunteering here has been the most rewarding experience of my life. I'm making a real difference."</p>
+                    <p class="testimonial-author">- Michael T., Volunteer</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/400x200?text=img" alt="Testimonial Author" class="testimonial-image">
+                <div class="testimonial-content">
+                    <p class="testimonial-quote">"The educational support we received transformed our entire community's approach to learning."</p>
+                    <p class="testimonial-author">- Elena R., Community Leader</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/400x200?text=img" alt="Testimonial Author" class="testimonial-image">
+                <div class="testimonial-content">
+                    <p class="testimonial-quote">"I never thought I could pursue my dreams, but this program gave me hope and direction."</p>
+                    <p class="testimonial-author">- David K., Beneficiary</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
 
 
 <section id="about" class="about-section py-5">
@@ -991,11 +1915,15 @@ document.addEventListener('DOMContentLoaded', () => {
   </main>
   <footer>
     <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-logo">
-        <img src="/images/logo.png" alt="AK Foundation Logo">
-      </div>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="/images/logo.png" alt="AK Foundation Logo">
+      <p class="tagline">Making a difference together</p>
+    </div>
+
+    <div class="footer-content">
       <div class="footer-links">
+        <h4>Quick Links</h4>
         <ul>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
@@ -1003,21 +1931,34 @@ document.addEventListener('DOMContentLoaded', () => {
           <li><a href="#donate">Donate</a></li>
         </ul>
       </div>
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country</p>
+        <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+        <p><i class="fas fa-envelope"></i> info@akfoundation.com</p>
+      </div>
+
       <div class="footer-socials">
+        <h4>Follow Us</h4>
         <ul>
-          <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-          <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+          <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 AK Foundation. All rights reserved. Sketched with <i class="fa fa-heart"
-                aria-hidden="true"></i> by <a class="text-white" href="https://www.tensketch.com/" title="TenSketch website">TenSketch</a>
-        </p>
-    </div>
-  </footer>
+  </div>
+
   
+  <div class="footer-bottom">
+    <p>&copy; 2024 AK Foundation. All rights reserved. Sketched with <i class="fa fa-heart" aria-hidden="true"></i> by 
+      <a href="https://www.tensketch.com/" title="TenSketch website">TenSketch</a>
+    </p>
+  </div>
+</footer>
+
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
       <script src="/js/main.js"></script>
