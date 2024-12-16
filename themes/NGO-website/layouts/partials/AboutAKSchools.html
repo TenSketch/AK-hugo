@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 8: AK Schools</title>
+    <style>
+        :root {
+            --light-green: #E6F9EB;
+            --green-dark: #2A5D34;
+            --text-primary: #333333;
+            --orange-accent: #FF7621;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-primary);
+        }
+
+        .schools-section {
+            background-color: var(--light-green);
+            padding: 50px 20px;
+        }
+
+        .schools-headline {
+            text-align: center;
+            color: var(--green-dark);
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .schools-headline::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: var(--orange-accent);
+        }
+
+        .schools-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .school-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .school-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .school-icon {
+            font-size: 3rem;
+            color: var(--green-dark);
+            margin-bottom: 15px;
+        }
+
+        .school-title {
+            color: var(--green-dark);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .school-description {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .view-all-btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto 0;
+            background-color: var(--orange-accent);
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .schools-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .schools-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="schools-section">
+        <h2 class="schools-headline">AK Schools: Nurturing Growth</h2>
+        <div class="schools-grid">
+            <div class="school-card">
+                <div class="school-icon">🏀</div>
+                <h3 class="school-title">AK School of Sports</h3>
+                <p class="school-description">Developing athletic skills and promoting physical wellness for youth.</p>
+            </div>
+            <div class="school-card">
+                <div class="school-icon">📚</div>
+                <h3 class="school-title">AK School of Education</h3>
+                <p class="school-description">Providing quality education and innovative learning approaches.</p>
+            </div>
+            <div class="school-card">
+                <div class="school-icon">🤲</div>
+                <h3 class="school-title">AK School of Voiceless</h3>
+                <p class="school-description">Empowering marginalized communities and giving voice to the unheard.</p>
+            </div>
+            <div class="school-card">
+                <div class="school-icon">🌍</div>
+                <h3 class="school-title">AK School of Environment</h3>
+                <p class="school-description">Promoting environmental awareness and sustainable practices.</p>
+            </div>
+            <div class="school-card">
+                <div class="school-icon">⚖️</div>
+                <h3 class="school-title">AK School of Moral Science</h3>
+                <p class="school-description">Cultivating ethical values and personal character development.</p>
+            </div>
+        </div>
+        <a href="#" class="view-all-btn">View All Schools</a>
+    </section>
+</body>
+</html>

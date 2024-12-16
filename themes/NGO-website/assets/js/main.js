@@ -69,63 +69,61 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const carousel = document.querySelector('.carousel');
-    const carouselItems = carousel.querySelectorAll('.carousel-item');
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
-    const indicatorsContainer = document.querySelector('.carousel-indicators');
+// document.addEventListener('DOMContentLoaded', () => {
+//     const track = document.querySelector('.carousel-track');
+//     const slides = document.querySelectorAll('.carousel-slide');
+//     const prevBtn = document.getElementById('prevBtn');
+//     const nextBtn = document.getElementById('nextBtn');
+    
+//     let currentIndex = 1;
+//     const slideWidth = slides[0].offsetWidth;
 
-    // Create indicators
-    carouselItems.forEach((_, index) => {
-        const indicator = document.createElement('div');
-        indicator.classList.add('carousel-indicator');
-        if (index === 0) indicator.classList.add('active');
-        indicator.addEventListener('click', () => goToSlide(index));
-        indicatorsContainer.appendChild(indicator);
-    });
+//     // Clone first and last slides for infinite effect
+//     const firstSlideClone = slides[0].cloneNode(true);
+//     const lastSlideClone = slides[slides.length - 1].cloneNode(true);
+    
+//     track.appendChild(firstSlideClone);
+//     track.insertBefore(lastSlideClone, slides[0]);
 
-    const indicators = document.querySelectorAll('.carousel-indicator');
-    let currentSlide = 0;
-    const totalSlides = carouselItems.length;
+//     function updateCarousel() {
+//         track.style.transition = 'transform 0.5s ease';
+//         track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+//     }
 
-    function resetClasses() {
-        carouselItems.forEach((item) => item.classList.remove('active', 'prev'));
-        indicators.forEach((ind) => ind.classList.remove('active'));
-    }
+//     function nextSlide() {
+//         if (currentIndex >= slides.length + 1) return;
+//         currentIndex++;
+//         updateCarousel();
 
-    function goToSlide(slideIndex) {
-        resetClasses();
-        carouselItems[slideIndex].classList.add('active');
-        if (slideIndex > 0) {
-            carouselItems[slideIndex - 1].classList.add('prev');
-        }
-        indicators[slideIndex].classList.add('active');
-        currentSlide = slideIndex;
-    }
+//         if (currentIndex === slides.length + 1) {
+//             setTimeout(() => {
+//                 track.style.transition = 'none';
+//                 currentIndex = 1;
+//                 track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+//             }, 500);
+//         }
+//     }
 
-    function nextSlide() {
-        if (currentSlide === totalSlides - 1) {
-            // Temporarily move to the first slide for seamless looping
-            goToSlide(0);
-        } else {
-            goToSlide(currentSlide + 1);
-        }
-    }
+//     function prevSlide() {
+//         if (currentIndex <= 0) return;
+//         currentIndex--;
+//         updateCarousel();
 
-    function prevSlide() {
-        if (currentSlide === 0) {
-            // Temporarily move to the last slide for seamless looping
-            goToSlide(totalSlides - 1);
-        } else {
-            goToSlide(currentSlide - 1);
-        }
-    }
+//         if (currentIndex === 0) {
+//             setTimeout(() => {
+//                 track.style.transition = 'none';
+//                 currentIndex = slides.length;
+//                 track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+//             }, 500);
+//         }
+//     }
 
-    nextBtn.addEventListener('click', nextSlide);
-    prevBtn.addEventListener('click', prevSlide);
+//     nextBtn.addEventListener('click', nextSlide);
+//     prevBtn.addEventListener('click', prevSlide);
+//     setInterval(nextSlide, 3000); // Auto-advance every 3 seconds
 
-    // Optional: Auto-slide every 5 seconds
-    setInterval(nextSlide, 5000);
-});
+//     // Initial positioning
+//     track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+// });
+
 

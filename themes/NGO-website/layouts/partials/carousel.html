@@ -1,80 +1,44 @@
-
-<style>
-    :root {
-        --bg-dark: #10100e;
-        --text-light: #ffffe6;
-        --accent-color: #ffffe6;
-        --transition-speed: 0.6s;
-    }
-
-    
-
-    .body-corusel {
-        min-height: 100dvh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Arial', sans-serif;
-        /* background-color: var(--bg-dark); */
-        color: var(--text-light);
-    }
-
-    .carousel-container {
-        width: 100%;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Infinite Slider Carousel</title>
+    <style>
+        .carousel-container {
+            width: 100%;
         max-width: 100%;
         position: relative;
-    }
+        }
 
-    .carousel {
-        position: relative;
-        width: 100%;
-        min-height: 100dvh;
-        aspect-ratio: 16/9;
-        overflow: hidden;
-        /* box-shadow: 0 10px 25px rgba(0,0,0,0.3); */
-    }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: 300%;
+        }
 
-    .carousel-item {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-        opacity: 0;
-        transform: translateX(100%);
+        .carousel-slide {
+            flex: 0 0 33.333%;
+            width: 33.333%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            font-size: 48px;
+            color: white;
+        }
 
-    }
-
-    .carousel-item.active {
-        opacity: 1;
-        transform: translateX(0);
-        z-index: 10;
-    }
-
-    .carousel-item .prev {
-    z-index: 2;
-    opacity: 0.25;
-    transform: translateX(-100%);
-    }
-
-    .carousel-item.prev {
-        transform: translateX(-100%);
-    }
-
-    .carousel-controls {
-        display: flex;
+        .navigation-buttons {
+            display: flex;
         justify-content: space-between;
         position: absolute;
         top: 43%;
         width: 100%;
         transform: translateY(-50%);
         z-index: 20;
-    }
+        }
 
-    .carousel-btn {
-        background: none;
+        .nav-btn {
+            background: none;
         border: none;
         color: var(--text-light);
         padding: 10px 15px;
@@ -86,37 +50,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+        }
 
-  
-
-    .carousel-indicators {
+        .hero-slide1 {
+        position: relative;
+        background: url(/images/hero-bg.jpeg) no-repeat center center;
+        background-size: cover;
+        height: 100vh;
         display: flex;
+        align-items: center;
         justify-content: center;
-        margin-top: 15px;
-        gap: 10px;
-    }
-
-    .carousel-indicator {
-        width: 12px;
-        height: 12px;
-        background: rgba(255,255,255,0.3);
-        border-radius: 50%;
-        cursor: pointer;
-        transition: background 0.3s ease;
-    }
-
-    .carousel-indicator.active {
-        background: var(--accent-color);
-    }
-
-    /* about us img */
-
-    
-
-  .hero-section-aboutus {
+                }
+.hero-slide-2 {
     position: relative;
-    background: url(/images/AK-foundation-About-us.jpg) no-repeat center center;
+    background: url(/images/ak-foundation-s2sscan8_2.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -204,109 +151,258 @@
     justify-content: center;
     }
 
-    .hero-section-service {
+    .hero-slide-4 {
     position: relative;
-    background: url(/images/AK-foundation-services.jpg) no-repeat center center;
+    background: url(/images/ak-foundation-s6scan19_2.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     }
-    .hero-section-activity {
+    .hero-slide-5 {
     position: relative;
-    background: url(/images/Ak-foundation-activities-scan10_1.jpg) no-repeat center center;
+    background: url(/images/Ak-foundation-awrd-scan19_1.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     }
+    .hero-slide-6 {
+    position: relative;
+    background: url(/images/ak-foundation-slide-6scan9_3.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .carousel-indicators {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 10px;
+    }
 
-  
-</style>
+    .carousel-indicator {
+        width: 12px;
+        height: 12px;
+        background: rgba(255,255,255,0.3);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
 
-<div class="body-corusel">
+    .carousel-indicator.active {
+        background: white;
+    }
+
+    </style>
+</head>
+<body>
     <div class="carousel-container">
-        <div class="carousel">
-            <div class="hero-section active carousel-item">
+        <div class="carousel-track">
+            <div class="hero-slide1  carousel-slide">
                 <div class="hero-overlay">
                   <div class="container text-center text-md-left">
-                    <h1 class="hero-title display-2">AK Foundation (Reg. 945/2010)</h1>
-                    <p class="hero-subtitle">Building Bridges for Better Futures</p>
+                    <h1 class="hero-title display-2">Welcome to AK Foundation (Reg. 945/2010)</h1>
+                    <p class="hero-subtitle">Building a brighter future through sports, education, and community welfare</p>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-slide-2   carousel-slide">
+                <div class="hero-overlay">
+                  <div class="container text-center text-md-left">
+                    <h1 class="hero-title display-2"> Sports Means Patriotism</h1>
+                    <p class="hero-subtitle">Nurturing rural talent to shine on global stages. Join us in empowering the next generation of athletes</p>
                     <div class="hero-buttons d-flex gap-3 justify-content-center">
-                      <a href="#about" class="btn btn-primary">Learn More About Us</a>
-                      <a href="#donate" class="btn btn-primary--outline">Donate Now</a>
+                      
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="hero-section-aboutus   carousel-item">
+              <div class="hero-section-school   carousel-slide">
                 <div class="hero-overlay">
                   <div class="container text-center text-md-left">
-                    <h1 class="hero-title display-2"> About US</h1>
-                    <p class="hero-subtitle">Building Bridges for Better Futures</p>
+                    <h1 class="hero-title display-2"> Unlocking Potential Through Education</h1>
+                    <p class="hero-subtitle">Encouraging creativity, innovation, and self-discovery in every child.</p>
                     <div class="hero-buttons d-flex gap-3 justify-content-center">
-                      <a href="#about" class="btn btn-primary">Learn More About Us</a>
-                      <a href="#donate" class="btn btn-primary--outline">Donate Now</a>
+                      
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="hero-section-school   carousel-item">
+              <div class="hero-slide-4  carousel-slide">
                 <div class="hero-overlay">
                   <div class="container text-center text-md-left">
-                    <h1 class="hero-title display-2"> Ak Schools</h1>
-                    <p class="hero-subtitle">Building Bridges for Better Futures</p>
+                    <h1 class="hero-title display-2"> Compassion for the Voiceless</h1>
+                    <p class="hero-subtitle">Advocating for animal welfare and providing a voice for those who cannot speak for themselves</p>
                     <div class="hero-buttons d-flex gap-3 justify-content-center">
-                      <a href="#about" class="btn btn-primary">Learn More About Us</a>
-                      <a href="#donate" class="btn btn-primary--outline">Donate Now</a>
+                      
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="hero-section-service  carousel-item">
+              <div class="hero-slide-5   carousel-slide">
                 <div class="hero-overlay">
                   <div class="container text-center text-md-left">
-                    <h1 class="hero-title display-2"> Service</h1>
-                    <p class="hero-subtitle">Building Bridges for Better Futures</p>
+                    <h1 class="hero-title display-2"> Preserving Nature for Future Generations</h1>
+                    <p class="hero-subtitle">Promoting environmental awareness and sustainable practices to protect our planet.</p>
                     <div class="hero-buttons d-flex gap-3 justify-content-center">
-                      <a href="#about" class="btn btn-primary">Learn More About Us</a>
-                      <a href="#donate" class="btn btn-primary--outline">Donate Now</a>
+                      
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="hero-section-activity   carousel-item">
+              <div class="hero-slide-6   carousel-slide">
                 <div class="hero-overlay">
                   <div class="container text-center text-md-left">
-                    <h1 class="hero-title display-2"> Activities</h1>
-                    <p class="hero-subtitle">Building Bridges for Better Futures</p>
+                    <h1 class="hero-title display-2"> Integrity for a Better Tomorrow</h1>
+                    <p class="hero-subtitle">Instilling values and fighting corruption through education and awareness.</p>
                     <div class="hero-buttons d-flex gap-3 justify-content-center">
-                      <a href="#about" class="btn btn-primary">Learn More About Us</a>
-                      <a href="#donate" class="btn btn-primary--outline">Donate Now</a>
+                      
                     </div>
                   </div>
                 </div>
               </div>
         </div>
-        
-        <div class="carousel-controls">
-            <button class="carousel-btn prev-btn">
-                <i class="fas fa-chevron-left" style="font-size: 2rem;"></i>
-            </button>
-            <button class="carousel-btn next-btn">
-                <i class="fas fa-chevron-right" style="font-size: 2rem;"></i>
-            </button>
-        </div>
-        
-        <div class="carousel-indicators">
-            <div class="carousel-indicator active"></div>
-            <div class="carousel-indicator"></div>
-          </div>
     </div>
-</div>
+    <div class="navigation-buttons">
+        <button class="nav-btn" id="prevBtn">
+            <i class="fas fa-chevron-left" style=" font-size: 2rem; color: rgba(255, 255, 255, 0.448);"></i>
+            
+        </button>
+        <button class="nav-btn" id="nextBtn">
+            <i class="fas fa-chevron-right" style="font-size: 2rem; color: rgba(255, 255, 255, 0.448);"></i>
+        </button>
+        
+    </div>
+    <div class="carousel-indicators">
+      <div class="carousel-indicators" role="tablist"></div>
+
+    </div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const indicatorsContainer = document.querySelector('.carousel-indicators');
+    
+    let currentIndex = 1;
+    const transitionDuration = 500; // in ms
+    let autoSlideInterval;
+
+    // Clone slides for infinite effect
+    const firstSlideClone = slides[0].cloneNode(true);
+    const lastSlideClone = slides[slides.length - 1].cloneNode(true);
+    track.append(firstSlideClone);
+    track.prepend(lastSlideClone);
+
+    const updateSlideWidth = () => slides[0].offsetWidth;
+    let slideWidth = updateSlideWidth();
+
+    // Position the track for initial slide
+    const positionTrack = () => {
+        track.style.transition = 'none';
+        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    };
+
+    positionTrack();
+
+    // Create indicators
+    slides.forEach((_, index) => {
+        const indicator = document.createElement('button');
+        indicator.classList.add('carousel-indicator');
+        indicator.setAttribute('role', 'tab');
+        indicator.setAttribute('aria-label', `Go to slide ${index + 1}`);
+        if (index === 0) indicator.classList.add('active');
+        indicator.addEventListener('click', () => goToSlide(index + 1));
+        indicatorsContainer.appendChild(indicator);
+    });
+
+    const indicators = Array.from(document.querySelectorAll('.carousel-indicator'));
+
+    const updateIndicators = () => {
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle(
+                'active',
+                index === (currentIndex - 1 + slides.length) % slides.length
+            );
+        });
+    };
+
+    const updateCarousel = () => {
+        track.style.transition = `transform ${transitionDuration}ms ease`;
+        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    };
+
+    const goToSlide = (index) => {
+        currentIndex = index;
+        updateCarousel();
+        updateIndicators();
+    };
+
+    const nextSlide = () => {
+        currentIndex++;
+        updateCarousel();
+        updateIndicators();
+
+        if (currentIndex === slides.length + 1) {
+            setTimeout(() => {
+                currentIndex = 1;
+                positionTrack();
+            }, transitionDuration);
+        }
+    };
+
+    const prevSlide = () => {
+        currentIndex--;
+        updateCarousel();
+        updateIndicators();
+
+        if (currentIndex === 0) {
+            setTimeout(() => {
+                currentIndex = slides.length;
+                positionTrack();
+            }, transitionDuration);
+        }
+    };
+
+    const startAutoSlide = () => {
+        autoSlideInterval = setInterval(nextSlide, 8000);
+    };
+
+    const stopAutoSlide = () => {
+        clearInterval(autoSlideInterval);
+    };
+
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    track.addEventListener('transitionend', updateIndicators);
+
+    // Responsive adjustments
+    window.addEventListener('resize', () => {
+        slideWidth = updateSlideWidth();
+        positionTrack();
+    });
+
+    // Pause auto-slide on hover
+    track.addEventListener('mouseenter', stopAutoSlide);
+    track.addEventListener('mouseleave', startAutoSlide);
+
+    startAutoSlide();
+});
+
+</script>
+   
+</body>
+</html>

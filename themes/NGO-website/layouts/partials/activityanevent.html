@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Activities & Events</title>
+    <style>
+        :root {
+            /* Primary Colors */
+            --orange-light: #FFA366;
+            --orange-dark: #FF7621;
+            --green-light: #B8E6C1;
+            --green-dark: #2A5D34;
+
+            /* Neutrals */
+            --white: #FFFFFF;
+            --gray-light: #F5F5F5;
+            --gray-medium: #CCCCCC;
+            --gray-dark: #333333;
+
+            /* Additional Colors */
+            --blue-link: #0056B3;
+            --red-alert: #D9534F;
+
+            /* Gradients */
+            --gradient-green: linear-gradient(to bottom, var(--green-light), var(--white));
+            --gradient-orange: linear-gradient(to bottom, var(--orange-light), var(--white));
+
+            /* Text Colors */
+            --text-primary: var(--gray-dark);
+            --text-secondary: var(--gray-medium);
+
+            /* Backgrounds */
+            --bg-primary: var(--white);
+            --bg-secondary: var(--gray-light);
+
+            /* Button Colors */
+            --btn-primary-bg: var(--orange-dark);
+            --btn-primary-hover: #E55E0E;
+            --btn-secondary-bg: var(--green-dark);
+            --btn-secondary-hover: #3A7D46;
+        }
+
+       
+
+        .activity {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: var(--text-primary);
+            padding-top: 4rem ;
+            padding-bottom: 4rem ;
+
+        }
+
+        .page-headline {
+            text-align: center;
+            color: var(--orange-dark);
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            position: relative;
+            padding: 10px;
+        }
+
+       
+
+        .events-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .event-card {
+            border: 1px solid var(--gray-medium);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            background: var(--white);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .event-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.1);
+        }
+
+        .event-thumbnail {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .event-details {
+            padding: 15px;
+            background: var(--gradient-green);
+        }
+
+        .event-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--green-dark);
+            margin-bottom: 10px;
+        }
+
+        .event-date {
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .event-description {
+            color: var(--text-primary);
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .learn-more-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--btn-primary-bg);
+            color: var(--white);
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        .learn-more-btn:hover {
+            background-color: var(--btn-primary-hover);
+        }
+
+        .learn-more-btn svg {
+            margin-left: 5px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .events-container {
+                grid-template-columns: 1fr;
+            }
+
+            .page-headline {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="">
+    <section class="activity">
+        
+
+   
+    <h1 class="page-headline">Latest Activities & Events</h1>
+
+    <div class="events-container" id="eventsContainer">
+        <!-- Event cards will be dynamically inserted here -->
+    </div>
+    </section>
+
+    <script>
+        // Sample event data
+        const events = [
+            {
+                thumbnail: 'https://via.placeholder.com/400x200?text=Community+Event',
+                title: 'Annual Community Fest',
+                date: 'June 15, 2024',
+                description: 'Join us for a day of fun, music, and community spirit at our annual festival.',
+                link: '#event1'
+            },
+            {
+                thumbnail: 'https://via.placeholder.com/400x200?text=Tech+Conference',
+                title: 'Tech Innovation Conference',
+                date: 'July 22, 2024',
+                description: 'Explore cutting-edge technologies and network with industry leaders.',
+                link: '#event2'
+            },
+            {
+                thumbnail: 'https://via.placeholder.com/400x200?text=Charity+Gala',
+                title: 'Charity Fundraiser Gala',
+                date: 'August 10, 2024',
+                description: 'An elegant evening supporting local charitable organizations.',
+                link: '#event3'
+            }
+        ];
+
+        // Function to create event cards
+        function createEventCards() {
+            const container = document.getElementById('eventsContainer');
+            
+            events.forEach(event => {
+                const card = document.createElement('div');
+                card.className = 'event-card';
+                
+                card.innerHTML = `
+                    <img src="${event.thumbnail}" alt="${event.title}" class="event-thumbnail">
+                    <div class="event-details">
+                        <h3 class="event-title">${event.title}</h3>
+                        <p class="event-date">${event.date}</p>
+                        <p class="event-description">${event.description}</p>
+                        <a href="${event.link}" class="learn-more-btn">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </a>
+                    </div>
+                `;
+                
+                container.appendChild(card);
+            });
+        }
+
+        // Create event cards when the page loads
+        document.addEventListener('DOMContentLoaded', createEventCards);
+    </script>
+</body>
+</html>
