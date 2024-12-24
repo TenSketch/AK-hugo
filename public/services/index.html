@@ -19,7 +19,8 @@
 <meta property="og:keywords" content="AK Foundation, Annadhanam, Food Offering Service, Rural Sports Academy, Support Rural Talent, Community Welfare, Charity Trust, Empowering Lives, Donate for Annadhanam, Social Service Initiatives">
 <meta property="og:image" content="http://localhost:1313/ogimage.jpg">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="/scss/main.css">
 
@@ -74,125 +75,56 @@
   </div>
 </nav>
 
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Right Sidebar Toggle</title>
-    
-    <style>
-         
-        #sidebar-right {
-            position: fixed;
-            top: 0;
-            right: -300px;  
-            width: 300px;
-            height: 100%;
-            background-color: #f8f9fa;
-            transition: all 0.3s ease-in-out;
-            z-index: 1050;
-            box-shadow: -2px 0 5px rgba(0,0,0,0.1);
-        }
 
-        #sidebar-right.show {
-            right: 0;
-        }
-
-         
-        .sidebar-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.5);
-            z-index: 1040;
-            display: none;
-        }
-
-        .sidebar-overlay.show {
-            display: block;
-            animation: fadeIn 0.3s ease-in-out;
-        }
-        .linksa{
-          margin-top: 1px;
-          border-radius: 0.2rem;
-          
-        }
-        .linksa:hover{
-          background-color: #007bff;
-          color: #fff;
-          }
-
-         
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideIn {
-            from { right: -300px; }
-            to { right: 0; }
-        }
-    </style>
-</head>
-<body class="sidebar">
-    
-    
-
-    
-    <div id="sidebar-right" class="p-4 bg-light  border-start h-100">
-      <div class="">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h4 class="mb-0 fw-bold"></h4>
-            <button id="sidebar-close" class="btn-close" aria-label="Close"></button>
-          </div>
-          
-          <div class="sidebar-content mb-4">
-              <div class="list-group">
-                <a href="/" class="nav-link active linksa p-2  fs-5 text-decoration-none list-group-item list-group-item-action  d-lg-none">Home</a>
-                <a href="/about-us" class="p-2 linksa fs-5 text-decoration-none d-lg-none">About us</a>
-                <a href="#AK-Schools" class="p-2 linksa fs-5 text-decoration-none d-lg-none">AK Schools</a>
-                <a href="/Services" class="p-2 linksa fs-5 text-decoration-none d-lg-none">Services</a>
-                <a href="#activities" class="p-2  linksa fs-5 text-decoration-none">Activities</a>
-                <a href="#gallery" class=" p-2 linksa fs-5 text-decoration-none">Gallery</a>
-                <a href="/contact-us" class="p-2 linksa fs-5 text-decoration-none">Contact Us</a>
-              </div>
-          </div>
+<div id="sidebar-right" class="p-4 bg-light  border-start h-100">
+  <div class="">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="mb-0 fw-bold"></h4>
+        <button id="sidebar-close" class="btn-close" aria-label="Close"></button>
       </div>
-
-      <div class="">
-         <div class="d-grid gap-2 mb-4">
-          <a href="#join" class="btn btn-outline-primary">Join as Member</a>
-          <a href="#donate" class="btn btn-primary">Donate Now</a>
-        </div>
       
-        <div class="text-center">
-          <h6 class="mb-3">Follow Us</h6>
-          <div class="d-flex justify-content-center gap-3">
-            <a href="#" class="text-decoration-none">
-              <i class="bi bi-facebook fs-4"></i>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <i class="bi bi-twitter fs-4"></i>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <i class="bi bi-instagram fs-4"></i>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <i class="bi bi-linkedin fs-4"></i>
-            </a>
+      <div class="sidebar-content mb-4">
+          <div class="list-group">
+            <a href="/" class="nav-link active linksa p-2  fs-5 text-decoration-none list-group-item list-group-item-action  d-lg-none">Home</a>
+            <a href="/about-us" class="p-2 linksa fs-5 text-decoration-none d-lg-none">About us</a>
+            <a href="#AK-Schools" class="p-2 linksa fs-5 text-decoration-none d-lg-none">AK Schools</a>
+            <a href="/Services" class="p-2 linksa fs-5 text-decoration-none d-lg-none">Services</a>
+            <a href="#activities" class="p-2  linksa fs-5 text-decoration-none">Activities</a>
+            <a href="#gallery" class=" p-2 linksa fs-5 text-decoration-none">Gallery</a>
+            <a href="/contact-us" class="p-2 linksa fs-5 text-decoration-none">Contact Us</a>
           </div>
-        </div>
-      </div>  
-        
       </div>
+  </div>
 
+  <div class="">
+     <div class="d-grid gap-2 mb-4">
+      <a href="#join" class="btn btn-outline-primary">Join as Member</a>
+      <a href="#donate" class="btn btn-primary">Donate Now</a>
+    </div>
+  
+    <div class="text-center">
+      <h6 class="mb-3">Follow Us</h6>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#" class="text-decoration-none">
+          <i class="bi bi-facebook fs-4"></i>
+        </a>
+        <a href="#" class="text-decoration-none">
+          <i class="bi bi-twitter fs-4"></i>
+        </a>
+        <a href="#" class="text-decoration-none">
+          <i class="bi bi-instagram fs-4"></i>
+        </a>
+        <a href="#" class="text-decoration-none">
+          <i class="bi bi-linkedin fs-4"></i>
+        </a>
+      </div>
+    </div>
+  </div>  
     
-    <div class="sidebar-overlay"></div>
-</body>
-</html>
+  </div>
+
+
+<div class="sidebar-overlay"></div>
   </header>
   <main>
     
@@ -213,53 +145,78 @@
   
   </main>
   <footer>
-    <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-logo">
-      <img src="/images/logo.png" alt="AK Foundation Logo">
-      <p class="tagline">Making a difference together</p>
+    <footer class="bg-light-green">
+  <div class="container pt-5 pb-0">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="footer-logo">
+          <img src="/images/logo.png" alt="AK Foundation Logo" class="img-fluid mb-2">
+          <p class="tagline fst-italic">Making a difference together</p>
+        </div>
+        <div class="footer-socials">
+          <h4 class="text-dark-green">Follow Us</h4>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://facebook.com" target="_blank" class="footer-link"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com" target="_blank" class="footer-link"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://instagram.com" target="_blank" class="footer-link"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://linkedin.com" target="_blank" class="footer-link"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="footer-links">
+          <h4 class="text-dark-green">Quick Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+            <li><a href="#donate" class="footer-link">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="footer-contact">
+          <h4 class="text-dark-green">Contact Us</h4>
+          <p class="mb-1">
+            <strong>Smt. Dr. Rtn. Geetha</strong><br>
+            <span class="fst-italic">Founder & President, AK Foundation</span>
+          </p>
+          <address>
+            New #4, Old #10,<br>
+            NGO's Colony, Third Cross Street,<br>
+            Adambakkam, Chennai - 600088, India
+          </address>
+          <ul>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a class="footer-link" href="mailto:rtngeetha17@yahoo.co.in">rtngeetha17@yahoo.co.in</a>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a class="footer-link" href="tel:+919940376304">+91 99403 76304</a>
+            </li>
+            <li>
+              <i class="fab fa-whatsapp"></i>
+              <a class="footer-link" href="https://wa.me/919940376304" target="_blank">WhatsApp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <div class="footer-content">
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#donate">Donate</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-contact">
-        <h4>Contact Us</h4>
-        <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country</p>
-        <p><i class="fas fa-phone"></i> +1 234 567 890</p>
-        <p><i class="fas fa-envelope"></i> info@akfoundation.com</p>
-      </div>
-
-      <div class="footer-socials">
-        <h4>Follow Us</h4>
-        <ul>
-          <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
-      </div>
-    </div>
   </div>
 
-  
-  <div class="footer-bottom">
-    <p>&copy; 2024 AK Foundation. All rights reserved. Sketched with <i class="fa fa-heart" aria-hidden="true"></i> by 
-      <a href="https://www.tensketch.com/" title="TenSketch website">TenSketch</a>
+  <div class="footer-bottom bg-light-green py-3">
+    <p class="text-center text-dark-green">&copy; 2024 AK Foundation. All rights reserved. Sketched with <i class="fa fa-heart" aria-hidden="true"></i> by 
+      <a href="https://www.tensketch.com/" title="TenSketch website" class="text-red-alert">TenSketch</a>
     </p>
   </div>
 </footer>
-
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+ <script src="/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
       <script src="/js/main.js"></script>
 
 

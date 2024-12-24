@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section id="events" class="py-5">
+    <div class="container">
+      <h2 class="text-center text-dark-green mb-4">Our Events</h2>
+      <div class="row">
+        {{ range .Pages }}
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title text-dark-green">{{ .Params.title }}</h3>
+                <p class="card-text">{{ .Params.brief }}</p>
+                <a href="{{ .Permalink }}" class="btn btn-secondary">Know More</a>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

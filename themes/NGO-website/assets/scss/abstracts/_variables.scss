@@ -1,65 +1,35 @@
-// Colors
-// Primary
-$hue-primary: 210;
-$saturation-primary: 100%;
-$lightness-primary: 25%;
-$color-primary: hsl($hue-primary, $saturation-primary, $lightness-primary);
+// Primary Colors
+$orange-light: #FFA366;   // Light shade of orange for highlights or accents
+$orange-dark: #FF7621;    // Bold shade of orange for buttons or CTA elements
+$green-light: #B8E6C1;    // Light shade of green for background and sections
+$green-dark: #2A5D34;     // Dark shade of green for text and headings
 
-// Secondary
-$hue-secondary:200;
-$saturation-secondary: 57%;
-$lightness-secondary: 9%;
-$color-secondary: hsl($hue-secondary, $saturation-secondary, $lightness-secondary);
+// Neutrals
+$white: #FFF;          // Pure white for backgrounds or text
+$gray-light: #F5F5F5;     // Very light gray for section backgrounds
+$gray-medium: #CCC;    // Medium gray for dividers or borders
+$gray-dark: #333;      // Dark gray for body text
 
-// Accent
-$hue-accent: 45;
-$saturation-accent: 100%;
-$lightness-accent: 51%;
-$color-accent: hsl($hue-accent, $saturation-accent, $lightness-accent);
+// Additional Colors
+$blue-link: #0056B3;      // Subtle blue for links
+$red-alert: #D9534F;      // Red for error messages or alerts
 
-$primary-clr: #004080;
-$primary-clr: hsl(210, 100%, 25%);
-$secondary-clr: #0a1b24;
-$secondary-clr: hsl(200, 57%, 9%);
-$accent-clr: hsl(45, 100%, 51%);
+// Gradient (optional)
+$gradient-green: linear-gradient(to bottom, $green-light, $white);
+$gradient-orange: linear-gradient(to bottom, $orange-light, $white);
 
+// Text Colors
+$text-primary: $gray-dark;  // Default text color
+$text-secondary: $gray-medium; // Secondary text or subtext
 
-$primary-clr--light: hsla(194, 86%, 86%, 1);
-$primary-clr--dark: hsla(206, 79%, 17%, 1);
+// Backgrounds
+$bg-primary: $white;      // Default background
+$bg-secondary: $gray-light; // Section backgrounds
 
-$light-clr: hsla(195, 33%, 98%, 1);
-$charcoal: hsla(198, 18%, 29%, 1);
-$white: #fff;
-$black: #000;
-$dark-clr: hsl(0, 0%, 17%);
-$text-dark: hsl(240, 29%, 07%);
-$text-light-clr: hsl(0, 0%, 100%);
+// Button Colors
+$btn-primary-bg: $orange-dark;
+$btn-primary-hover: darken($orange-dark, 10%);
+$btn-secondary-bg: $green-dark;
+$btn-secondary-hover: lighten($green-dark, 10%);
 
-
-// cards
-$card-dark: #dcdce0;
-$card-shadow-light: #dcdce0;
-$card-shadow-dark: #cfcfd4;
-
-
-// Typography
-$font-primary: "EB Garamond", serif;;
-$font-secondary: 'Montserrat', sans-serif;
-$font-tertiary: 'Lato', sans-serif;
-$font-daniel: 'Daniel', sans-serif;
-
-$base-font-size: 16px;
-$base-line-height: 1.5;
-
-
-$base-unit: 0.25rem;
-$sizes: (); // An empty map to store the size values
-
-@for $i from 1 through 32 {
-  $size: $i * 25;
-  $size-value: $base-unit * $i;
-
-  // Store the sizes in the map
-  $sizes: map-merge($sizes, ($size: $size-value));
-}
-$navbar-height: 10vh
+$navbar-height:10vh

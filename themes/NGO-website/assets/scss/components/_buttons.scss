@@ -1,117 +1,61 @@
 @import '../abstracts/variables';
 
-$btn-primary--clr: hsl($hue-primary, $saturation-primary, 55%);
-$btn-hover-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); // Soft shadow for hover
+// Define button base styles  
+$btn-padding: 0.5rem 1rem;  
+$btn-border-radius: 5px;  
 
-// Mixin to handle button states with best-practice styles
-@mixin btn-state($color) {
-  &:hover {
-    background-color: darken($color, 7%); // Slight darken effect for hover
-    box-shadow: $btn-hover-shadow; // Soft shadow on hover
+.btn {  
+  // display: inline-block;  
+  padding: $btn-padding;  
+  border: none;  
+  border-radius: $btn-border-radius;  
+  font-weight: bold;  
+  text-align: center;  
+  // cursor: pointer;  
+  // text-decoration: none!important; // Remove underline for anchor styled as buttons  
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;  
+  &:hover{
+  text-decoration: none!important; // Remove underline for anchor styled as buttons  
+
   }
 
-  &:focus-visible {
-    outline: 2px solid lighten($color, 15%); // Lightened outline for accessibility
-  }
+  &.btn-primary {  
+    background-color: $orange-dark; // Bold orange background  
+    color: $white;  
 
-  &:active {
-    background-color: darken($color, 10%); // Darken further on active
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); // Inset shadow for pressed effect
-  }
-}
+    &:hover {  
+      background-color: darken($orange-dark, 10%); // Darken on hover  
+    }  
+  }  
 
-// Base button styles
-.btn {
-  padding: 0.6em 1.2em;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease outline 0.3s ease; // Smooth transitions
-}
+  &.btn-primary-outline {  
+    background-color: transparent; // Transparent background for outline  
+    border: 2px solid $orange-dark; // Light orange border  
+    // color: $orange-dark; // Text color is dark orange  
 
-// Primary button
-.btn-primary {
-  background-color: $btn-primary--clr;
-  border-color: $btn-primary--clr;
-  color: $white;
+    &:hover {  
+      background-color: $orange-dark; // Light orange background on hover  
+      color: $white; // Change text color to white on hover  
+    }  
+  }  
 
-  @include btn-state($btn-primary--clr); // Primary color state styles
-}
+  &.btn-secondary {  
+    background-color: $green-dark; // Dark green background  
+    color: $green-light;  
 
-// Primary Outline button
-.btn-primary--outline {
-  background-color: transparent;
-  color: $btn-primary--clr;
-  border: 2px solid $btn-primary--clr;
+    &:hover {  
+      background-color: darken($green-dark, 10%); // Darken on hover  
+    }  
+  }  
 
-  &:hover {
-    background-color: $btn-primary--clr;
-    color: $white;
-  }
-  &_none{
-    border: none;
-    color: $primary-clr;
-    &:hover{
-      // background-color: $btn-primary--clr;
-      outline: 2px solid $btn-primary--clr
-    }
-  }
+  &.btn-secondary-outline {  
+    background-color: $green-light; // Transparent background for outline  
+    border: 2px solid $green-dark; // Light green border  
+    color: $green-dark; // Text color is dark green  
 
-  @include btn-state($btn-primary--clr);
-}
-
-// Secondary button
-.btn-secondary {
-  background-color: $secondary-clr;
-  border-color: $secondary-clr;
-  color: $white;
-
-  @include btn-state($secondary-clr);
-}
-
-// Secondary Outline button
-.btn-secondary--outline {
-  background-color: transparent;
-  color: $secondary-clr;
-  border: 2px solid $secondary-clr;
-
-  &:hover {
-    background-color: $secondary-clr;
-    color: $white;
-  }
-
-  @include btn-state($secondary-clr);
-}
-
-// Light button
-.btn-light {
-  background-color: $light-clr;
-  border-color: $light-clr;
-  color: $dark-clr;
-
-  @include btn-state($light-clr);
-}
-
-.btn {
-  padding: 0.75rem 1.5rem;
-  // font-size: 0.9rem;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-  font-weight: bold;
-  // display: inline-block;
-  &:hover {
-    transform: scale(1.05);
-  }
-}
-
-.btn-primary {
-  background: linear-gradient(45deg, #ff7f50, #ff6347);
-  border: none;
-  &--outline{
-    border: 1px solid #ff7f50;
-    background: $white;
-    color:#ff7f50;
-  }
-}
-
-.btn-secondary {
-  background: linear-gradient(45deg, #32cd32, #228b22);
-  border: none;
+    &:hover {  
+      background-color: $green-dark; // Light green background on hover  
+      color: $green-light; // Change text color to white on hover  
+    }  
+  }  
 }

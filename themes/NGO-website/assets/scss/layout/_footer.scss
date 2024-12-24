@@ -1,149 +1,111 @@
 @import '../abstracts/variables';
 
-.footer {
-  background: linear-gradient(to bottom, #333, #333);
-  // background-color: #333
-  color: #fff;
-  padding: 60px 20px 20px;
-  
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-    
-    @media (min-width: 768px) {
-      grid-template-columns: 300px 1fr;
-    }
-  }
+footer {
+  background-color: $green-light;
 
-  .footer-logo {
-    text-align: center;
-    
-    @media (min-width: 768px) {
-      text-align: left;
-    }
-    
-    img {
-      width: 150px;
-      height: auto;
-      margin-bottom: 15px;
-    }
-    
-    .tagline {
-      font-style: italic;
-      color: #ecf0f1;
-    }
-  }
+  .container {
+    // padding: 2rem 0;
+    .text-dark-green{
+      font-size: 1.4rem;
+      padding-bottom: 0.25rem;
+      position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 25%;
+        height: 3px;
+        background: $green-dark;
 
-  .footer-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(3, 1fr);
+      }
     }
-  }
+    .footer-logo {
+      // text-align: center;
+      margin-bottom: 1.5rem;
 
-  h4 {
-    color: #3498db;
-    margin-bottom: 20px;
-    font-size: 1.2rem;
-    position: relative;
-    
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: -8px;
-      left: 0;
-      width: 40px;
-      height: 2px;
-      background-color: #3498db;
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 0.5rem;
+      }
+
+      .tagline {
+        color: $green-dark;
+      }
     }
-  }
 
-  .footer-links {
-    ul {
-      list-style: none;
-      padding: 0;
-      
-      li {
-        margin-bottom: 12px;
-        
-        a {
-          color: #ecf0f1;
-          text-decoration: none;
-          transition: color 0.3s ease;
-          display: inline-block;
-          
-          &:hover {
-            color: #3498db;
-            transform: translateX(5px);
+    .footer-links,
+    .footer-contact {
+      margin-bottom: 1.5rem;
+
+      h4 {
+        color: $green-dark;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin: 0.5rem 0;
+
+          .footer-link {
+            color: $red-alert;
+            font-weight: 500;
+            transition: transform 0.3s ease;
+            display: inline-block;
+            &:hover {
+              transform: translateY(-3px);
+              color: $red-alert;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-socials {
+      // text-align: center;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        display: inline-flex;
+
+        .list-inline-item {
+          margin: 0 0.5rem;
+
+          a {
+            color: $green-dark;
+            transition: transform 0.3s ease;
+
+            &:hover {
+              transform: translateY(-3px);
+              color: $red-alert;
+            }
           }
         }
       }
     }
   }
 
-  .footer-contact {
-    p {
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      
-      i {
-        color: #3498db;
-      }
-    }
-  }
-
-  .footer-socials {
-    ul {
-      display: flex;
-      gap: 15px;
-      list-style: none;
-      padding: 0;
-      
-      a {
-        color: #fff;
-        font-size: 1.5rem;
-        transition: all 0.3s ease;
-        
-        &:hover {
-          color: #3498db;
-          transform: translateY(-3px);
-        }
-      }
-    }
-  }
-
- 
-
   .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 40px;
-    padding-top: 20px;
-    text-align: center;
-    
+    background-color: $green-light;
+    padding: 1rem 0;
+
     p {
-      color: #bdc3c7;
-      font-size: 0.9rem;
-      
-      .fa-heart {
-        color: #e74c3c;
-      }
-      
+      text-align: center;
+      color: $green-dark;
+
       a {
-        color: #3498db;
-        text-decoration: none;
-        
+        color: $red-alert;
+        transition: color 0.3s ease;
+
         &:hover {
-          text-decoration: underline;
+          color: darken($red-alert, 10%);
         }
       }
     }
   }
 }
+

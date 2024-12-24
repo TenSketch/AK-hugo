@@ -1,0 +1,42 @@
+@import '../abstracts/variables';
+$carousel-height: calc(100vh - #{$navbar-height});
+
+.carousel {  
+    height: $carousel-height; // Set the carousel height to the viewport height minus the navbar height  
+  
+    .carousel-inner {  
+      height: $carousel-height; // Set the inner height to 100% of the viewport height  
+  
+      .carousel-item {  
+        height: $carousel-height; // Each carousel item has a height of 100% of the viewport height  
+  
+        img {  
+          object-fit: cover; // Ensures images cover the entire carousel item area  
+          width: 100%; // Make sure the image takes the full width  
+          height: 100%; // Make the image take the full height  
+        }  
+  
+        .overlay {  
+          position: absolute; // Position overlay to cover the entire item  
+          top: 0;  
+          left: 0;  
+          right: 0;  
+          bottom: 0;  
+          background-color: rgba(0, 0, 0, 0.5); // Semi-transparent black overlay  
+          z-index: 1; // Place overlay above the image  
+        }  
+  
+        .carousel-caption {  
+        //   position: relative; // Ensure captions sit above the overlay  
+          z-index: 2; // Place caption above the overlay  
+          color: white; // Change the text color to white for better visibility  
+          text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); // Optional: Add text shadow for better contrast  
+        }  
+      }  
+    }  
+  
+    .carousel-control-prev,  
+    .carousel-control-next {  
+      filter: brightness(0) invert(1); // Optional: Change control icons to white for better visibility on dark backgrounds  
+    }  
+  }
