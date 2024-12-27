@@ -1,2 +1,20 @@
 @import '../abstracts/variables';
 
+.bg-orange{
+    background-color: $orange-light;
+}
+.bg-green{
+    background-color: $green-light;
+    color: $green-dark;
+}
+
+.text-orange{
+    color: $orange-darker;
+}
+.text-green{
+    color: $green-dark;
+}
+
+.link-clr{
+    color: $red-alert;
+}

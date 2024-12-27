@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AK Foundation services on AK Foundation - Empowering Lives Through Annadhanam and Sports Initiatives</title>
-    <link>http://localhost:1313/services/</link>
+    <link>https://akfoundationindia.com/services/</link>
     <description>Recent content in AK Foundation services on AK Foundation - Empowering Lives Through Annadhanam and Sports Initiatives</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/services/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://akfoundationindia.com/services/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

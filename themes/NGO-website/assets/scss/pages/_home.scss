@@ -1,9 +1,18 @@
-@import '../abstracts/variables';
+@import '../abstracts/index';
 
 #hero {
   background-size: cover;
   background-position: center;
   color: $white;
+  // min-height: 100vh;
+  @include media-desktop {  
+    // min-height: unset!important;
+    height: 100vh!important;
+    font-size: 8rem;
+  }  
+  @media(min-width:768px){
+    height: 100vh!important;
+  }
 
   h1 {
     font-size: 3rem;
@@ -19,3 +28,11 @@
     color: $green-dark;
   }
 }
+
+.sports{
+  border-radius: 10px;
+  img{
+    border-radius: 50%;
+  }
+}
+

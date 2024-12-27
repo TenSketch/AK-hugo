@@ -1,3 +1,19 @@
+.bg-orange {
+  background-color: #FFA366; }
+
+.bg-green {
+  background-color: #B8E6C1;
+  color: #2A5D34; }
+
+.text-orange {
+  color: #eb5a00; }
+
+.text-green {
+  color: #2A5D34; }
+
+.link-clr {
+  color: #D9534F; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -229,10 +245,33 @@ footer {
   .carousel .carousel-control-next {
     filter: brightness(0) invert(1); }
 
+.bg-orange {
+  background-color: #FFA366; }
+
+.bg-green {
+  background-color: #B8E6C1;
+  color: #2A5D34; }
+
+.text-orange {
+  color: #eb5a00; }
+
+.text-green {
+  color: #2A5D34; }
+
+.link-clr {
+  color: #D9534F; }
+
 #hero {
   background-size: cover;
   background-position: center;
   color: #FFF; }
+  @media (min-width: 769px) {
+    #hero {
+      height: 100vh !important;
+      font-size: 8rem; } }
+  @media (min-width: 768px) {
+    #hero {
+      height: 100vh !important; } }
   #hero h1 {
     font-size: 3rem; }
   #hero p {
@@ -240,6 +279,11 @@ footer {
 
 #events h2, #about h2 {
   color: #2A5D34; }
+
+.sports {
+  border-radius: 10px; }
+  .sports img {
+    border-radius: 50%; }
 
 .about-section {
   background-color: #f9f9f9; }

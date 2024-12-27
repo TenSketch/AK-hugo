@@ -6,4 +6,5 @@ layout: "home"
 section: "hero"
 date: 2024-12-25T00:12:17+05:30
 draft: false
+description: "this is des of home"
 ---
