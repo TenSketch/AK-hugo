@@ -285,6 +285,19 @@ footer {
   .sports img {
     border-radius: 50%; }
 
+.about {
+  background-color: #FFA366; }
+  .about h2 {
+    font-weight: bold; }
+  .about .lead {
+    margin-bottom: 1.5rem; }
+  .about .btn-green-dark {
+    background-color: #2A5D34;
+    color: white;
+    border: none; }
+    .about .btn-green-dark:hover {
+      background-color: #1a3a20; }
+
 .about-section {
   background-color: #f9f9f9; }
   .about-section .section-title {

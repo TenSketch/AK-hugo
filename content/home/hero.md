@@ -4,7 +4,7 @@ subtitle: "Building a brighter future through sports, education, and community w
 background: "/images/akf_flag.jpg"
 layout: "home"
 section: "hero"
-date: 2024-12-25T00:12:17+05:30
+date: 2024-12-27T20:12:17+05:30
 draft: false
 description: "this is des of home"
 ---

@@ -36,3 +36,27 @@
   }
 }
 
+
+
+.about {  
+  background-color: $orange-light;  
+  // color: $green-dark;  
+
+  h2 {  
+      font-weight: bold;  
+  }  
+
+  .lead {  
+      margin-bottom: 1.5rem;  
+  }  
+
+  .btn-green-dark {  
+      background-color: $green-dark;  
+      color: white;  
+      border: none;  
+
+      &:hover {  
+          background-color: darken($green-dark, 10%);  
+      }  
+  }  
+}  

@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on AK Foundation - Empowering Lives Through Annadhanam and Sports Initiatives</title>
-    <link>https://akfoundationindia.com/home/</link>
+    <link>http://localhost:1313/home/</link>
     <description>Recent content in Homes on AK Foundation - Empowering Lives Through Annadhanam and Sports Initiatives</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Dec 2024 16:55:51 +0530</lastBuildDate>
-    <atom:link href="https://akfoundationindia.com/home/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/home/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Honoring Excellence in Service</title>
-      <link>https://akfoundationindia.com/home/awards/</link>
+      <link>http://localhost:1313/home/awards/</link>
       <pubDate>Fri, 27 Dec 2024 16:55:51 +0530</pubDate>
-      <guid>https://akfoundationindia.com/home/awards/</guid>
+      <guid>http://localhost:1313/home/awards/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;Demonstrated exceptional commitment to community development and social welfare.&lt;/li&gt;&#xA;&lt;li&gt;Pioneered innovative approaches to addressing critical social challenges.&lt;/li&gt;&#xA;&lt;li&gt;Recognized for outstanding leadership and sustained impact in service to others.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Cta</title>
-      <link>https://akfoundationindia.com/home/cta/</link>
+      <link>http://localhost:1313/home/cta/</link>
       <pubDate>Wed, 25 Dec 2024 00:13:23 +0530</pubDate>
-      <guid>https://akfoundationindia.com/home/cta/</guid>
+      <guid>http://localhost:1313/home/cta/</guid>
       <description></description>
     </item>
     <item>
       <title>Testimonials</title>
-      <link>https://akfoundationindia.com/home/testimonials/</link>
+      <link>http://localhost:1313/home/testimonials/</link>
       <pubDate>Wed, 25 Dec 2024 00:13:10 +0530</pubDate>
-      <guid>https://akfoundationindia.com/home/testimonials/</guid>
+      <guid>http://localhost:1313/home/testimonials/</guid>
       <description></description>
     </item>
     <item>
       <title>Empowering Rural Sports Talent</title>
-      <link>https://akfoundationindia.com/home/sports/</link>
+      <link>http://localhost:1313/home/sports/</link>
       <pubDate>Wed, 25 Dec 2024 00:12:55 +0530</pubDate>
-      <guid>https://akfoundationindia.com/home/sports/</guid>
+      <guid>http://localhost:1313/home/sports/</guid>
       <description></description>
     </item>
     <item>
       <title>Welcome to AK Foundation</title>
-      <link>https://akfoundationindia.com/home/hero/</link>
+      <link>http://localhost:1313/home/hero/</link>
       <pubDate>Wed, 25 Dec 2024 00:12:17 +0530</pubDate>
-      <guid>https://akfoundationindia.com/home/hero/</guid>
+      <guid>http://localhost:1313/home/hero/</guid>
       <description></description>
     </item>
     <item>
       <title>About Us</title>
-      <link>https://akfoundationindia.com/home/about/</link>
+      <link>http://localhost:1313/home/about/</link>
       <pubDate>Wed, 25 Dec 2024 00:11:37 +0530</pubDate>
-      <guid>https://akfoundationindia.com/home/about/</guid>
+      <guid>http://localhost:1313/home/about/</guid>
       <description></description>
     </item>
     <item>
       <title>Our Events</title>
-      <link>https://akfoundationindia.com/home/events/</link>
+      <link>http://localhost:1313/home/events/</link>
       <pubDate>Thu, 17 Oct 2024 14:37:44 +0530</pubDate>
-      <guid>https://akfoundationindia.com/home/events/</guid>
+      <guid>http://localhost:1313/home/events/</guid>
       <description></description>
     </item>
   </channel>

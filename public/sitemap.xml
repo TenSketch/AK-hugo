@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://akfoundationindia.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-12-27T16:55:51+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/</loc>
+    <loc>http://localhost:1313/home/</loc>
     <lastmod>2024-12-27T16:55:51+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/awards/</loc>
+    <loc>http://localhost:1313/home/awards/</loc>
     <lastmod>2024-12-27T16:55:51+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/cta/</loc>
+    <loc>http://localhost:1313/home/cta/</loc>
     <lastmod>2024-12-25T00:13:23+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/testimonials/</loc>
+    <loc>http://localhost:1313/home/testimonials/</loc>
     <lastmod>2024-12-25T00:13:10+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/sports/</loc>
+    <loc>http://localhost:1313/home/sports/</loc>
     <lastmod>2024-12-25T00:12:55+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/hero/</loc>
+    <loc>http://localhost:1313/home/hero/</loc>
     <lastmod>2024-12-25T00:12:17+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/about/</loc>
+    <loc>http://localhost:1313/home/about/</loc>
     <lastmod>2024-12-25T00:11:37+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/sports/</loc>
+    <loc>http://localhost:1313/sports/</loc>
     <lastmod>2024-12-15T23:26:13+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/contact-us/</loc>
+    <loc>http://localhost:1313/contact-us/</loc>
     <lastmod>2024-12-03T16:01:41+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/about-us/</loc>
+    <loc>http://localhost:1313/about-us/</loc>
     <lastmod>2024-12-03T16:01:28+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/services/</loc>
+    <loc>http://localhost:1313/services/</loc>
     <lastmod>2024-12-02T17:30:50+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/events/</loc>
+    <loc>http://localhost:1313/home/events/</loc>
     <lastmod>2024-10-17T14:37:44+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://akfoundationindia.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
