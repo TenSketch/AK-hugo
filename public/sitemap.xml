@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-12-27T16:55:51+05:30</lastmod>
+    <lastmod>2024-12-27T20:12:17+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/home/</loc>
-    <lastmod>2024-12-27T16:55:51+05:30</lastmod>
+    <lastmod>2024-12-27T20:12:17+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/home/hero/</loc>
+    <lastmod>2024-12-27T20:12:17+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/home/awards/</loc>
     <lastmod>2024-12-27T16:55:51+05:30</lastmod>
@@ -19,9 +22,6 @@
   </url><url>
     <loc>http://localhost:1313/home/sports/</loc>
     <lastmod>2024-12-25T00:12:55+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/home/hero/</loc>
-    <lastmod>2024-12-25T00:12:17+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/home/about/</loc>
     <lastmod>2024-12-25T00:11:37+05:30</lastmod>

@@ -4,6 +4,9 @@
 .bg-green {
   background-color: #B8E6C1;
   color: #2A5D34; }
+  .bg-green--dark {
+    background-color: #2A5D34;
+    color: #B8E6C1; }
 
 .text-orange {
   color: #eb5a00; }
@@ -13,6 +16,10 @@
 
 .link-clr {
   color: #D9534F; }
+
+hr.bg-green--dark {
+  background-color: #2A5D34;
+  border-color: transparent; }
 
 html {
   scroll-behavior: smooth; }
@@ -119,11 +126,11 @@ img {
 
 footer {
   background-color: #B8E6C1; }
-  footer .container .text-dark-green {
+  footer .container .subtitle {
     font-size: 1.4rem;
     padding-bottom: 0.25rem;
     position: relative; }
-    footer .container .text-dark-green::after {
+    footer .container .subtitle::after {
       content: '';
       position: absolute;
       bottom: 0;
@@ -137,14 +144,9 @@ footer {
       max-width: 100%;
       height: auto;
       margin-bottom: 0.5rem; }
-    footer .container .footer-logo .tagline {
-      color: #2A5D34; }
   footer .container .footer-links,
   footer .container .footer-contact {
     margin-bottom: 1.5rem; }
-    footer .container .footer-links h4,
-    footer .container .footer-contact h4 {
-      color: #2A5D34; }
     footer .container .footer-links ul,
     footer .container .footer-contact ul {
       list-style: none;
@@ -178,8 +180,7 @@ footer {
     background-color: #B8E6C1;
     padding: 1rem 0; }
     footer .footer-bottom p {
-      text-align: center;
-      color: #2A5D34; }
+      text-align: center; }
       footer .footer-bottom p a {
         color: #D9534F;
         transition: color 0.3s ease; }
@@ -251,6 +252,9 @@ footer {
 .bg-green {
   background-color: #B8E6C1;
   color: #2A5D34; }
+  .bg-green--dark {
+    background-color: #2A5D34;
+    color: #B8E6C1; }
 
 .text-orange {
   color: #eb5a00; }
@@ -260,6 +264,10 @@ footer {
 
 .link-clr {
   color: #D9534F; }
+
+hr.bg-green--dark {
+  background-color: #2A5D34;
+  border-color: transparent; }
 
 #hero {
   background-size: cover;

@@ -6,6 +6,10 @@
 .bg-green{
     background-color: $green-light;
     color: $green-dark;
+    &--dark{
+        background-color: $green-dark;
+        color: $green-light;
+    }
 }
 
 .text-orange{
@@ -17,4 +21,10 @@
 
 .link-clr{
     color: $red-alert;
+}
+
+hr.bg-green--dark{
+    background-color: $green-dark;
+    border-color: transparent;
+    // opacity: 0.8;
 }

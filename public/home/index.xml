@@ -6,8 +6,15 @@
     <description>Recent content in Homes on AK Foundation - Empowering Lives Through Annadhanam and Sports Initiatives</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Dec 2024 16:55:51 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 27 Dec 2024 20:12:17 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/home/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to AK Foundation</title>
+      <link>http://localhost:1313/home/hero/</link>
+      <pubDate>Fri, 27 Dec 2024 20:12:17 +0530</pubDate>
+      <guid>http://localhost:1313/home/hero/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Honoring Excellence in Service</title>
       <link>http://localhost:1313/home/awards/</link>
@@ -34,13 +41,6 @@
       <link>http://localhost:1313/home/sports/</link>
       <pubDate>Wed, 25 Dec 2024 00:12:55 +0530</pubDate>
       <guid>http://localhost:1313/home/sports/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Welcome to AK Foundation</title>
-      <link>http://localhost:1313/home/hero/</link>
-      <pubDate>Wed, 25 Dec 2024 00:12:17 +0530</pubDate>
-      <guid>http://localhost:1313/home/hero/</guid>
       <description></description>
     </item>
     <item>
