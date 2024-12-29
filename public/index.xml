@@ -13,7 +13,7 @@
       <link>http://localhost:1313/home/hero/</link>
       <pubDate>Fri, 27 Dec 2024 20:12:17 +0530</pubDate>
       <guid>http://localhost:1313/home/hero/</guid>
-      <description></description>
+      <description>&lt;h4 id=&#34;ak-school-of&#34;&gt;AK School of&amp;hellip;&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sports&lt;/li&gt;&#xA;&lt;li&gt;Education&lt;/li&gt;&#xA;&lt;li&gt;Voiceless&lt;/li&gt;&#xA;&lt;li&gt;Environment&lt;/li&gt;&#xA;&lt;li&gt;Moral Science / Anti-Corruption&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Honoring Excellence in Service</title>
@@ -37,7 +37,7 @@
       <description></description>
     </item>
     <item>
-      <title>Empowering Rural Sports Talent</title>
+      <title>AK School of Sports</title>
       <link>http://localhost:1313/home/sports/</link>
       <pubDate>Wed, 25 Dec 2024 00:12:55 +0530</pubDate>
       <guid>http://localhost:1313/home/sports/</guid>
@@ -69,6 +69,13 @@
       <link>http://localhost:1313/about-us/</link>
       <pubDate>Tue, 03 Dec 2024 16:01:28 +0530</pubDate>
       <guid>http://localhost:1313/about-us/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Our Schools</title>
+      <link>http://localhost:1313/home/akschools/</link>
+      <pubDate>Sun, 01 Dec 2024 01:21:09 +0530</pubDate>
+      <guid>http://localhost:1313/home/akschools/</guid>
       <description></description>
     </item>
     <item>

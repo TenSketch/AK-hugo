@@ -21,7 +21,7 @@
 
 
  <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="/scss/main.css">
 
 
@@ -97,27 +97,9 @@
   </div>  
 
   <div class="">  
-    <div class="d-grid gap-2 mb-4">  
-      <a href="#join" class="btn btn-outline-primary">Join as Member</a>  
-      <a href="#donate" class="btn btn-primary">Donate Now</a>  
-    </div>  
+    
   
-    <div class="text-center">  
-      <div class="d-flex justify-content-center gap-3">  
-        <a href="#" class="text-decoration-none">  
-          <i class="bi bi-facebook fs-4"></i>  
-        </a>  
-        <a href="#" class="text-decoration-none">  
-          <i class="bi bi-twitter fs-4"></i>  
-        </a>  
-        <a href="#" class="text-decoration-none">  
-          <i class="bi bi-instagram fs-4"></i>  
-        </a>  
-        <a href="#" class="text-decoration-none">  
-          <i class="bi bi-linkedin fs-4"></i>  
-        </a>  
-      </div>  
-    </div>  
+    
   </div>  
 </div>  
 
@@ -162,12 +144,54 @@ Our vision is to see rural athletes represent India on the global stage, raising
   <div class="container pt-5 pb-0">
     <div class="row">
       <div class="col-md-4">
-        <div class="footer-logo">
-          <img src="/images/logo.png" alt="AK Foundation Logo" class="img-fluid mb-2">
-          <p class="tagline fst-italic">Making a difference together</p>
+        
+
+        <div class="footer-links">
+          <h4 class="subtitle">Quick Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+            <li><a href="#donate" class="footer-link">Donate</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      
+
+      <div class="col-md-4">
+        <div class="footer-contact">
+          <h4 class="subtitle">Contact Us</h4>
+          <p class="mb-1">
+            <strong>Smt. Dr. Geetha</strong><br>
+            <span class="fst-italic">Founder & President, AK Foundation</span>
+          </p>
+          <p class="text-green mb-0">Address</p>
+          <address>
+            # AK Foundation,<br>
+            19 / 33, Pantheon Road,<br>
+            Egmore, Chennai - 600 008,<br>
+            Tamil Nadu, India.<br>
+            <strong>Land mark:</strong> Adjacent to 20 feet Sacred Heart Jesus Christ Statue & Egmore Police Museum.
+          </address>
+          <ul>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a class="footer-link" href="mailto:geethaakf17@gmail.com">geethaakf17@gmail.com</a>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a class="footer-link" href="tel:+919940376304">+91 99403 76304</a>
+            </li>
+            <li>
+              <i class="fab fa-whatsapp"></i>
+              <a class="footer-link" href="https://wa.me/919940376304" target="_blank">WhatsApp</a>
+            </li>
+          </ul>
         </div>
         <div class="footer-socials">
-          <h4 class="text-dark-green">Follow Us</h4>
+          <h4 class="subtitle">Follow Us</h4>
           <ul class="list-inline">
             <li class="list-inline-item"><a href="https://facebook.com" target="_blank" class="footer-link"><i
                   class="fab fa-facebook"></i></a></li>
@@ -180,54 +204,39 @@ Our vision is to see rural athletes represent India on the global stage, raising
           </ul>
         </div>
       </div>
-
       <div class="col-md-4">
-        <div class="footer-links">
-          <h4 class="text-dark-green">Quick Links</h4>
-          <ul class="list-unstyled">
-            <li><a href="#about" class="footer-link">About Us</a></li>
-            <li><a href="#services" class="footer-link">Services</a></li>
-            <li><a href="#contact" class="footer-link">Contact</a></li>
-            <li><a href="#donate" class="footer-link">Donate</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="footer-contact">
-          <h4 class="text-dark-green">Contact Us</h4>
-          <p class="mb-1">
-            <strong>Smt. Dr. Geetha</strong><br>
-            <span class="fst-italic">Founder & President, AK Foundation</span>
-          </p>
-          <h4 class="text-dark-green">Contact Address</h4>
-          <address>
-            # AK Foundation,<br>
-            19 / 33, Pantheon Road,<br>
-            Egmore, Chennai - 600 008,<br>
-            Tamil Nadu, India.<br>
-            <strong>Land mark:</strong> Adjacent to 20 feet Sacred Heart Jesus Christ Statue & Egmore Police Museum.
-          </address>
-          <ul>
-            
-            <li>
-              <i class="fas fa-phone"></i>
-              <a class="footer-link" href="tel:+919940376304">+91 99403 76304</a>
-            </li>
-            <li>
-              <i class="fab fa-whatsapp"></i>
-              <a class="footer-link" href="https://wa.me/919940376304" target="_blank">WhatsApp</a>
-            </li>
-          </ul>
+        
+        <div class="footer-contact-form">
+          <h4 class="subtitle">Get in Touch</h4>
+          <form action="/thank-you" netlify>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" name="Name:" id="name" placeholder="Enter your Full name">
+            </div>
+            <div class="form-group mt-3">
+               
+                <label for="mobile">Mobile No:</label>
+                <input type="tel" maxlength="10" minlength="10" class="form-control" name="Mobile no.:" id="mobile" placeholder="Enter your 10 digit mobile no">
+             </div>
+            <div class="form-group mt-3">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" name="Email id:" id="email" placeholder="abc@mail.com">
+            </div>
+            <div class="form-group mt-3">
+              <label for="message">Message:</label>
+              <textarea class="form-control" name="Message:" id="message" rows="3"></textarea>
+            </div>
+            <a href="" type="button" class="btn btn-primary mt-3">SUBMIT</a>
+          </form>
         </div>
       </div>
     </div>
-
   </div>
 
+<hr class="bg-green--dark">
   <div class="footer-bottom bg-light-green py-3">
-    <p class="text-center text-dark-green">&copy; 2024 AK Foundation. All rights reserved. Sketched with <i
-        class="fa fa-heart" aria-hidden="true"></i> by
+    <p class="text-center subtitle">&copy; 2024 AK Foundation. All rights reserved. Sketched with <i class="fa fa-heart"
+        aria-hidden="true"></i> by
       <a href="https://www.tensketch.com/" title="TenSketch website" class="text-red-alert">TenSketch</a>
     </p>
   </div>

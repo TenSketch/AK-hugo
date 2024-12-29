@@ -59,16 +59,20 @@ $breakpoint-large-desktop: 1440px;
 //     background-color: orange;  
 //   }  
 // }
-@include media-mobile {
-    
-}
+@include media-mobile {}
 
 
-@include media-tablet {
-    
-}
+@include media-tablet {}
 
 
-@include media-desktop {
-    
+@include media-desktop {}
+
+@mixin background-mixin($bg-color: $green-dark, $bg-attachment: fixed) {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-attachment: $bg-attachment;
+    background-color: $bg-color;
 }
