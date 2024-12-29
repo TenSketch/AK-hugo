@@ -16,7 +16,7 @@
       background-color: $white;
       left: 0;
       transform: unset;
-      width: 100%;
+      width: 50%;
     }
   }
   .subtitle{
@@ -34,9 +34,17 @@
     }
   }
 }
-
-.events{
-
+.awards, .sports, .about{
+  .section-title {
+    // font-size: 3rem;
+    // color: $orange-light;
+    &::after{
+      background-color: $orange-light;
+      left: 0;
+      transform: unset;
+      width: 50%;
+    }
+  }
 }
 
 .about {
@@ -56,8 +64,8 @@
 // schools
 
 .schools {
-    background-color: $green-light;
-    padding: 50px 20px;
+    // background-color: $green-light;
+    // padding: 50px 20px;
 
     .section-title {
         color: $green-dark;
@@ -135,4 +143,8 @@
         text-decoration: none;
         border-radius: 5px;
     }
+}
+
+.events{
+
 }

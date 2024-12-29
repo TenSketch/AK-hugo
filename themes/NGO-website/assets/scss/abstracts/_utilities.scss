@@ -24,6 +24,7 @@
 }
 .section-title {
     color: $green-dark;
+    position: relative;
     &::after {
         content: '';
         position: absolute;
