@@ -1,6 +1,8 @@
 @import '../abstracts/variables';
-
+$navbar-bg:#FFEFE6;
 .navbar {
+  // background-color: $orange-lighter;
+  background-color: $navbar-bg;
   .logo {
     width: 200px; // Adjust size as needed
     // height: auto;
@@ -9,7 +11,7 @@
   .nav-link {
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    color: #333;
+    color: $green-dark;
 
     &:hover {
       // color: #007bff;
@@ -23,10 +25,10 @@
 
 
   .sidebar-toggler-bar {
-    border: 1px solid rgb(159, 159, 159);
-    border-radius: 5px;
-    background: $white;
-    padding: 0.5rem;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    padding: 0;
     margin: 0 0.5rem;
     // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -41,7 +43,7 @@
     right: -300px; /* Initially hidden */
     width: 300px;
     height: 100%;
-    background-color: #f8f9fa;
+    background-color: $navbar-bg;
     transition: all 0.3s ease-in-out;
     z-index: 1050;
     box-shadow: -2px 0 5px rgba(0,0,0,0.1);
@@ -70,11 +72,11 @@
 .linksa{
   margin-top: 1px;
   border-radius: 0.2rem;
-  
+  color: $green-dark;
 }
 .linksa:hover{
-  background-color: #007bff;
-  color: #fff;
+  background-color: $green-light;
+  color: $green-dark;
   }
 
 /* Animations */
@@ -86,23 +88,4 @@
 @keyframes slideIn {
     from { right: -300px; }
     to { right: 0; }
-}
-.sidebar {
-  .nav-link {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    color: #333;
-
-    &:hover {
-      color: #007bff;
-    }
-
-    &.active {
-      font-weight: bold;
-      color: #007bff;
-    }
-  }
-
-
-
 }

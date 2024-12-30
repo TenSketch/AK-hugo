@@ -22,6 +22,7 @@
 
  <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
     <link rel="stylesheet" href="/scss/main.css">
 
 
@@ -29,103 +30,253 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">  
-  <div class="container-fluid">  
+    <nav class="navbar navbar-expand-md fixed-top bg-light">
+  <div class="container-fluid">
+    
+    <a class="navbar-brand" href="/">
+      <img src="/images/logo.png" alt="AK Foundation Logo" class="logo">
+    </a>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+    <div class="collapse navbar-collapse" id="navbarContent">
       
-    <a class="navbar-brand" href="#">  
-      <img src="/images/logo.png" alt="AK Foundation Logo" class="logo">  
-    </a>  
+      <ul class="navbar-nav mx-auto">
+        
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+          
+        
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about-us">About Us</a>
+            </li>
+          
+        
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/ak-schools" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                AK Schools
+              </a>
+              <ul class="dropdown-menu">
+                
+                  <li><a class="dropdown-item" href="/ak-school-of-sports">AK School of Sports</a></li>
+                
+                  <li><a class="dropdown-item" href="/ak-school-of-education">AK School of Education</a></li>
+                
+                  <li><a class="dropdown-item" href="/ak-school-of-voiceless">AK School of Voiceless</a></li>
+                
+                  <li><a class="dropdown-item" href="/ak-school-of-environment">AK School of Environment</a></li>
+                
+                  <li><a class="dropdown-item" href="/ak-school-of-moral-science-and-anti-corruption">AK School of Moral Science</a></li>
+                
+              </ul>
+            </li>
+          
+        
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/services">Services</a>
+            </li>
+          
+        
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/activities">Activities</a>
+            </li>
+          
+        
+          
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us">Contact Us</a>
+            </li>
+          
+        
+      </ul>
+
       
-    <div class="collapse navbar-collapse" id="navbarContent">  
-        
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">  
-        <li class="nav-item">  
-          <a class="nav-link active" href="/">Home</a>  
-        </li>  
-        <li class="nav-item">  
-          <a class="nav-link" href="/about-us">About Us</a>  
-        </li>  
-        <li class="nav-item dropdown">  
-          <a class="nav-link dropdown-toggle" href="#AKSchools" id="akSchoolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">  
-            AK Schools  
-          </a>  
-          <ul class="dropdown-menu" aria-labelledby="akSchoolsDropdown">  
-            <li><a class="dropdown-item" href="#Sports">AK School of Sports</a></li>  
-            <li><a class="dropdown-item" href="#Education">AK School of Education</a></li>  
-            <li><a class="dropdown-item" href="#Voiceless">AK School of Voiceless</a></li>  
-            <li><a class="dropdown-item" href="#Environment">AK School of Environment</a></li>  
-            <li><a class="dropdown-item" href="#MoralScience">AK School of Moral Science</a></li>  
-          </ul>  
-        </li>  
-        <li class="nav-item">  
-          <a class="nav-link" href="/Services">Services </a>  
-        </li>  
-      </ul>  
+      <div class="d-flex">
+        <a href="/join-us" class="btn btn-primary-outline">Join as Member</a>
+      </div>
+    </div>
+  </div>
+</nav>
 
-        
-      <div class="d-flex">  
-        <a href="#join" class="btn btn-primary--outline me-2">Join as Member</a>  
-        <a href="#donate" class="btn btn-primary">Donate Now</a>  
-      </div>  
-    </div>  
-
-    <button class="sidebar-toggler-bar" id="sidebar-toggle">  
-      <span class="navbar-toggler-icon"></span>  
-    </button>  
-  </div>  
-</nav>  
-
-  
-<div id="sidebar-right" class="p-4 bg-light border-start h-100">  
-  <div class="">  
-    <div class="d-flex justify-content-between align-items-center mb-4">  
-      <h4 class="mb-0 fw-bold"></h4>  
-      <button id="sidebar-close" class="btn-close" aria-label="Close"></button>  
-    </div>  
-    
-    <div class="sidebar-content mb-4">  
-      <div class="list-group">  
-        <a href="/" class="nav-link active linksa p-2 fs-5 text-decoration-none list-group-item list-group-item-action d-lg-none">Home</a>  
-        <a href="/about-us" class="p-2 linksa fs-5 text-decoration-none d-lg-none">About Us</a>  
-        <a href="#AK-Schools" class="p-2 linksa fs-5 text-decoration-none d-lg-none">AK Schools</a>  
-        <a href="/Services" class="p-2 linksa fs-5 text-decoration-none d-lg-none">Services</a>  
-        <a href="#activities" class="p-2 linksa fs-5 text-decoration-none">Activities</a>  
-        <a href="#gallery" class="p-2 linksa fs-5 text-decoration-none">Gallery</a>  
-        <a href="/contact-us" class="p-2 linksa fs-5 text-decoration-none">Contact Us</a>  
-      </div>  
-    </div>  
-  </div>  
-
-  <div class="">  
-    
-  
-    
-  </div>  
-</div>  
-
-  
-<div class="sidebar-overlay"></div>
   </header>
   <main>
     
-<main>
-  <h1 class="h-full">
-    About Us page  comming soon
-  </h1>
-  <style>
-    .h-full{
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  </style>
+<main class="py-5">
+  
+
+  <section class="about-section py-5">
+    <div class="container">
+      <h1 class="text-center mb-4">About Us</h1>
+      <div class="row mb-5">
+        
+        <div class="col-md-6">
+          <div class="card shadow border-0">
+            <img src="/images/Anantha_Krishnan.jpg" class="card-img-top" alt="Shri K. Anantha Krishnan">
+            <div class="card-body">
+              <h3 class="card-title">Shri K. Anantha Krishnan</h3>
+              <p>A man of principle with broad-mindedness, known for his humility, simplicity, and dedication to sports.</p>
+              <ul>
+                <li><strong>Role:</strong> Anti-Corruption Officer, Central Government</li>
+                <li><strong>Passion:</strong> Supporting rural children in athletics, hockey, and tennis.</li>
+                <li><strong>Achievements:</strong> Mentored 444 children over 20 years in various sports.</li>
+                <li><strong>Awards:</strong> A vast collection of awards and certificates.</li>
+              </ul>
+              <p><strong>Beliefs:</strong></p>
+              <ul>
+                
+                <li>Sports means patriotism.</li>
+                
+                <li>Inspired by Swami Vivekananda.</li>
+                
+                <li>Father as role model in sports.</li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="card shadow border-0">
+            <img src="/images/image21.png" class="card-img-top" alt="Dr. Geetha">
+            <div class="card-body">
+              <h3 class="card-title">Smt. Dr. Rtn. Geetha</h3>
+              <p>A leader with a transparent and disciplined life philosophy, dedicated to social service and integrity.</p>
+              <p><strong>Education:</strong></p>
+              <ul>
+                
+                <li>St. Antony’s Anglo Indian High School</li>
+                
+                <li>Presidency Girls Higher Secondary School</li>
+                
+                <li>Stella Maris College</li>
+                
+                <li>Madras School of Social Work</li>
+                
+                <li>Doctorate from Dravidian University</li>
+                
+              </ul>
+              <p><strong>Expertise:</strong></p>
+              <ul>
+                
+                <li>Human Relations</li>
+                
+                <li>Social Development</li>
+                
+                <li>Personnel Management</li>
+                
+                <li>Resettlement and Rehabilitation</li>
+                
+                <li>United Nations and Child Rights</li>
+                
+              </ul>
+              <p><strong>Experience:</strong></p>
+              <ul>
+                
+                <li>Chennai Port Trust</li>
+                
+                <li>Murugappa Group</li>
+                
+                <li>Tamil Nadu Road Sector Project (World Bank)</li>
+                
+                <li>Indian Council for Child Welfare</li>
+                
+                <li>M.S. Swaminathan Research Foundation</li>
+                
+                <li>J.K Foundation, Chennai</li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center">Core Executive Members</h2>
+          <ul class="list-group">
+            
+            <li class="list-group-item">Shri Perumal Ramasamy</li>
+            
+            <li class="list-group-item">Shri N. Elango</li>
+            
+            <li class="list-group-item">Shri Capt. S. Thyagarajan</li>
+            
+            <li class="list-group-item">Shri M. Mahalingam</li>
+            
+            <li class="list-group-item">Shri S. Karthick Manish</li>
+            
+            <li class="list-group-item">Shri Loheeth Meiyappan</li>
+            
+            <li class="list-group-item">Shri Pazhaniappan</li>
+            
+            <li class="list-group-item">Selvi Harni Meiyappan</li>
+            
+            <li class="list-group-item">Smt Kamatchi Jayakrishnan</li>
+            
+            <li class="list-group-item">Smt Angayarkanni</li>
+            
+            <li class="list-group-item">Smt Shreevidhya</li>
+            
+            <li class="list-group-item">Smt Bavithra Thirumurgan</li>
+            
+            <li class="list-group-item">Smt Vijaya George</li>
+            
+            <li class="list-group-item">Smt Vijaya Nirmala Shivakumar</li>
+            
+            <li class="list-group-item">Smt Latha Vijayakumar</li>
+            
+            <li class="list-group-item">Smt Pushpalatha</li>
+            
+            <li class="list-group-item">Selvi Nalini</li>
+            
+            <li class="list-group-item">Smt Rohini (Ex MLA)</li>
+            
+            <li class="list-group-item">Shri Dinesh</li>
+            
+            <li class="list-group-item">Shri Senthil</li>
+            
+            <li class="list-group-item">Shri S. Karthikeyan</li>
+            
+            <li class="list-group-item">Shri Vimal</li>
+            
+            <li class="list-group-item">Shri Prem Joki</li>
+            
+            <li class="list-group-item">Shri Moses</li>
+            
+            <li class="list-group-item">Shri Gopathy</li>
+            
+            <li class="list-group-item">Shri Magesh</li>
+            
+            <li class="list-group-item">Shri Saravanan</li>
+            
+            <li class="list-group-item">Shri Giriraj</li>
+            
+            <li class="list-group-item">Shri Sampath</li>
+            
+            <li class="list-group-item">Shri Yogeesh</li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
 </main>
   
   </main>
   <footer>
-    <footer class="bg-light-green">
+    <footer id="contact-us" class="bg-light-green">
   <div class="container pt-5 pb-0">
     <div class="row">
       <div class="col-md-4">
@@ -193,7 +344,7 @@
         
         <div class="footer-contact-form">
           <h4 class="subtitle">Get in Touch</h4>
-          <form action="/thank-you" netlify>
+          <form id="contact" name="Contact form" method="POST" action="/thank-you" netlify>
             <div class="form-group">
               <label for="name">Name:</label>
               <input type="text" class="form-control" name="Name:" id="name" placeholder="Enter your Full name">
@@ -228,7 +379,8 @@
 </footer>
   </footer>
   
- <script src="/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+ <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+ 
       <script src="/js/main.js"></script>
 
 

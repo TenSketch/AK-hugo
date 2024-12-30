@@ -1,5 +1,10 @@
 ---
-title: 'Cta'
-date: 2024-12-25T00:13:23+05:30
+title: 'Be a Part of the Change'
+subtitle: '"Together, we can make a difference."'
+date: 2024-12-01T01:21:07+05:30
+layout: "home"
+section: "cta"
+join_now_url: "/join-now"
+volunteer_url: "/volunteer"
 draft: false
 ---

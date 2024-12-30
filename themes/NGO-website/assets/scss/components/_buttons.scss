@@ -1,62 +1,59 @@
 @import '../abstracts/variables';
 
 // Define button base styles  
-$btn-padding: 0.5rem 1rem;  
-$btn-border-radius: 5px;  
+$btn-padding: 0.5rem 1rem;
+$btn-border-radius: 50px;
 
-.btn {  
-  // display: inline-block;  
-  padding: $btn-padding;  
-  border: none;  
-  border-radius: $btn-border-radius;  
-  font-weight: bold;  
-  text-align: center;  
-  // cursor: pointer;  
-  // text-decoration: none!important; // Remove underline for anchor styled as buttons  
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;  
-  &:hover{
-  text-decoration: none!important; // Remove underline for anchor styled as buttons  
+.btn {
+  padding: $btn-padding;
+  border: none;
+  border-radius: $btn-border-radius;
+  line-height: normal;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+
+  &:hover {
+    // text-decoration: none !important; // Remove underline for anchor styled as buttons  
 
   }
 
-  &.btn-primary {  
-    background-color: $orange-dark; // Bold orange background  
-    color: $white;  
+  &.btn-primary {
+    background-color: $orange-light; // light orange background  
+    color: $gray-dark;
 
-    &:hover {  
-      background-color: darken($orange-dark, 10%); // Darken on hover  
-    }  
-  }  
+    &:hover {
+      background-color: $orange-dark; // Dark on hover  
+    }
 
-  &.btn-primary-outline {  
-    background-color: transparent; // Transparent background for outline  
-    border: 2px solid $orange-dark; // Light orange border  
-    // color: $orange-dark; // Text color is dark orange  
+    &-outline {
+      background-color: transparent; // Transparent background for outline  
+      border: 2px solid $orange-darker; // dark orange border  
+      color: $gray-dark; // Text color is dark orange  
 
-    &:hover {  
-      background-color: $orange-dark; // Light orange background on hover  
-      color: $white; // Change text color to white on hover  
-    }  
-  }  
+      &:hover {
+        background-color: $orange-lighter; // Light orange background on hover  
+      }
+    }
+  }
 
-  &.btn-secondary {  
+
+  &.btn-secondary {
     background-color: $green-dark; // Dark green background  
-    color: $green-light;  
+    color: $green-light;
 
-    &:hover {  
+    &:hover {
       background-color: darken($green-dark, 10%); // Darken on hover  
-    }  
-  }  
+    }
 
-  &.btn-secondary-outline {  
-    background-color: $green-light; // Transparent background for outline  
-    border: 2px solid $green-dark; // Light green border  
-    color: $green-dark; // Text color is dark green  
+    &-outline {
+      background-color: transparent; // Transparent background for outline  
+      border: 2px solid $green-dark; // Light green border  
+      color: $green-dark; // Text color is dark green  
 
-    &:hover {  
-      background-color: $green-dark; // Light green background on hover  
-      color: $green-light; // Change text color to white on hover  
-    }  
-  }  
+      &:hover {
+        background-color: $green-dark; // Light green background on hover  
+        color: $green-light; // Change text color to white on hover  
+      }
+    }
+  }
+
 }
-

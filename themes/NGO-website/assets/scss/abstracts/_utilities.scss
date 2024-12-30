@@ -1,7 +1,7 @@
 @import '../abstracts/variables';
 
 .bg-orange{
-    background-color: $orange-light;
+    background-color: $orange-lighter;
 }
 .bg-green{
     background-color: $green-light;
@@ -42,4 +42,34 @@ hr.bg-green--dark{
     border-color: transparent;
     // opacity: 0.8;
     border-top: 0;
+}
+
+.custom-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+
+    .icon {
+        font-size: 3rem;
+        color: $green-dark;
+        margin-bottom: 15px;
+    }
+
+    .title {
+        color: $green-dark;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        color: $gray-dark;
+        font-size: 0.9rem;
+    }
 }

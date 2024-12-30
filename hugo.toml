@@ -9,6 +9,61 @@ keywords = 'AK Foundation, Annadhanam, Food Offering Service, Rural Sports Acade
 author = 'Balachandiran - TenSketch'
 logo = '/images/logo/Success-Solutions-logo-2.jpeg'
 og_image = '/ogimage.jpg'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 [asset]
   # Enable Hugo pipes for SCSS
   enable = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About Us"
+    url = "/about-us"
+    weight = 2
+  [[menu.main]]
+    name = "AK Schools"
+    url = "/ak-schools"
+    weight = 3
+    [[menu.main]]
+      parent = "AK Schools"
+      name = "AK School of Sports"
+      url = "/ak-school-of-sports"
+      weight = 1
+    [[menu.main]]
+      parent = "AK Schools"
+      name = "AK School of Education"
+      url = "/ak-school-of-education"
+      weight = 2
+    [[menu.main]]
+      parent = "AK Schools"
+      name = "AK School of Voiceless"
+      url = "/ak-school-of-voiceless"
+      weight = 3
+    [[menu.main]]
+      parent = "AK Schools"
+      name = "AK School of Environment"
+      url = "/ak-school-of-environment"
+      weight = 4
+    [[menu.main]]
+      parent = "AK Schools"
+      name = "AK School of Moral Science"
+      url = "/ak-school-of-moral-science-and-anti-corruption"
+      weight = 5
+  [[menu.main]]
+    name = "Services"
+    url = "/services"
+    weight = 3
+  [[menu.main]]
+    name = "Activities"
+    url = "/activities"
+    weight = 4
+  [[menu.main]]
+    name = "Contact Us"
+    url = "#contact-us"
+    weight = 5

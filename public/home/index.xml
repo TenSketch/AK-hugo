@@ -6,8 +6,15 @@
     <description>Recent content in Homes on AK Foundation - Empowering Lives Through Annadhanam and Sports Initiatives</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Dec 2024 20:12:17 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 30 Dec 2024 15:37:10 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/home/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gallery</title>
+      <link>http://localhost:1313/home/gallery/</link>
+      <pubDate>Mon, 30 Dec 2024 15:37:10 +0530</pubDate>
+      <guid>http://localhost:1313/home/gallery/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Welcome to AK Foundation</title>
       <link>http://localhost:1313/home/hero/</link>
@@ -21,13 +28,6 @@
       <pubDate>Fri, 27 Dec 2024 16:55:51 +0530</pubDate>
       <guid>http://localhost:1313/home/awards/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;Demonstrated exceptional commitment to community development and social welfare.&lt;/li&gt;&#xA;&lt;li&gt;Pioneered innovative approaches to addressing critical social challenges.&lt;/li&gt;&#xA;&lt;li&gt;Recognized for outstanding leadership and sustained impact in service to others.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Cta</title>
-      <link>http://localhost:1313/home/cta/</link>
-      <pubDate>Wed, 25 Dec 2024 00:13:23 +0530</pubDate>
-      <guid>http://localhost:1313/home/cta/</guid>
-      <description></description>
     </item>
     <item>
       <title>Testimonials</title>
@@ -55,6 +55,20 @@
       <link>http://localhost:1313/home/akschools/</link>
       <pubDate>Sun, 01 Dec 2024 01:21:09 +0530</pubDate>
       <guid>http://localhost:1313/home/akschools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Our Services</title>
+      <link>http://localhost:1313/home/services/</link>
+      <pubDate>Sun, 01 Dec 2024 01:21:08 +0530</pubDate>
+      <guid>http://localhost:1313/home/services/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Be a Part of the Change</title>
+      <link>http://localhost:1313/home/cta/</link>
+      <pubDate>Sun, 01 Dec 2024 01:21:07 +0530</pubDate>
+      <guid>http://localhost:1313/home/cta/</guid>
       <description></description>
     </item>
     <item>

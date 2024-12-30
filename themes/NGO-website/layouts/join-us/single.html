@@ -1,0 +1,152 @@
+{{ define "main" }}
+<main>
+  <div class="join-us-form container my-5">
+    <div class="card shadow-lg">
+      <div class="card-header text-center py-4">
+        <h2 class="form-title">Join Us as a Member</h2>
+        <p class="form-subtitle">Be part of our mission to make a difference.</p>
+      </div>
+      <div class="card-body">
+        <form id="join" name="Join Us form" method="POST" action="/thank-you" netlify>
+          <!-- Name -->
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="name" 
+              name="name" 
+              placeholder="e.g., John Doe" 
+              required>
+          </div>
+        
+          <!-- Mobile Number -->
+          <div class="mb-3">
+            <label for="mobile" class="form-label">Mobile Number</label>
+            <input 
+              type="tel" 
+              class="form-control" 
+              id="mobile" 
+              name="mobile" 
+              placeholder="e.g., 9876543210" 
+              minlength="10" 
+              maxlength="10" 
+              required>
+          </div>
+        
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input 
+              type="email" 
+              class="form-control" 
+              id="email" 
+              name="email" 
+              placeholder="e.g., johndoe@example.com" 
+              required>
+          </div>
+        
+          <!-- Age -->
+          <div class="mb-3">
+            <label for="age" class="form-label">Age</label>
+            <input 
+              type="number" 
+              class="form-control" 
+              id="age" 
+              name="age" 
+              placeholder="e.g., 25" 
+              min="1" 
+              max="120" 
+              required>
+          </div>
+        
+          <!-- Gender -->
+          <div class="mb-3">
+            <label class="form-label">Gender</label>
+            <div class="d-flex gap-3">
+              <div class="form-check">
+                <input 
+                  class="form-check-input" 
+                  type="radio" 
+                  name="gender" 
+                  id="male" 
+                  value="male" 
+                  required>
+                <label class="form-check-label" for="male">Male</label>
+              </div>
+              <div class="form-check">
+                <input 
+                  class="form-check-input" 
+                  type="radio" 
+                  name="gender" 
+                  id="female" 
+                  value="female">
+                <label class="form-check-label" for="female">Female</label>
+              </div>
+              <div class="form-check">
+                <input 
+                  class="form-check-input" 
+                  type="radio" 
+                  name="gender" 
+                  id="other" 
+                  value="other">
+                <label class="form-check-label" for="other">Other</label>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Educational Qualification -->
+          <div class="mb-3">
+            <label for="qualification" class="form-label">Educational Qualification</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="qualification" 
+              name="qualification" 
+              placeholder="e.g., Bachelor's in Science" 
+              required>
+          </div>
+        
+          <!-- Profession -->
+          <div class="mb-3">
+            <label for="profession" class="form-label">Profession</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="profession" 
+              name="profession" 
+              placeholder="e.g., Software Engineer" 
+              required>
+          </div>
+        
+          <!-- Address -->
+          <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <textarea 
+              class="form-control" 
+              id="address" 
+              name="address" 
+              rows="3" 
+              placeholder="e.g., 123 Main Street, City, State, Zip" 
+              required>
+            </textarea>
+          </div>
+        
+          <!-- Submit Button -->
+          <div class="d-grid">
+            <button 
+              type="submit" 
+              class="btn btn-primary btn-lg">
+              Join Now
+            </button>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+  
+
+
+</main>
+  {{ end }}

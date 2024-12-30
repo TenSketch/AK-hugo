@@ -1,0 +1,74 @@
+<nav class="navbar navbar-expand-md fixed-top">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand" href="/">
+      <img src="/images/logo.png" alt="AK Foundation Logo" class="logo">
+    </a>
+
+    <!-- Navbar Toggle for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Content -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <!-- Centered Menu -->
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about-us">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            AK Schools
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#Sports">AK School of Sports</a></li>
+            <li><a class="dropdown-item" href="#Education">AK School of Education</a></li>
+            <li><a class="dropdown-item" href="#Voiceless">AK School of Voiceless</a></li>
+            <li><a class="dropdown-item" href="#Environment">AK School of Environment</a></li>
+            <li><a class="dropdown-item" href="#MoralScience">AK School of Moral Science</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Services">Services</a>
+        </li>
+      </ul>
+
+      <!-- Right Buttons -->
+      <div class="d-flex gap-2">
+        <a href="#donate" class="btn btn-primary">Donate Now</a>
+        <a href="#join" class="btn btn-primary-outline">Join as Member</a>
+      </div>
+    </div>
+
+    <!-- Sidebar Toggle Button -->
+    <button class="sidebar-toggler-bar d-none d-md-block" id="sidebar-toggle">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Sidebar -->
+<aside id="sidebar-right" class="p-4 border-start h-100 d-none d-md-block">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h4 class="mb-0 fw-bold">More Options</h4>
+    <button id="sidebar-close" class="btn-close" aria-label="Close"></button>
+  </div>
+
+  <div class="sidebar-content">
+    <div class="list-group">
+      <a href="#activities" class="p-2 fs-5 text-decoration-none">Activities</a>
+      <a href="#gallery" class="p-2 fs-5 text-decoration-none">Gallery</a>
+      <a href="/contact-us" class="p-2 fs-5 text-decoration-none">Contact Us</a>
+      <hr>
+      <a href="#donate" class="btn btn-primary">Donate Now</a>
+      <a href="#join" class="btn btn-primary-outline mt-3">Join as Member</a>
+    </div>
+  </div>
+</aside>
+
+<!-- Overlay -->
+<div class="sidebar-overlay"></div>

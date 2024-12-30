@@ -1,13 +1,130 @@
 {{ define "main" }}
 <main>
-  <section class="page-title d-flex align-items-center">
+  <section class="page-title d-flex align-items-center py-5">
     <div class="container text-center py-5">
-      <h1 class="display-4">{{ .Title }}</h1>
+      <h1 class="display-4 mb-0 fw-bold">{{ .Title }}</h1>
     </div>
   </section>
-  <section class="py-5 container">
-    <!-- <h1>{{ .Title }}</h1> -->
-    {{ .Content }}
-  </section>
+  {{ if eq .Params.layout "akschools" }}
+    <section class="ak-schools py-5">
+      <div class="container">
+        <!-- Overview Section -->
+        <div class="text-center mb-5">
+          <!-- <h1 class="display-5 fw-bold">{{ .Title }}</h1> -->
+          <p class="lead">{{ .Params.overview }}</p>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-8 mx-auto">
+          {{ .Content }}
+
+          </div>
+        </div>
+        <!-- Initiatives Section -->
+        <div class="row mb-5">
+          <h2 class="text-center mb-4">Our Initiatives</h2>
+          {{ range .Params.initiatives }}
+          <div class="col-md-6 mb-4">
+            <div class="card shadow border-0 h-100">
+              <div class="card-body text-center">
+                <span class="initiative-icon display-4">{{ .icon }}</span>
+                <h3 class="card-title mt-3">{{ .title }}</h3>
+                <p class="card-text">{{ .description }}</p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+    
+        <!-- How You Can Help Section -->
+        <div class="row">
+          <h2 class="text-center mb-4">How You Can Help</h2>
+          {{ range .Params.how_to_help }}
+          <div class="col-md-4 mb-4">
+            <div class="card shadow border-0 h-100">
+              <div class="card-body text-center">
+                <span class="help-icon display-4">{{ .icon }}</span>
+                <h3 class="card-title mt-3">{{ .title }}</h3>
+                <p class="card-text">{{ .description }}</p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ if eq .Params.layout "services" }}
+  <div class="services-page">
+    <section class="services-list">
+      <div class="container">
+        {{ range .Params.services }}
+        <div class="service-item">
+          <h2>{{ .title }}</h2>
+          {{ with .highlight }}
+          <p class="highlight">{{ . }}</p>
+          {{ end }}
+          <p>{{ .description }}</p>
+          {{ with .details }}
+          <ul>
+            {{ range . }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </section>
+  </div>
+  {{ end }}
+  <!-- activities layout -->
+   {{ if eq .Params.layout "activities" }}
+   <div class="activities-page">
+    <section class="activities-list">
+      <div class="container">
+        {{ range .Params.activities }}
+        <div class="activity-item">
+          <div class="activity-header">
+            <h2 class="activity-title">{{ .title }}</h2>
+            <p class="activity-date">{{ .date }}</p>
+          </div>
+          <p class="activity-description">{{ .description }}</p>
+          <ul class="activity-details">
+            {{ range .details }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+      </div>
+    </section>
+  </div>
+{{ end }}
+
+
+{{ if eq .Params.layout "response" }}
+<section class=" py-5">
+  <div class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card shadow-lg p-4 ">
+          <div class="card-body">
+            <!-- <h1 class="display-4 text-success mb-4">Thank You!</h1> -->
+            <p class="lead">We appreciate your submission and will get back to you as soon as possible.</p>
+            <!-- <hr class="my-4"> -->
+            <p class="d-none">If you need immediate assistance, feel free to call us
+              <a class="nav-link phone-link" href="tel:+919962006364" title="tap to call mobile"
+                aria-label="tap to call mobile">9962006364</a>
+              <!-- <a href="/contact" class="">contact us directly</a>. -->
+            </p>
+            <!-- <a href="/" class="btn btn-primary btn-lg mt-3">Go Back to Home</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
 </main>
 {{ end }}

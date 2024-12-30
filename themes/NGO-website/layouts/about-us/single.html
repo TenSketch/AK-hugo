@@ -1,6 +1,6 @@
 {{ define "main" }}
-<main>
-  <h1 class="h-full">
+<main class="py-5">
+  <!-- <h1 class="h-full">
     {{ .Title }} page  comming soon
   </h1>
   <style>
@@ -10,7 +10,77 @@
       justify-content: center;
       align-items: center;
     }
-  </style>
+  </style> -->
+
+  <section class="about-section py-5">
+    <div class="container">
+      <h1 class="text-center mb-4">{{ .Title }}</h1>
+      <div class="row mb-5">
+        <!-- About the Patron -->
+        <div class="col-md-6">
+          <div class="card shadow border-0">
+            <img src="/images/Anantha_Krishnan.jpg" class="card-img-top" alt="Shri K. Anantha Krishnan">
+            <div class="card-body">
+              <h3 class="card-title">{{ .Params.patron.name }}</h3>
+              <p>{{ .Params.patron.description }}</p>
+              <ul>
+                <li><strong>Role:</strong> {{ .Params.patron.role }}</li>
+                <li><strong>Passion:</strong> {{ .Params.patron.passion }}</li>
+                <li><strong>Achievements:</strong> {{ .Params.patron.achievements }}</li>
+                <li><strong>Awards:</strong> {{ .Params.patron.awards }}</li>
+              </ul>
+              <p><strong>Beliefs:</strong></p>
+              <ul>
+                {{ range .Params.patron.beliefs }}
+                <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- About the Founder -->
+        <div class="col-md-6">
+          <div class="card shadow border-0">
+            <img src="/images/image21.png" class="card-img-top" alt="Dr. Geetha">
+            <div class="card-body">
+              <h3 class="card-title">{{ .Params.founder.name }}</h3>
+              <p>{{ .Params.founder.description }}</p>
+              <p><strong>Education:</strong></p>
+              <ul>
+                {{ range .Params.founder.education }}
+                <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+              <p><strong>Expertise:</strong></p>
+              <ul>
+                {{ range .Params.founder.expertise }}
+                <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+              <p><strong>Experience:</strong></p>
+              <ul>
+                {{ range .Params.founder.experience }}
+                <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Core Members -->
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center">Core Executive Members</h2>
+          <ul class="list-group">
+            {{ range .Params.core_members }}
+            <li class="list-group-item">{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
 </main>
   {{ end }}

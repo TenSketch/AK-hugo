@@ -22,6 +22,7 @@
 
  <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
     <link rel="stylesheet" href="/scss/main.css">
 
 
@@ -29,118 +30,84 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">  
-  <div class="container-fluid">  
+    <nav class="navbar navbar-expand-md fixed-top bg-light">
+  <div class="container-fluid">
+    
+    <a class="navbar-brand" href="/">
+      <img src="/images/logo.png" alt="AK Foundation Logo" class="logo">
+    </a>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+    <div class="collapse navbar-collapse" id="navbarContent">
       
-    <a class="navbar-brand" href="#">  
-      <img src="/images/logo.png" alt="AK Foundation Logo" class="logo">  
-    </a>  
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about-us">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            AK Schools
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#Sports">AK School of Sports</a></li>
+            <li><a class="dropdown-item" href="#Education">AK School of Education</a></li>
+            <li><a class="dropdown-item" href="#Voiceless">AK School of Voiceless</a></li>
+            <li><a class="dropdown-item" href="#Environment">AK School of Environment</a></li>
+            <li><a class="dropdown-item" href="#MoralScience">AK School of Moral Science</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Services">Services</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#activities">Activities</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-us">Contact Us</a>
+        </li>
+      </ul>
+
       
-    <div class="collapse navbar-collapse" id="navbarContent">  
+      <div class="d-flex">
         
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">  
-        <li class="nav-item">  
-          <a class="nav-link active" href="/">Home</a>  
-        </li>  
-        <li class="nav-item">  
-          <a class="nav-link" href="/about-us">About Us</a>  
-        </li>  
-        <li class="nav-item dropdown">  
-          <a class="nav-link dropdown-toggle" href="#AKSchools" id="akSchoolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">  
-            AK Schools  
-          </a>  
-          <ul class="dropdown-menu" aria-labelledby="akSchoolsDropdown">  
-            <li><a class="dropdown-item" href="#Sports">AK School of Sports</a></li>  
-            <li><a class="dropdown-item" href="#Education">AK School of Education</a></li>  
-            <li><a class="dropdown-item" href="#Voiceless">AK School of Voiceless</a></li>  
-            <li><a class="dropdown-item" href="#Environment">AK School of Environment</a></li>  
-            <li><a class="dropdown-item" href="#MoralScience">AK School of Moral Science</a></li>  
-          </ul>  
-        </li>  
-        <li class="nav-item">  
-          <a class="nav-link" href="/Services">Services </a>  
-        </li>  
-      </ul>  
+        <a href="#join" class="btn btn-primary-outline">Join as Member</a>
+      </div>
+    </div>
+  </div>
+</nav>
 
-        
-      <div class="d-flex">  
-        <a href="#join" class="btn btn-primary--outline me-2">Join as Member</a>  
-        <a href="#donate" class="btn btn-primary">Donate Now</a>  
-      </div>  
-    </div>  
-
-    <button class="sidebar-toggler-bar" id="sidebar-toggle">  
-      <span class="navbar-toggler-icon"></span>  
-    </button>  
-  </div>  
-</nav>  
-
-  
-<div id="sidebar-right" class="p-4 bg-light border-start h-100">  
-  <div class="">  
-    <div class="d-flex justify-content-between align-items-center mb-4">  
-      <h4 class="mb-0 fw-bold"></h4>  
-      <button id="sidebar-close" class="btn-close" aria-label="Close"></button>  
-    </div>  
-    
-    <div class="sidebar-content mb-4">  
-      <div class="list-group">  
-        <a href="/" class="nav-link active linksa p-2 fs-5 text-decoration-none list-group-item list-group-item-action d-lg-none">Home</a>  
-        <a href="/about-us" class="p-2 linksa fs-5 text-decoration-none d-lg-none">About Us</a>  
-        <a href="#AK-Schools" class="p-2 linksa fs-5 text-decoration-none d-lg-none">AK Schools</a>  
-        <a href="/Services" class="p-2 linksa fs-5 text-decoration-none d-lg-none">Services</a>  
-        <a href="#activities" class="p-2 linksa fs-5 text-decoration-none">Activities</a>  
-        <a href="#gallery" class="p-2 linksa fs-5 text-decoration-none">Gallery</a>  
-        <a href="/contact-us" class="p-2 linksa fs-5 text-decoration-none">Contact Us</a>  
-      </div>  
-    </div>  
-  </div>  
-
-  <div class="">  
-    
-  
-    
-  </div>  
-</div>  
-
-  
-<div class="sidebar-overlay"></div>
   </header>
   <main>
     
 <main>
-  <section class="page-title d-flex align-items-center">
+  <section class="page-title d-flex align-items-center py-5">
     <div class="container text-center py-5">
-      <h1 class="display-4">AK School of Sports</h1>
+      <h1 class="display-4 mb-0 fw-bold">AK School of Sports</h1>
     </div>
   </section>
-  <section class="py-5 container">
-    
-    <h2 id="ak-school-of-sports">AK School of Sports</h2>
-<h3 id="sports-means-patriotism">&ldquo;Sports Means Patriotism&rdquo;</h3>
-<p>AK School of Sports is dedicated to identifying and nurturing sports talent, especially among rural children and youth.<br>
-Our vision is to see rural athletes represent India on the global stage, raising our National Flag with pride.</p>
-<h3 id="mission"><strong>Mission:</strong></h3>
-<ul>
-<li>Discover and develop talent in rural areas.</li>
-<li>Provide coaching and resources for young athletes.</li>
-<li>Empower individuals to shine in national and international arenas.</li>
-</ul>
-<h3 id="our-approach"><strong>Our Approach:</strong></h3>
-<ol>
-<li>Organizing talent hunts and sports meets.</li>
-<li>Offering specialized training programs with experienced coaches.</li>
-<li>Promoting discipline, teamwork, and patriotism through sports.</li>
-</ol>
-<h3 id="join-us"><strong>Join Us:</strong></h3>
-<p>Be a part of our mission to build a stronger, healthier, and more patriotic generation through sports.</p>
+  
 
-  </section>
+  
+  
+   
+
+
+
 </main>
 
   </main>
   <footer>
-    <footer class="bg-light-green">
+    <footer id="contact-us" class="bg-light-green">
   <div class="container pt-5 pb-0">
     <div class="row">
       <div class="col-md-4">
@@ -208,7 +175,7 @@ Our vision is to see rural athletes represent India on the global stage, raising
         
         <div class="footer-contact-form">
           <h4 class="subtitle">Get in Touch</h4>
-          <form action="/thank-you" netlify>
+          <form id="contact" name="Contact form" method="POST" action="/thank-you" netlify>
             <div class="form-group">
               <label for="name">Name:</label>
               <input type="text" class="form-control" name="Name:" id="name" placeholder="Enter your Full name">
@@ -243,7 +210,8 @@ Our vision is to see rural athletes represent India on the global stage, raising
 </footer>
   </footer>
   
- <script src="/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+ <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+ 
       <script src="/js/main.js"></script>
 
 

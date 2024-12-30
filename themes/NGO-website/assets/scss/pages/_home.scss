@@ -4,7 +4,7 @@
   @include background-mixin;
   color: $white;
   min-height: 100vh;
-
+  padding-top: $navbar-height;
   @include media-desktop {
     height: 100vh !important;
   }
@@ -53,7 +53,12 @@
 
 .sports {
   // border-radius: 10px;
-
+  li{
+    &+li{
+      margin-top: 0.5rem;
+    //   font-size: 1.2rem;
+    }
+  }
   img {
     // border-radius: 50%;
   }
@@ -102,35 +107,7 @@
       }  
     }
 
-    .school-card {
-        background: white;
-        border-radius: 10px;
-        padding: 25px;
-        text-align: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
 
-        &:hover {
-            transform: translateY(-10px);
-        }
-
-        .school-icon {
-            font-size: 3rem;
-            color: $green-dark;
-            margin-bottom: 15px;
-        }
-
-        .school-title {
-            color: $green-dark;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .school-description {
-            color: $gray-dark;
-            font-size: 0.9rem;
-        }
-    }
 
     .view-all-btn {
         display: block;
@@ -145,6 +122,22 @@
     }
 }
 
+.services{
+
+  .custom-card{
+    background-color: $green-light;
+    @include media-desktop {
+      flex: 30% 0 1;
+
+    }
+  }
+}
+
+.cta{
+  .section-title{
+    color: $orange-dark;
+  }
+}
 .events{
 
 }
