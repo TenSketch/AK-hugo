@@ -1,0 +1,9 @@
+content/about-us.md 
+content/ak-school-of-sports.md
+content/ak-school-of-education.md
+content/ak-school-of-voiceless.md
+content/ak-school-of-environment.md
+content/ak-school-of-moral-science-and-anti-corruption.md
+content/services.md
+content/activities.md
+content/join-us.md
