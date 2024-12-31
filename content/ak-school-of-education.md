@@ -1,5 +1,7 @@
 ---
 title: "AK School of Educational Academy"
+description: "Providing transformative education that promotes creativity, innovation, and self-discovery for every child."  
+keywords: "AK School of Education, Innovative Education Models, Education for Rural India, Creative Learning"
 layout: "akschools"
 # heroImage: "/images/akf_flag.jpg"
 date: 2024-12-30T18:30:00+05:30

@@ -1,5 +1,7 @@
 ---
 title: 'AK School of Sports Academy'
+description: "Dedicated to nurturing sports talent in rural India, the AK School of Sports aims to produce athletes for the global stage."  
+keywords: "AK School of Sports, Rural Athletes, Sports Talent Development, Indian Sports Academy"  
 layout: 'akschools'
 # heroImage: "/images/akf_flag.jpg"
 date: 2024-12-30T17:21:50+05:30

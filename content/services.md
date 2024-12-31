@@ -1,5 +1,7 @@
 ---
 title: "Services by Dr. Geetha"
+description: "Discover the diverse services provided by AK Foundation, including counseling, awareness programs, youth development, and family support."  
+keywords: "AK Foundation Services, Counseling Services, Youth Development Programs, Family Support"
 subtitle: "Empowering Lives through Compassion and Care"
 layout: "services" # Matches the custom HTML layout
 # heroImage: "/images/akf_flag.jpg"

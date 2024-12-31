@@ -1,7 +1,7 @@
 @import '../abstracts/variables';
 
 // Define button base styles  
-$btn-padding: 0.5rem 1rem;
+$btn-padding: 0.75rem 1.5rem;
 $btn-border-radius: 50px;
 
 .btn {
@@ -10,7 +10,7 @@ $btn-border-radius: 50px;
   border-radius: $btn-border-radius;
   line-height: normal;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-
+  font-size: 1.1rem;
   &:hover {
     // text-decoration: none !important; // Remove underline for anchor styled as buttons  
 

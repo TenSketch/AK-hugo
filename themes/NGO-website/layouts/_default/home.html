@@ -3,9 +3,9 @@
 {{ $section := .Params.section }}
 
 {{ if eq $section "hero" }}
-<section class="hero" class="pb-5" style="background-image: url('{{ .Params.background }}');">
-  <div class="container h-100 ">
-    <div class="row align-items-center h-100">
+<section class="hero" style="background-image: url('{{ .Params.background }}');">
+  <div class="container  ">
+    <div class="row align-items-center ">
       <div class="col-auto ">
         <h1 class="display-4 fw-bold section-title mb-5">{{ .Params.title }}</h1>
         <h3 class=" subtitle mb-3 fst-italic">{{ .Params.subtitle }}</h3>
@@ -20,13 +20,13 @@
 {{ end }}
 
 {{ if eq $section "awards" }}
-<section class="awards py-5">
+<section class="awards">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md-5">
         <img src="{{ .Params.image }}" alt="{{ .Name }}">
       </div>
-      <div class="col-md-6 mt-4 mt-md-0">
+      <div class="col-md-6 mt-5 mt-md-0">
         <h2 class="section-title display-5 fw-bold mb-5">{{ .Params.title }}</h2>
         <p class=" mb-2">{{ .Params.subtitle }}</p>
 
@@ -38,13 +38,13 @@
 {{ end }}
 
 {{ if eq $section "sports" }}
-<section class="sports bg-green py-5">
+<section class="sports bg-green">
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6 order-2">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md-5">
         <img src="{{ .Params.image }}" alt="{{ .Name }}">
       </div>
-      <div class="col-md-6 mt-4 mt-md-0">
+      <div class="col-md-6 order-md-2 mt-5 mt-md-0">
         <h2 class="section-title display-5 fw-bold mb-5">{{ .Params.title }}</h2>
         <h3 class="mb-3">{{ .Params.subtitle }}</h3>
 
@@ -56,9 +56,6 @@
           <li><i class="fas fa-check"></i> {{ . }}</li>
           {{ end }}
         </ul>
-
-
-        <!-- {{ .Content }} -->
       </div>
 
     </div>
@@ -67,16 +64,17 @@
 {{ end }}
 
 {{ if eq $section "about" }}
-<section class="about py-5 ">
+<section class="about ">
   <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-md-4">
-        <img src="{{ .Params.image }}" alt="{{.Name}}" class="img-fluid rounded-circle">
+        <img src="{{ .Params.image }}" alt="{{.Name}}">
       </div>
-      <div class="col-lg-7">
+      <div class="col-lg-7 mt-5 mt-md-0">
         <h2 class="section-title display-5 fw-bold mb-5">{{ .Params.title }}</h2>
         <p class="lead text-green-dark">{{ .Params.brief }}</p>
-        <a href="/about-us" class="btn btn-primary">Know More</a>
+        <p class="">{{ .Content }}</p>
+        <a href="/about-us" class="btn btn-primary w-100 w-md-auto">Know More</a>
       </div>
     </div>
   </div>
@@ -84,17 +82,19 @@
 {{ end }}
 
 {{ if eq $section "schools" }}
-<section class="py-5 schools bg-green">
+<section class="schools bg-green">
   <div class="container">
     <h2 class="section-title display-5 fw-bold text-center mb-5">{{ .Params.title }}</h2>
     <p class="text-center">{{ .Params.brief }}</p>
-    <div class="schools-grid">
+    <div class="row gap-5 align-items-center justify-content-center">
       {{ range .Params.schools }}
-      <div class="school-card custom-card align-items-center d-flex flex-column justify-content-between">
-        <div class="icon">{{ .icon }}</div>
-        <h3 class="title">{{ .title }}</h3>
-        <p class="description">{{ .description }}</p>
-        <a href="{{ .link }}" class="btn btn-secondary">Read More</a>
+      <div class="col">
+        <div class="custom-card align-items-center d-flex flex-column justify-content-between">
+          <div class="icon">{{ .icon }}</div>
+          <h4 class="title">{{ .title }}</h4>
+          <p class="description">{{ .description }}</p>
+          <a href="{{ .link }}" class="btn btn-secondary">Read More</a>
+        </div>
       </div>
       {{ end }}
     </div>
@@ -103,17 +103,19 @@
 {{ end }}
 
 {{ if eq $section "services" }}
-<section class="py-5 services">
+<section class="services">
   <div class="container">
     <h2 class="section-title display-5 fw-bold text-center mb-5">{{ .Params.title }}</h2>
     <p class="text-center">{{ .Params.brief }}</p>
-    <div class="row justify-content-between align-items-center gap-5">
+    <div class="row gap-5 align-items-center justify-content-center">
       {{ range .Params.services }}
-      <div class=" custom-card align-items-center d-flex flex-column justify-content-between">
-        <div class="icon">{{ .icon }}</div>
-        <h3 class="title">{{ .title }}</h3>
-        <p class="description">{{ .description }}</p>
-        <a href="{{ .link }}" class="btn btn-secondary-outline">Read More</a>
+      <div class="col">
+        <div class="custom-card align-items-center d-flex flex-column justify-content-between">
+          <div class="icon">{{ .icon }}</div>
+          <h4  class="title">{{ .title }}</h4>
+          <p class="description">{{ .description }}</p>
+          <a href="{{ .link }}" class="btn btn-secondary-outline">Read More</a>
+        </div>
       </div>
       {{ end }}
     </div>
@@ -124,7 +126,7 @@
 <!-- section gallery -->
  <!-- {{ if eq $section "gallery" }}
 
- <div class="container py-5">
+ <div class="container">
   <h2 class="section-title display-5 fw-bold text-center mb-5">{{ .Params.title }}</h2>
   <div class="row g-4">
     {{ range .Params.gallery }}
@@ -141,16 +143,16 @@
 
 <!-- section cta -->
  {{ if eq $section "cta" }}
- <div class="cta py-5 text-center bg-orange" >
+ <section class="cta text-center bg-orange" >
   <div class="container">
     <h2 class="section-title display-5 fw-bold  mb-5">{{ .Params.title }}</h2>
     <p class="text-center">{{ .Params.subtitle }}</p>
     <div>
-      <a href="{{ .Params.join_now_url }}" class="btn btn-primary btn-lg me-2">Join Now</a>
+      <a href="{{ .Params.join_now_url }}" class="btn btn-primary-outline btn-lg me-2">Join Now</a>
       <!-- <a href="{{ .Params.volunteer_url }}" class="btn btn-primary-outline btn-lg">Volunteer</a> -->
     </div>
   </div>
-</div>
+ </section>
 {{ end }}
 
 {{ end }}

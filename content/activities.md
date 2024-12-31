@@ -1,5 +1,7 @@
 ---
 title: "Activities of AK Foundation"
+description: "Explore the impactful activities conducted by AK Foundation, from sports tournaments to academic events and community outreach."  
+keywords: "AK Foundation Activities, Sports Events, Community Outreach, Academic Programs"
 subtitle: "Highlights of Our Journey and Milestones"
 layout: "activities" # Matches the custom HTML layout
 date: 2024-12-24T12:00:00+05:30

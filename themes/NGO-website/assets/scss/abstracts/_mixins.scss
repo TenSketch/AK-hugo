@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;
 }
+@mixin border-radius($radius: 10px) {
+    border-radius: $radius;
+}
 
 @mixin responsive-font($desktop, $mobile) {
     font-size: $desktop;

@@ -36,22 +36,31 @@
         background-color: $orange-light;
     }
 }
-
-hr.bg-green--dark{
-    background-color: $green-dark;
+hr{
+    width: 90%;
+    height: 1px;
     border-color: transparent;
-    // opacity: 0.8;
-    border-top: 0;
+    opacity: 1;
+    margin: 1rem auto;
+    &.bg-green{
+        background-color: $green-dark;
+    }
+    &.bg-orange{
+        background-color: $orange-dark;
+    }
 }
 
+
 .custom-card {
-    background: white;
+    background: $white;
     border-radius: 10px;
-    padding: 25px;
+    padding: 2rem 0.75rem;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-
+   @include media-desktop{
+    height: 55dvh;
+   }
     &:hover {
         transform: translateY(-10px);
     }
@@ -72,4 +81,11 @@ hr.bg-green--dark{
         color: $gray-dark;
         font-size: 0.9rem;
     }
+}
+
+.py-custom{
+    padding-block: 5rem;
+}
+.pt-custom{
+    padding-block-start: 5rem;
 }

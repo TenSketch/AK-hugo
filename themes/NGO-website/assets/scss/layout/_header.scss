@@ -3,9 +3,15 @@ $navbar-bg:#FFEFE6;
 .navbar {
   // background-color: $orange-lighter;
   background-color: $navbar-bg;
-  .logo {
-    width: 200px; // Adjust size as needed
-    // height: auto;
+  .navbar-brand{
+    flex: 1;
+    @include media-desktop{
+      flex: 0 0 20%;
+    }
+    .logo {
+      width: clamp(35%, 35vw, 60%);; // Adjust size as needed
+      // height: auto;
+    }
   }
 
   .nav-link {

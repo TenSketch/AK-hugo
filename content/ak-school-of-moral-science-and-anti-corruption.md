@@ -1,5 +1,7 @@
 ---
 title: "AK School of Moral Science / Anti-Corruption"
+description: "Teaching moral science to inspire ethical behavior, compassion, and community building among youth."  
+keywords: "AK School of Moral Science, Ethical Education, Moral Science for Youth, Compassionate Learning"
 layout: "akschools"
 # heroImage: "/images/akf_flag.jpg"
 date: 2024-12-30T18:00:00+05:30

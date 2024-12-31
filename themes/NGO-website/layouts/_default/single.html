@@ -1,10 +1,12 @@
 {{ define "main" }}
 <main>
+  <!-- common header to all pages -->
   <section class="page-title d-flex align-items-center py-5">
     <div class="container text-center py-5">
       <h1 class="display-4 mb-0 fw-bold">{{ .Title }}</h1>
     </div>
   </section>
+
   {{ if eq .Params.layout "akschools" }}
     <section class="ak-schools py-5">
       <div class="container">
@@ -55,76 +57,91 @@
   {{ end }}
 
   {{ if eq .Params.layout "services" }}
-  <div class="services-page">
-    <section class="services-list">
-      <div class="container">
-        {{ range .Params.services }}
-        <div class="service-item">
-          <h2>{{ .title }}</h2>
-          {{ with .highlight }}
-          <p class="highlight">{{ . }}</p>
-          {{ end }}
-          <p>{{ .description }}</p>
-          {{ with .details }}
-          <ul>
-            {{ range . }}
-            <li>{{ . }}</li>
+    <div class="services-page">
+      <section class="services-list">
+        <div class="container">
+          {{ range .Params.services }}
+          <div class="service-item">
+            <h2>{{ .title }}</h2>
+            {{ with .highlight }}
+            <p class="highlight">{{ . }}</p>
             {{ end }}
-          </ul>
-          {{ end }}
-        </div>
-        {{ end }}
-      </div>
-    </section>
-  </div>
-  {{ end }}
-  <!-- activities layout -->
-   {{ if eq .Params.layout "activities" }}
-   <div class="activities-page">
-    <section class="activities-list">
-      <div class="container">
-        {{ range .Params.activities }}
-        <div class="activity-item">
-          <div class="activity-header">
-            <h2 class="activity-title">{{ .title }}</h2>
-            <p class="activity-date">{{ .date }}</p>
+            <p>{{ .description }}</p>
+            {{ with .details }}
+            <ul>
+              {{ range . }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+            {{ end }}
           </div>
-          <p class="activity-description">{{ .description }}</p>
-          <ul class="activity-details">
-            {{ range .details }}
-            <li>{{ . }}</li>
-            {{ end }}
-          </ul>
+          {{ end }}
         </div>
-        {{ end }}
-      </div>
-    </section>
-  </div>
-{{ end }}
+      </section>
+    </div>
+  {{ end }}
+
+   {{ if eq .Params.layout "activities" }}
+    <div class="activities-page">
+      <section class="activities-list">
+        <div class="container">
+          {{ range .Params.activities }}
+          <div class="activity-item">
+            <div class="activity-header">
+              <h2 class="activity-title">{{ .title }}</h2>
+              <p class="activity-date">{{ .date }}</p>
+            </div>
+            <p class="activity-description">{{ .description }}</p>
+            <ul class="activity-details">
+              {{ range .details }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          </div>
+          {{ end }}
+        </div>
+      </section>
+    </div>
+  {{ end }}
 
 
 {{ if eq .Params.layout "response" }}
-<section class=" py-5">
-  <div class="container text-center">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="card shadow-lg p-4 ">
-          <div class="card-body">
-            <!-- <h1 class="display-4 text-success mb-4">Thank You!</h1> -->
-            <p class="lead">We appreciate your submission and will get back to you as soon as possible.</p>
-            <!-- <hr class="my-4"> -->
-            <p class="d-none">If you need immediate assistance, feel free to call us
-              <a class="nav-link phone-link" href="tel:+919962006364" title="tap to call mobile"
-                aria-label="tap to call mobile">9962006364</a>
-              <!-- <a href="/contact" class="">contact us directly</a>. -->
-            </p>
-            <!-- <a href="/" class="btn btn-primary btn-lg mt-3">Go Back to Home</a> -->
+  <section class=" py-5">
+    <div class="container text-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow-lg p-4 ">
+            <div class="card-body">
+              <!-- <h1 class="display-4 text-success mb-4">Thank You!</h1> -->
+              <p class="lead">We appreciate your submission and will get back to you as soon as possible.</p>
+              <!-- <hr class="my-4"> -->
+              <p class="d-none">If you need immediate assistance, feel free to call us
+                <a class="nav-link phone-link" href="tel:+919962006364" title="tap to call mobile"
+                  aria-label="tap to call mobile">9962006364</a>
+                <!-- <a href="/contact" class="">contact us directly</a>. -->
+              </p>
+              <!-- <a href="/" class="btn btn-primary btn-lg mt-3">Go Back to Home</a> -->
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 {{ end }}
+
+<!-- layout terms -->
+ {{ if eq .Params.layout "terms" }}
+  <section class="py-5">
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-8 mx-auto">
+          <p class="text-center">{{ .Params.brief }}</p>
+          {{.Content}}
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
+{{ end }}
+
 {{ end }}

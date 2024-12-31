@@ -1,5 +1,7 @@
 ---
 title: "AK School of Environment"
+description: "A school dedicated to environmental education and sustainability, fostering a green future for rural communities."  
+keywords: "AK School of Environment, Environmental Education, Sustainability Programs, Green Future"
 layout: "akschools"
 # heroImage: "/images/akf_flag.jpg"
 date: 2024-12-30T18:00:00+05:30

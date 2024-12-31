@@ -2,7 +2,7 @@
 
 html {
     scroll-behavior: smooth;
-
+    scroll-padding-top: 5rem ;
 }
 
 body {
@@ -32,9 +32,14 @@ img {
     /* display: block; */
 }
 
-section{
-    padding-inline: 2rem;
+section, footer{
+    padding: 5rem 1rem;
+
+    .container{
+        // width: clamp(95%, 1200px, 98vw);
+      
+    }
 }
-// .fa, .fab, .fas{
+// .fa, .fab, .fas{ 
 //     color: $accent-clr;
 // }

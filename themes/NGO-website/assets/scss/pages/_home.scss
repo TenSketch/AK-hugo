@@ -3,10 +3,10 @@
 .hero {
   @include background-mixin;
   color: $white;
-  min-height: 100vh;
+  min-height: calc(100vh - #{$navbar-height});
   padding-top: $navbar-height;
   @include media-desktop {
-    height: 100vh !important;
+    // height: 100vh !important;
   }
 
   .section-title {
@@ -45,91 +45,50 @@
       width: 50%;
     }
   }
+  img{
+    @include border-radius; // Uses default 10px
+
+  }
 }
 
-.about {
 
-}
 
 .sports {
-  // border-radius: 10px;
+  @include border-radius; // Uses default 10px
+
   li{
     &+li{
       margin-top: 0.5rem;
-    //   font-size: 1.2rem;
     }
   }
-  img {
-    // border-radius: 50%;
+
+}
+.schools, .services{
+  .col{
+    flex: 1 0 97%;
+    max-width: 97%;
+   @include media-desktop{
+    flex: 1 0 30%;
+    max-width: 30%;
+   }
   }
 }
 
-
-
-// schools
-
 .schools {
-    // background-color: $green-light;
-    // padding: 50px 20px;
-
+ 
     .section-title {
         color: $green-dark;
         &::after {
             background-color: $orange-light;
         }
     }
-    
 
-    .schools-grid {
-      display: flex;  
-      flex-wrap: wrap; // Allow wrapping to new rows  
-      justify-content: center; // Center all items  
-      gap: 30px;  
-      max-width: 1200px;  
-  
-      .school-card {  
-          flex: 0 1 calc(33.33% - 20px); // 3 cards per row with a gap  
-          max-width: calc(33.33% - 20px);  
-      }  
-  
-      @media (max-width: 768px) {  
-          .school-card {  
-              flex: 0 1 calc(50% - 20px); // Adjust on medium screens  
-              max-width: calc(50% - 20px);  
-          }  
-      }  
-  
-      @media (max-width: 480px) {  
-          .school-card {  
-              flex: 0 1 100%; // Full width on small screens  
-              max-width: 100%;  
-          }  
-      }  
-    }
-
-
-
-    .view-all-btn {
-        display: block;
-        width: 200px;
-        margin: 30px auto 0;
-        background-color: $orange-dark;
-        color: white;
-        text-align: center;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-    }
 }
 
 .services{
 
   .custom-card{
     background-color: $green-light;
-    @include media-desktop {
-      flex: 30% 0 1;
-
-    }
   }
 }
 
@@ -137,7 +96,4 @@
   .section-title{
     color: $orange-dark;
   }
-}
-.events{
-
 }

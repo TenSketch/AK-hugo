@@ -1,11 +1,11 @@
 baseURL = 'https://akfoundationindia.com/'
 languageCode = 'en-us'
-title = 'AK Foundation - Empowering Lives Through Annadhanam and Sports Initiatives'
+title = 'AK Foundation - Reg. No: 945/2010 | Empowering Lives Through Sports & Annadhanam'
 theme = 'NGO-website'
 [params]
-favicon = '/favicon1.ico'
-description = 'AK Foundation (Reg. 945/2010) is dedicated to serving humanity through Annadhanam (food offerings) and nurturing rural sports talent. Join us in creating a better future by supporting our initiatives for the underprivileged and aspiring athletes.'
-keywords = 'AK Foundation, Annadhanam, Food Offering Service, Rural Sports Academy, Support Rural Talent, Community Welfare, Charity Trust, Empowering Lives, Donate for Annadhanam, Social Service Initiatives'
+favicon = '/favicon.jpg'
+description = 'AK Foundation empowers rural sports talent, supports the underprivileged through Annadhanam, and fosters environmental stewardship, moral education, and care for the voiceless. Join us to create lasting impact through our initiatives and programs.'
+keywords = 'AK Foundation, Rural Talent Development, Environmental Stewardship, Voiceless Support, Moral Science Education, Sports Academy, Educational Academy, Community Services, Tamil Nadu NGOs, Annadhanam, Food Offerings, Animal Welfare, Animal Care, Child Abuse Awareness, Drug Abuse Awareness, PoCSO, PoSH, Anti-Corruption Training, Social Work, Social Service, Community Outreach, Youth Development, Career Guidance, Sustainable Living, Tree Plantation Drives, Rainwater Harvesting, Waste Management, Adoption Drives, Family Counseling, Marriage Support, Rural Education, NGO Initiatives, Humanitarian Aid, Charity in Tamil Nadu, Nonprofit Organization, Volunteering Opportunities, Social Justice, Community Building.'
 author = 'Balachandiran - TenSketch'
 logo = '/images/logo/Success-Solutions-logo-2.jpeg'
 og_image = '/ogimage.jpg'
@@ -67,3 +67,12 @@ og_image = '/ogimage.jpg'
     name = "Contact Us"
     url = "#contact-us"
     weight = 5
+
+  [[menu.footer]]    
+    name = "Join Us"
+    url = "/join-us"
+    weight = 1
+  [[menu.footer]]
+    name = "Terms & Conditions"
+    url = "/terms-and-conditions"
+    weight = 2

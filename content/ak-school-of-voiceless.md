@@ -1,5 +1,7 @@
 ---
 title: "AK School of Voiceless"
+description: "Advocating for and empowering the voiceless, including animals and marginalized communities, through education and care."
+keywords: "AK School of Voiceless, Animal Advocacy, Support for Marginalized, Empowering Voiceless" 
 layout: "akschools"
 # heroImage: "/images/akf_flag.jpg"
 date: 2024-12-30T17:21:51+05:30

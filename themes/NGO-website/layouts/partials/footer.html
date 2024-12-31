@@ -1,28 +1,54 @@
-<footer id="contact-us" class="bg-light-green">
-  <div class="container pt-5 pb-0">
+<footer id="contact-us" class="bg-light-green py-5">
+  <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <!-- <div class="footer-logo">
-          <img src="/images/logo.png" alt="AK Foundation Logo" class="img-fluid">
-          <p class="tagline fst-italic">Making a difference together</p>
-        </div> -->
+      <div class="col-md-3">
+        <h4 class="subtitle fst-italic mb-3">Quick LinksMaking a difference together</h4>
+        
+        <div class="footer-logo">
+          <img src="/images/bullet-flag.png" alt="AK Foundation Logo" class="">
+          <!-- <p class="tagline fst-italic">Making a difference together</p> -->
+        </div>        
+      </div>
 
+      <div class="col-md-3 mt-4 mt-md-0">
         <div class="footer-links">
           <h4 class="subtitle">Quick Links</h4>
           <ul class="list-unstyled">
-            <li><a href="#about" class="footer-link">About Us</a></li>
-            <li><a href="#services" class="footer-link">Services</a></li>
-            <li><a href="#contact" class="footer-link">Contact</a></li>
-            <li><a href="#donate" class="footer-link">Donate</a></li>
+            {{ range .Site.Menus.main }}
+              <li>
+                {{ if .HasChildren }}
+                  <span class="footer-link">{{ .Name }}</span>
+                  <ul class="list-unstyled ps-3">
+                    {{ range .Children }}
+                      <li><a href="{{ .URL }}" class="footer-link">{{ .Name }}</a></li>
+                    {{ end }}
+                  </ul>
+                {{ else }}
+                  <a href="{{ .URL }}" class="footer-link">{{ .Name }}</a>
+                {{ end }}
+              </li>
+            {{ end }}
+            {{ range .Site.Menus.footer }}
+              <li>
+                {{ if .HasChildren }}
+                  <span class="footer-link">{{ .Name }}</span>
+                  <ul class="list-unstyled ps-3">
+                    {{ range .Children }}
+                      <li><a href="{{ .URL }}" class="footer-link">{{ .Name }}</a></li>
+                    {{ end }}
+                  </ul>
+                {{ else }}
+                  <a href="{{ .URL }}" class="footer-link">{{ .Name }}</a>
+                {{ end }}
+              </li>
+            {{ end }}
           </ul>
         </div>
-
+        
       </div>
 
-      <!-- <div class="col-md-4">
-      </div> -->
-
-      <div class="col-md-4">
+      
+      <div class="col-md-3 mt-4 mt-md-0">
         <div class="footer-contact">
           <h4 class="subtitle">Contact Us</h4>
           <p class="mb-1">
@@ -66,7 +92,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3 mt-4 mt-md-0">
         <!-- contact form -->
         <div class="footer-contact-form">
           <h4 class="subtitle">Get in Touch</h4>
@@ -88,18 +114,18 @@
               <label for="message">Message:</label>
               <textarea class="form-control" name="Message:" id="message" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary mt-3">SUBMIT</button>
+            <button type="submit" class="btn btn-primary-outline mt-3 w-100">SUBMIT</button>
           </form>
         </div>
       </div>
     </div>
+    <div class="footer-bottom bg-light-green">
+        <hr class="bg-green">
+        <p class="text-center mb-0">&copy; 2024 AK Foundation. All rights reserved. Sketched with <i class="fa fa-heart"
+            aria-hidden="true"></i> by
+          <a href="https://www.tensketch.com/" title="TenSketch website" class="text-red-alert">TenSketch</a>
+        </p>
+      </div>
   </div>
 
-<hr class="bg-green--dark">
-  <div class="footer-bottom bg-light-green py-3">
-    <p class="text-center subtitle">&copy; 2024 AK Foundation. All rights reserved. Sketched with <i class="fa fa-heart"
-        aria-hidden="true"></i> by
-      <a href="https://www.tensketch.com/" title="TenSketch website" class="text-red-alert">TenSketch</a>
-    </p>
-  </div>
 </footer>

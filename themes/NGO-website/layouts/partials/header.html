@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-md fixed-top bg-light">
-  <div class="container-fluid">
+<nav class="navbar navbar-expand-lg fixed-top py-4 py-lg-1">
+  <div class="container">
     <!-- Logo -->
-    <a class="navbar-brand" href="/">
-      <img src="/images/logo.png" alt="AK Foundation Logo" class="logo">
+    <a class="navbar-brand py-0" href="/">
+      <img src="/images/AK_Foundation-logo-1.png" alt="AK Foundation Logo" class="logo">
     </a>
 
     <!-- Navbar Toggle for Mobile -->
@@ -13,30 +13,30 @@
     <!-- Navbar Content -->
     <div class="collapse navbar-collapse" id="navbarContent">
       <!-- Centered Menu -->
-      <ul class="navbar-nav mx-auto">
+      <ul class="navbar-nav mx-auto gap-2 gap-lg-0 py-4 py-md-0">
         {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown text-end text-lg-start">
               <a class="nav-link dropdown-toggle" href="{{ .URL }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {{ .Name }}
               </a>
               <ul class="dropdown-menu">
                 {{ range .Children }}
-                  <li><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
+                  <li class="text-end text-lg-start"><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
                 {{ end }}
               </ul>
             </li>
           {{ else }}
-            <li class="nav-item">
+            <li class="nav-item text-end text-lg-start">
               <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
             </li>
           {{ end }}
         {{ end }}
       </ul>
-
+      <hr class="bg-orange d-lg-none">
       <!-- Right Buttons -->
-      <div class="d-flex">
-        <a href="/join-us" class="btn btn-primary-outline">Join as Member</a>
+      <div class="d-flex justify-content-end">
+        <a href="/join-us" class="btn btn-primary ">Join as Member</a>
       </div>
     </div>
   </div>
