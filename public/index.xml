@@ -2,164 +2,171 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AK Foundation - Reg. No: 945/2010 | Empowering Lives Through Sports &amp; Annadhanam</title>
-    <link>https://akfoundationindia.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on AK Foundation - Reg. No: 945/2010 | Empowering Lives Through Sports &amp; Annadhanam</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Dec 2024 17:58:14 +0530</lastBuildDate>
-    <atom:link href="https://akfoundationindia.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Apr 2025 20:23:06 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gallery</title>
+      <link>http://localhost:1313/gallery/</link>
+      <pubDate>Thu, 03 Apr 2025 20:23:06 +0530</pubDate>
+      <guid>http://localhost:1313/gallery/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Terms and Conditions</title>
-      <link>https://akfoundationindia.com/terms-and-conditions/</link>
+      <link>http://localhost:1313/terms-and-conditions/</link>
       <pubDate>Tue, 31 Dec 2024 17:58:14 +0530</pubDate>
-      <guid>https://akfoundationindia.com/terms-and-conditions/</guid>
+      <guid>http://localhost:1313/terms-and-conditions/</guid>
       <description>&lt;h5 id=&#34;1-restrictions-on-the-use-of-content&#34;&gt;&lt;strong&gt;1. Restrictions on the Use of Content&lt;/strong&gt;&lt;/h5&gt;&#xA;&lt;p&gt;You may download and use designated content solely for purposes aligned with AK Foundation’s charitable mission. Redistribution or use for a fee is prohibited. Access from outside India is at your own risk, and compliance with local laws is required.&lt;/p&gt;&#xA;&lt;h5 id=&#34;2-registration-and-profile-creation&#34;&gt;&lt;strong&gt;2. Registration and Profile Creation&lt;/strong&gt;&lt;/h5&gt;&#xA;&lt;p&gt;Registration for certain site areas requires accurate, current information. You are responsible for maintaining confidentiality and accuracy; misuse may result in suspension or termination of access.&lt;/p&gt;</description>
     </item>
     <item>
       <title>AK School of Educational Academy</title>
-      <link>https://akfoundationindia.com/ak-school-of-education/</link>
+      <link>http://localhost:1313/ak-school-of-education/</link>
       <pubDate>Mon, 30 Dec 2024 18:30:00 +0530</pubDate>
-      <guid>https://akfoundationindia.com/ak-school-of-education/</guid>
+      <guid>http://localhost:1313/ak-school-of-education/</guid>
       <description></description>
     </item>
     <item>
       <title>AK School of Environment</title>
-      <link>https://akfoundationindia.com/ak-school-of-environment/</link>
+      <link>http://localhost:1313/ak-school-of-environment/</link>
       <pubDate>Mon, 30 Dec 2024 18:00:00 +0530</pubDate>
-      <guid>https://akfoundationindia.com/ak-school-of-environment/</guid>
+      <guid>http://localhost:1313/ak-school-of-environment/</guid>
       <description></description>
     </item>
     <item>
       <title>AK School of Moral Science / Anti-Corruption</title>
-      <link>https://akfoundationindia.com/ak-school-of-moral-science-and-anti-corruption/</link>
+      <link>http://localhost:1313/ak-school-of-moral-science-and-anti-corruption/</link>
       <pubDate>Mon, 30 Dec 2024 18:00:00 +0530</pubDate>
-      <guid>https://akfoundationindia.com/ak-school-of-moral-science-and-anti-corruption/</guid>
+      <guid>http://localhost:1313/ak-school-of-moral-science-and-anti-corruption/</guid>
       <description></description>
     </item>
     <item>
       <title>AK School of Voiceless</title>
-      <link>https://akfoundationindia.com/ak-school-of-voiceless/</link>
+      <link>http://localhost:1313/ak-school-of-voiceless/</link>
       <pubDate>Mon, 30 Dec 2024 17:21:51 +0530</pubDate>
-      <guid>https://akfoundationindia.com/ak-school-of-voiceless/</guid>
+      <guid>http://localhost:1313/ak-school-of-voiceless/</guid>
       <description></description>
     </item>
     <item>
       <title>AK School of Sports Academy</title>
-      <link>https://akfoundationindia.com/ak-school-of-sports/</link>
+      <link>http://localhost:1313/ak-school-of-sports/</link>
       <pubDate>Mon, 30 Dec 2024 17:21:50 +0530</pubDate>
-      <guid>https://akfoundationindia.com/ak-school-of-sports/</guid>
+      <guid>http://localhost:1313/ak-school-of-sports/</guid>
       <description>&lt;h2 id=&#34;mission&#34;&gt;Mission:&lt;/h2&gt;&#xA;&lt;p&gt;To identify and support sports talent among rural children and youth. We aspire to see rural athletes representing India in the 2016 and 2020 Olympics and competing on the global stage, proudly raising our AK School of  Flag.&lt;/p&gt;&#xA;&lt;h2 id=&#34;vision&#34;&gt;Vision:&lt;/h2&gt;&#xA;&lt;p&gt;“Express your Views” and “Communicate” are our guiding principles. Our foundation will act as a bridge to support rural youth in their journey, helping them overcome any challenges they may face.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gallery</title>
-      <link>https://akfoundationindia.com/home/gallery/</link>
+      <link>http://localhost:1313/home/gallery/</link>
       <pubDate>Mon, 30 Dec 2024 15:37:10 +0530</pubDate>
-      <guid>https://akfoundationindia.com/home/gallery/</guid>
+      <guid>http://localhost:1313/home/gallery/</guid>
       <description></description>
     </item>
     <item>
       <title>Welcome to AK Foundation</title>
-      <link>https://akfoundationindia.com/home/hero/</link>
+      <link>http://localhost:1313/home/hero/</link>
       <pubDate>Fri, 27 Dec 2024 20:12:17 +0530</pubDate>
-      <guid>https://akfoundationindia.com/home/hero/</guid>
+      <guid>http://localhost:1313/home/hero/</guid>
       <description>&lt;h4 id=&#34;ak-school-of&#34;&gt;AK School of&amp;hellip;&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sports&lt;/li&gt;&#xA;&lt;li&gt;Education&lt;/li&gt;&#xA;&lt;li&gt;Voiceless&lt;/li&gt;&#xA;&lt;li&gt;Environment&lt;/li&gt;&#xA;&lt;li&gt;Moral Science / Anti-Corruption&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Honoring Excellence in Service</title>
-      <link>https://akfoundationindia.com/home/awards/</link>
+      <link>http://localhost:1313/home/awards/</link>
       <pubDate>Fri, 27 Dec 2024 16:55:51 +0530</pubDate>
-      <guid>https://akfoundationindia.com/home/awards/</guid>
+      <guid>http://localhost:1313/home/awards/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;Demonstrated exceptional commitment to community development and social welfare.&lt;/li&gt;&#xA;&lt;li&gt;Pioneered innovative approaches to addressing critical social challenges.&lt;/li&gt;&#xA;&lt;li&gt;Recognized for outstanding leadership and sustained impact in service to others.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Testimonials</title>
-      <link>https://akfoundationindia.com/home/testimonials/</link>
+      <link>http://localhost:1313/home/testimonials/</link>
       <pubDate>Wed, 25 Dec 2024 00:13:10 +0530</pubDate>
-      <guid>https://akfoundationindia.com/home/testimonials/</guid>
+      <guid>http://localhost:1313/home/testimonials/</guid>
       <description></description>
     </item>
     <item>
       <title>AK School of Sports</title>
-      <link>https://akfoundationindia.com/home/sports/</link>
+      <link>http://localhost:1313/home/sports/</link>
       <pubDate>Wed, 25 Dec 2024 00:12:55 +0530</pubDate>
-      <guid>https://akfoundationindia.com/home/sports/</guid>
+      <guid>http://localhost:1313/home/sports/</guid>
       <description></description>
     </item>
     <item>
       <title>About Us</title>
-      <link>https://akfoundationindia.com/home/about/</link>
+      <link>http://localhost:1313/home/about/</link>
       <pubDate>Wed, 25 Dec 2024 00:11:37 +0530</pubDate>
-      <guid>https://akfoundationindia.com/home/about/</guid>
+      <guid>http://localhost:1313/home/about/</guid>
       <description>&lt;h4 id=&#34;mission&#34;&gt;Mission:&lt;/h4&gt;&#xA;&lt;p&gt;To BRIDGE the gap between unknown people to unknown people, along with positive vibrations and zero expectations&lt;/p&gt;</description>
     </item>
     <item>
       <title>Activities of AK Foundation</title>
-      <link>https://akfoundationindia.com/activities/</link>
+      <link>http://localhost:1313/activities/</link>
       <pubDate>Tue, 24 Dec 2024 12:00:00 +0530</pubDate>
-      <guid>https://akfoundationindia.com/activities/</guid>
+      <guid>http://localhost:1313/activities/</guid>
       <description></description>
     </item>
     <item>
       <title>Services by Dr. Geetha</title>
-      <link>https://akfoundationindia.com/services/</link>
+      <link>http://localhost:1313/services/</link>
       <pubDate>Tue, 24 Dec 2024 10:00:00 +0530</pubDate>
-      <guid>https://akfoundationindia.com/services/</guid>
+      <guid>http://localhost:1313/services/</guid>
       <description></description>
     </item>
     <item>
       <title>Thank you</title>
-      <link>https://akfoundationindia.com/thank-you/</link>
+      <link>http://localhost:1313/thank-you/</link>
       <pubDate>Sun, 15 Dec 2024 15:59:23 +0530</pubDate>
-      <guid>https://akfoundationindia.com/thank-you/</guid>
+      <guid>http://localhost:1313/thank-you/</guid>
       <description></description>
     </item>
     <item>
       <title>Contact Us</title>
-      <link>https://akfoundationindia.com/contact-us/</link>
+      <link>http://localhost:1313/contact-us/</link>
       <pubDate>Tue, 03 Dec 2024 16:01:41 +0530</pubDate>
-      <guid>https://akfoundationindia.com/contact-us/</guid>
+      <guid>http://localhost:1313/contact-us/</guid>
       <description></description>
     </item>
     <item>
       <title>Join Us</title>
-      <link>https://akfoundationindia.com/join-us/</link>
+      <link>http://localhost:1313/join-us/</link>
       <pubDate>Tue, 03 Dec 2024 16:01:41 +0530</pubDate>
-      <guid>https://akfoundationindia.com/join-us/</guid>
+      <guid>http://localhost:1313/join-us/</guid>
       <description></description>
     </item>
     <item>
       <title>About Us</title>
-      <link>https://akfoundationindia.com/about-us/</link>
+      <link>http://localhost:1313/about-us/</link>
       <pubDate>Tue, 03 Dec 2024 16:01:28 +0530</pubDate>
-      <guid>https://akfoundationindia.com/about-us/</guid>
+      <guid>http://localhost:1313/about-us/</guid>
       <description></description>
     </item>
     <item>
       <title>Our Schools</title>
-      <link>https://akfoundationindia.com/home/akschools/</link>
+      <link>http://localhost:1313/home/akschools/</link>
       <pubDate>Sun, 01 Dec 2024 01:21:09 +0530</pubDate>
-      <guid>https://akfoundationindia.com/home/akschools/</guid>
+      <guid>http://localhost:1313/home/akschools/</guid>
       <description></description>
     </item>
     <item>
       <title>Our Services</title>
-      <link>https://akfoundationindia.com/home/services/</link>
+      <link>http://localhost:1313/home/services/</link>
       <pubDate>Sun, 01 Dec 2024 01:21:08 +0530</pubDate>
-      <guid>https://akfoundationindia.com/home/services/</guid>
+      <guid>http://localhost:1313/home/services/</guid>
       <description></description>
     </item>
     <item>
       <title>Be a Part of the Change</title>
-      <link>https://akfoundationindia.com/home/cta/</link>
+      <link>http://localhost:1313/home/cta/</link>
       <pubDate>Sun, 01 Dec 2024 01:21:07 +0530</pubDate>
-      <guid>https://akfoundationindia.com/home/cta/</guid>
+      <guid>http://localhost:1313/home/cta/</guid>
       <description></description>
     </item>
     <item>
       <title>Our Events</title>
-      <link>https://akfoundationindia.com/home/events/</link>
+      <link>http://localhost:1313/home/events/</link>
       <pubDate>Thu, 17 Oct 2024 14:37:44 +0530</pubDate>
-      <guid>https://akfoundationindia.com/home/events/</guid>
+      <guid>http://localhost:1313/home/events/</guid>
       <description></description>
     </item>
   </channel>

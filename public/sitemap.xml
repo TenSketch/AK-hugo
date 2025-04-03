@@ -2,80 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://akfoundationindia.com/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-04-03T20:23:06+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/gallery/</loc>
+    <lastmod>2025-04-03T20:23:06+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/terms-and-conditions/</loc>
     <lastmod>2024-12-31T17:58:14+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/terms-and-conditions/</loc>
-    <lastmod>2024-12-31T17:58:14+05:30</lastmod>
-  </url><url>
-    <loc>https://akfoundationindia.com/ak-school-of-education/</loc>
+    <loc>http://localhost:1313/ak-school-of-education/</loc>
     <lastmod>2024-12-30T18:30:00+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/ak-school-of-environment/</loc>
+    <loc>http://localhost:1313/ak-school-of-environment/</loc>
     <lastmod>2024-12-30T18:00:00+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/ak-school-of-moral-science-and-anti-corruption/</loc>
+    <loc>http://localhost:1313/ak-school-of-moral-science-and-anti-corruption/</loc>
     <lastmod>2024-12-30T18:00:00+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/ak-school-of-voiceless/</loc>
+    <loc>http://localhost:1313/ak-school-of-voiceless/</loc>
     <lastmod>2024-12-30T17:21:51+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/ak-school-of-sports/</loc>
+    <loc>http://localhost:1313/ak-school-of-sports/</loc>
     <lastmod>2024-12-30T17:21:50+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/gallery/</loc>
+    <loc>http://localhost:1313/home/gallery/</loc>
     <lastmod>2024-12-30T15:37:10+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/</loc>
+    <loc>http://localhost:1313/home/</loc>
     <lastmod>2024-12-30T15:37:10+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/hero/</loc>
+    <loc>http://localhost:1313/home/hero/</loc>
     <lastmod>2024-12-27T20:12:17+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/awards/</loc>
+    <loc>http://localhost:1313/home/awards/</loc>
     <lastmod>2024-12-27T16:55:51+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/testimonials/</loc>
+    <loc>http://localhost:1313/home/testimonials/</loc>
     <lastmod>2024-12-25T00:13:10+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/sports/</loc>
+    <loc>http://localhost:1313/home/sports/</loc>
     <lastmod>2024-12-25T00:12:55+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/about/</loc>
+    <loc>http://localhost:1313/home/about/</loc>
     <lastmod>2024-12-25T00:11:37+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/activities/</loc>
+    <loc>http://localhost:1313/activities/</loc>
     <lastmod>2024-12-24T12:00:00+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/services/</loc>
+    <loc>http://localhost:1313/services/</loc>
     <lastmod>2024-12-24T10:00:00+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/thank-you/</loc>
+    <loc>http://localhost:1313/thank-you/</loc>
     <lastmod>2024-12-15T15:59:23+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/contact-us/</loc>
+    <loc>http://localhost:1313/contact-us/</loc>
     <lastmod>2024-12-03T16:01:41+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/join-us/</loc>
+    <loc>http://localhost:1313/join-us/</loc>
     <lastmod>2024-12-03T16:01:41+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/about-us/</loc>
+    <loc>http://localhost:1313/about-us/</loc>
     <lastmod>2024-12-03T16:01:28+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/akschools/</loc>
+    <loc>http://localhost:1313/home/akschools/</loc>
     <lastmod>2024-12-01T01:21:09+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/services/</loc>
+    <loc>http://localhost:1313/home/services/</loc>
     <lastmod>2024-12-01T01:21:08+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/cta/</loc>
+    <loc>http://localhost:1313/home/cta/</loc>
     <lastmod>2024-12-01T01:21:07+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/home/events/</loc>
+    <loc>http://localhost:1313/home/events/</loc>
     <lastmod>2024-10-17T14:37:44+05:30</lastmod>
   </url><url>
-    <loc>https://akfoundationindia.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://akfoundationindia.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
