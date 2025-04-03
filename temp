@@ -1,0 +1,136 @@
+---
+title: 'Gallery'
+date: 2025-04-03T20:23:06+05:30
+layout: 'single'
+type: 'gallery'
+draft: false
+---
+
+1. write md code to create a gallery - only the above one md file to contain all the images given below
+2. convert below html to hugo html that will consume the gallery given in the md file
+3. write js for fancybox and loazyload images 
+
+<div id="gallery-grid" class="gallery-grid">
+
+<a class="gallery-item" href="" data-fancybox="gallery" aria-label="" title="Live Concert 2">
+<img src="" alt="">
+</a>
+</div>
+
+scss
+.gallery-grid {
+	column-count: 3;
+	column-gap: 15px;
+	max-width: 1200px;
+	margin: 0 auto;
+
+	.gallery-item {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 15px;
+		position: relative;
+		overflow: hidden;
+		border-radius: 10px;
+		cursor: pointer;
+		transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+		&:hover {
+			transform: scale(1.05);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+		}
+
+		img {
+			width: 100%;
+			border-radius: 10px;
+			transition: 0.3s ease-in-out;
+		}
+	}
+}
+
+// Responsive Masonry Grid
+@media (max-width: 1024px) {
+	.gallery-grid {
+		column-count: 2;
+	}
+}
+
+@media (max-width: 768px) {
+	.gallery-grid {
+		column-count: 1;
+	}
+}
+
+
+/images/gallery/AKF-Gallery-1.jpg
+/images/gallery/AKF-Gallery-2.jpg
+/images/gallery/AKF-Gallery-3.jpg
+/images/gallery/AKF-Gallery-4.jpg
+/images/gallery/AKF-Gallery-5.jpg
+/images/gallery/AKF-Gallery-6.jpg
+/images/gallery/AKF-Gallery-7.jpg
+/images/gallery/AKF-Gallery-8.jpg
+/images/gallery/AKF-Gallery-9.jpg
+/images/gallery/AKF-Gallery-10.jpg
+/images/gallery/AKF-Gallery-11.jpg
+/images/gallery/AKF-Gallery-12.jpg
+/images/gallery/AKF-Gallery-13.jpg
+/images/gallery/AKF-Gallery-14.jpg
+/images/gallery/AKF-Gallery-15.jpg
+/images/gallery/AKF-Gallery-16.jpg
+/images/gallery/AKF-Gallery-17.jpg
+/images/gallery/AKF-Gallery-18.jpg
+/images/gallery/AKF-Gallery-19.jpg
+/images/gallery/AKF-Gallery-20.jpg
+/images/gallery/AKF-Gallery-21.jpg
+/images/gallery/AKF-Gallery-22.jpg
+/images/gallery/AKF-Gallery-23.jpg
+/images/gallery/AKF-Gallery-24.jpg
+/images/gallery/AKF-Gallery-25.jpg
+/images/gallery/AKF-Gallery-26.jpg
+/images/gallery/AKF-Gallery-27.jpg
+/images/gallery/AKF-Gallery-28.jpg
+/images/gallery/AKF-Gallery-29.jpg
+/images/gallery/AKF-Gallery-30.jpg
+/images/gallery/AKF-Gallery-31.jpg
+/images/gallery/AKF-Gallery-32.jpg
+/images/gallery/AKF-Gallery-33.jpg
+/images/gallery/AKF-Gallery-34.jpg
+/images/gallery/AKF-Gallery-35.jpg
+/images/gallery/AKF-Gallery-36.jpg
+/images/gallery/AKF-Gallery-37.jpg
+/images/gallery/AKF-Gallery-38.jpg
+/images/gallery/AKF-Gallery-39.jpg
+/images/gallery/AKF-Gallery-40.jpg
+/images/gallery/AKF-Gallery-41.jpg
+/images/gallery/AKF-Gallery-42.jpg
+/images/gallery/AKF-Gallery-43.jpg
+/images/gallery/AKF-Gallery-44.jpg
+/images/gallery/AKF-Gallery-45.jpg
+/images/gallery/AKF-Gallery-46.jpg
+/images/gallery/AKF-Gallery-47.jpg
+/images/gallery/AKF-Gallery-48.jpg
+/images/gallery/AKF-Gallery-49.jpg
+/images/gallery/AKF-Gallery-50.jpg
+/images/gallery/AKF-Gallery-51.jpg
+/images/gallery/AKF-Gallery-52.jpg
+/images/gallery/AKF-Gallery-53.jpg
+/images/gallery/AKF-Gallery-54.jpg
+/images/gallery/AKF-Gallery-55.jpg
+/images/gallery/AKF-Gallery-56.jpg
+/images/gallery/AKF-Gallery-57.jpg
+/images/gallery/AKF-Gallery-58.jpg
+/images/gallery/AKF-Gallery-59.jpg
+/images/gallery/AKF-Gallery-60.jpg
+/images/gallery/AKF-Gallery-61.jpg
+/images/gallery/AKF-Gallery-62.jpg
+/images/gallery/AKF-Gallery-63.jpg
+/images/gallery/AKF-Gallery-64.jpg
+/images/gallery/AKF-Gallery-65.jpg
+/images/gallery/AKF-Gallery-66.jpg
+/images/gallery/AKF-Gallery-67.jpg
+/images/gallery/AKF-Gallery-68.jpg
+/images/gallery/AKF-Gallery-69.jpg
+/images/gallery/AKF-Gallery-70.jpg
+/images/gallery/AKF-Gallery-71.jpg
+/images/gallery/AKF-Gallery-72.jpg
+/images/gallery/AKF-Gallery-73.jpg

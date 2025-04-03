@@ -1,0 +1,18 @@
+{{ define "main" }}
+<main class="py-5 my-3">
+    
+    <div class="container">
+      <h1 class="text-center text-orange display-4 mb-5">{{ .Title }}</h1>
+      <div id="gallery-grid" class="gallery-grid">
+        {{ range .Params.images }}
+          <a class="gallery-item" href="{{ . }}" data-fancybox="gallery" aria-label="Gallery Image" title="Gallery Image">
+            <img src="{{ . }}" alt="Gallery Image" loading="lazy">
+          </a>
+        {{ end }}
+      </div>
+      
+    </div>
+  
+
+</main>
+  {{ end }}

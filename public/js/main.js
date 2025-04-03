@@ -27,4 +27,49 @@
       });
     });
   });
+  Fancybox.bind("[data-fancybox='gallery']", {
+    // Optional Fancybox options
+    Thumbs: {
+      autoStart: true
+    }
+  });
+  document.addEventListener("DOMContentLoaded", function() {
+    var lazyImages = [].slice.call(document.querySelectorAll("img[loading='lazy']"));
+    if ("IntersectionObserver" in window) {
+      let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            let lazyImage = entry.target;
+            lazyImageObserver.unobserve(lazyImage);
+          }
+        });
+      });
+      lazyImages.forEach(function(lazyImage) {
+        lazyImageObserver.observe(lazyImage);
+      });
+    }
+  });
+  var videoLightbox = document.getElementById("video-lightbox");
+  var videoIframe = document.getElementById("video-iframe");
+  function openLightbox(url) {
+    videoIframe.src = url;
+    videoLightbox.classList.remove("hidden");
+  }
+  function closeLightbox() {
+    videoIframe.src = "";
+    videoLightbox.classList.add("hidden");
+  }
+  document.addEventListener("DOMContentLoaded", function() {
+    const videoCards = document.querySelectorAll(".video-card");
+    videoCards.forEach((card) => {
+      card.addEventListener("click", function() {
+        const url = card.getAttribute("data-url");
+        openLightbox(url);
+      });
+    });
+    const closeButton = document.querySelector(".close-btn");
+    if (closeButton) {
+      closeButton.addEventListener("click", closeLightbox);
+    }
+  });
 })();

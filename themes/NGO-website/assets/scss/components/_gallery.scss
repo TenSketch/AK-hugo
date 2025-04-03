@@ -1,0 +1,38 @@
+.gallery-grid {
+    column-count: 5;
+    column-gap: 15px;
+    // max-width: 1200px;
+    // margin: 0 auto;
+
+    .gallery-item {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 15px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+        }
+    }
+    @include media-desktop{
+        column-count: 4;
+    }
+    @include media-tablet {
+        column-count: 3;
+    }
+
+    @include media-mobile {
+        column-count: 2;
+    }
+}

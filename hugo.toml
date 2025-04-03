@@ -64,9 +64,23 @@ og_image = '/ogimage.jpg'
     url = "/activities"
     weight = 4
   [[menu.main]]
+    name = "Gallery"
+    weight = 5
+    [[menu.main]]
+      parent = "Gallery"
+      name = "Photo Gallery"
+      url = "/photo-gallery"
+      weight = 1
+    [[menu.main]]
+      parent = "Gallery"
+      name = "Video Gallery"
+      url = "/video-gallery"
+      weight = 2
+      
+  [[menu.main]]
     name = "Contact Us"
     url = "#contact-us"
-    weight = 5
+    weight = 6
 
   [[menu.footer]]    
     name = "Join Us"
